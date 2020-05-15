@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>webdoc: Interface: IFileBuffer</title>
+    <title>webdoc: Mixin: LowpassFilter</title>
 
     <script src="scripts/prettify.js"> </script>
     <script src="scripts/lang-css.js"> </script>
@@ -14,7 +14,7 @@
 </head>
 <body>
     <div id="main">
-        <h1 class="page-title">Interface: IFileBuffer</h1>
+        <h1 class="page-title">Mixin: LowpassFilter</h1>
         
 
 
@@ -26,9 +26,12 @@
     
         <h2>
             
-            EX.IFileBuffer
+            EX.LowpassFilter
             
         </h2>
+        
+            <div class="class-description"> Filters data points above a certain frequency threshold.
+</div>
         
         
 </header>
@@ -36,6 +39,9 @@
 <article>
     <div class="container-overview">
         
+            
+                <div class="description"> Filters data points above a certain frequency threshold.
+</div>
             
 
             
@@ -103,77 +109,15 @@
 
         
             
-<h4 class="name" id="PropertyDocdirtyID"><span class="type-signature"></span>dirtyID<span class="type-signature"> :number</span></h4>
+<h4 class="name" id="PropertyDoccurrentThreshold"><span class="type-signature"></span>currentThreshold<span class="type-signature"> :number</span></h4>
 
 
 
 
+    <div class="description">
+         The current frequency threshold
 
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-        <span class="param-type">number</span>
-        
-
-
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-version">Version:</dt>
-    <dd class="tag-version"><ul class="dummy"><li>public</li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="PropertyDocflushID"><span class="type-signature"></span>flushID<span class="type-signature"> :number</span></h4>
-
-
-
+    </div>
 
 
 
@@ -238,6 +182,144 @@
         
     
 
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+        <h4 class="name" id="MethodDocsetUpperCutoff">
+            <span class="type-signature"></span>setUpperCutoff<span class="signature">(threshold)</span><span class="type-signature"></span>
+        </h4>
+    
+
+
+
+
+
+    <div class="description">
+         The max. frequency to be allowed in the stream
+
+    </div>
+
+
+
+
+
+
+
+
+
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+
+            <td class="type">
+            
+                
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                t - threshold
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-version">Version:</dt>
+    <dd class="tag-version"><ul class="dummy"><li>public</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     
 
     
