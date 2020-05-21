@@ -11,6 +11,7 @@
     <![endif]-->
     <link type="text/css" rel="stylesheet" href="styles/tomorrow.min.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 </head>
 <body>
     <div id="main">
@@ -30,6 +31,18 @@
             
         </h2>
         
+            <div class="class-description"><p><em>Simulation</em> for a automobile that can drive on a manifold surface.</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> car = <span class="hljs-keyword">new</span> Car({ <span class="hljs-attr">make</span>: <span class="hljs-string">"Ferrari"</span> });
+
+car.installComponent(<span class="hljs-string">"interior"</span>, <span class="hljs-keyword">new</span> AirConditioner());
+car.installComponent(<span class="hljs-string">"exterior"</span>, <span class="hljs-keyword">new</span> Bumper());
+car.drop(<span class="hljs-string">"1234 Virtual Street, OH, Virtual US"</span>, <span class="hljs-string">"Universe-Default"</span>);
+car.gear(<span class="hljs-string">"D"</span>);
+car.accelerate(<span class="hljs-number">2</span>).until(<span class="hljs-number">65</span>).then(<span class="hljs-number">0</span>);
+
+car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> Services.Insurance.initiateClaim(<span class="hljs-string">"abcdefghi-ticke"</span>));
+</code></pre></div>
+        
         
 </header>
 
@@ -48,11 +61,21 @@
 
 
 
+
+
     <div class="description">
-        <p>Simulation for a automobile that can drive on a manifold surface.</p>
+        <p><em>Simulation</em> for a automobile that can drive on a manifold surface.</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> car = <span class="hljs-keyword">new</span> Car({ <span class="hljs-attr">make</span>: <span class="hljs-string">"Ferrari"</span> });
+
+car.installComponent(<span class="hljs-string">"interior"</span>, <span class="hljs-keyword">new</span> AirConditioner());
+car.installComponent(<span class="hljs-string">"exterior"</span>, <span class="hljs-keyword">new</span> Bumper());
+car.drop(<span class="hljs-string">"1234 Virtual Street, OH, Virtual US"</span>, <span class="hljs-string">"Universe-Default"</span>);
+car.gear(<span class="hljs-string">"D"</span>);
+car.accelerate(<span class="hljs-number">2</span>).until(<span class="hljs-number">65</span>).then(<span class="hljs-number">0</span>);
+
+car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> Services.Insurance.initiateClaim(<span class="hljs-string">"abcdefghi-ticke"</span>));
+</code></pre>
     </div>
-
-
 
 
 
@@ -119,21 +142,6 @@
 
 
 
-        <h5>Example</h5>
-        
-    <pre class="prettyprint"><code>
- const car = new Car({ make: "Ferrari" });
-
- car.installComponent("interior", new AirConditioner());
- car.installComponent("exterior", new Bumper());
- car.drop("1234 Virtual Street, OH, Virtual US", "Universe-Default");
- car.gear("D");
- car.accelerate(2).until(65).then(0);
-
- car.onCrash(() => Services.Insurance.initiateClaim("abcdefghi-ticke"));
-</code></pre>
-
-    
 
         
     </div>
