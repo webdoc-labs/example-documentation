@@ -40,7 +40,7 @@ car.drop(<span class="hljs-string">"1234 Virtual Street, OH, Virtual US"</span>,
 car.gear(<span class="hljs-string">"D"</span>);
 car.accelerate(<span class="hljs-number">2</span>).until(<span class="hljs-number">65</span>).then(<span class="hljs-number">0</span>);
 
-car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> Services.Insurance.initiateClaim(<span class="hljs-string">"abcdefghi-ticke"</span>));
+car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> Services.Insurance.initiateClaim(<span class="hljs-string">"abcdefghi-ticket"</span>));
 </code></pre></div>
         
         
@@ -73,7 +73,7 @@ car.drop(<span class="hljs-string">"1234 Virtual Street, OH, Virtual US"</span>,
 car.gear(<span class="hljs-string">"D"</span>);
 car.accelerate(<span class="hljs-number">2</span>).until(<span class="hljs-number">65</span>).then(<span class="hljs-number">0</span>);
 
-car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> Services.Insurance.initiateClaim(<span class="hljs-string">"abcdefghi-ticke"</span>));
+car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> Services.Insurance.initiateClaim(<span class="hljs-string">"abcdefghi-ticket"</span>));
 </code></pre>
     </div>
 
@@ -160,6 +160,143 @@ car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt
 
     
 
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+        <h4 class="name" id="onCrash">
+            <span class="type-signature"></span>onCrash<span class="signature">(callback)</span><span class="type-signature"></span>
+        </h4>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+
+            <td class="type">
+            
+                
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h5>Example</h5>
+        
+    <pre class="prettyprint"><code>
+ car.onCrash((car) => console.log(car.id + " crashed!"))
+</code></pre>
+
+
+
+        
     
 
     
