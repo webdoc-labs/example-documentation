@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>webdoc: Class: ObjectRenderer</title>
+    <title>webdoc: Class: PhysicalObject</title>
 
     <script src="scripts/prettify.js"> </script>
     <script src="scripts/lang-css.js"> </script>
@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="main">
-        <h1 class="page-title">Class: ObjectRenderer</h1>
+        <h1 class="page-title">Class: PhysicalObject</h1>
         
 
 
@@ -27,12 +27,12 @@
     
         <h2>
             
-            PIXI.ObjectRenderer
+            PhysicalObject
             
         </h2>
         
-            <div class="class-description"><p>Base for a common object renderer that can be used as a
-system renderer plugin.</p></div>
+            <div class="class-description"><p>Represents a physical-object and its intrinsic properties. This is useful for approximating
+extended objects as a uniform, continous body mass (ignoring its particulate composition).</p></div>
         
         
 </header>
@@ -45,8 +45,8 @@ system renderer plugin.</p></div>
     
 
     
-        <h4 class="name" id="ObjectRenderer">
-            ObjectRenderer
+        <h4 class="name" id="PhysicalObject">
+            PhysicalObject
         </h4>
     
 
@@ -55,8 +55,8 @@ system renderer plugin.</p></div>
 
 
     <div class="description">
-        <p>Base for a common object renderer that can be used as a
-system renderer plugin.</p>
+        <p>Represents a physical-object and its intrinsic properties. This is useful for approximating
+extended objects as a uniform, continous body mass (ignoring its particulate composition).</p>
     </div>
 
 
@@ -129,15 +129,6 @@ system renderer plugin.</p>
     </div>
 
     
-        <h3 class="subsection-title">Extends</h3>
-
-        
-
-<ul>
-  
-    <li><a href="PIXI.System.html">PIXI.System</a></li>
-  
-</ul>
 
     
 
@@ -150,39 +141,31 @@ system renderer plugin.</p>
     
 
     
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
+        <h3 class="subsection-title">Members</h3>
 
         
             
-
-    
-
-    
-        <h4 class="name" id="flush">
-            <span class="type-signature"></span>flush<span class="signature">()</span><span class="type-signature"></span>
-        </h4>
-    
-
+<h4 class="name" id="mass"><span class="type-signature"></span>mass<span class="type-signature"> :number</span></h4>
 
 
 
 
     <div class="description">
-        <p>Stub method that should be used to empty the current
-batch by rendering objects now.</p>
+        <p>The mass of this object in kilograms.</p>
     </div>
 
 
 
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type">number</span>
+        
 
 
-
-
-
+        </li>
+    </ul>
 
 
 
@@ -228,140 +211,29 @@ batch by rendering objects now.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
             
-
-    
-
-    
-        <h4 class="name" id="destroy">
-            <span class="type-signature"></span>destroy<span class="signature">()</span><span class="type-signature"></span>
-        </h4>
-    
-
+<h4 class="name" id="position"><span class="type-signature"></span>position<span class="type-signature"> :<a href="Vector.html">Vector</a>:<a href="-_.html"></a>.&lt;3:<a href="-_.html"></a>></span></h4>
 
 
 
 
     <div class="description">
-        <p>Generic destruction method that frees all resources. This
-should be called by subclasses.</p>
+        <p>The absolute position of this object's center of mass (in the universal reference frame)</p>
     </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="PIXI.System.html#destroy">[object Object]</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+    <h5>Type:</h5>
+    <ul>
+        <li>
             
-
-    
-
-    
-        <h4 class="name" id="start">
-            <span class="type-signature"></span>start<span class="signature">()</span><span class="type-signature"></span>
-        </h4>
-    
+        <span class="param-type"><a href="Vector.html">Vector</a>:<a href="-_.html"></a>.&lt;3:<a href="-_.html"></a>></span>
+        
 
 
-
-
-
-    <div class="description">
-        <p>Stub method that initializes any state required before
-rendering starts. It is different from the <code>prerender</code>
-signal, which occurs every frame, in that it is called
-whenever an object requests <em>this</em> renderer specifically.</p>
-    </div>
-
-
-
-
-
-
-
-
+        </li>
+    </ul>
 
 
 
@@ -407,47 +279,29 @@ whenever an object requests <em>this</em> renderer specifically.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
             
-
-    
-
-    
-        <h4 class="name" id="stop">
-            <span class="type-signature"></span>stop<span class="signature">()</span><span class="type-signature"></span>
-        </h4>
-    
-
+<h4 class="name" id="velocity"><span class="type-signature"></span>velocity<span class="type-signature"> :<a href="Vector.html">Vector</a>:<a href="-_.html"></a>.&lt;3:<a href="-_.html"></a>></span></h4>
 
 
 
 
     <div class="description">
-        <p>Stops the renderer. It should free up any state and
-become dormant.</p>
+        <p>The absolute velocity of this object (in the universal reference frame)</p>
     </div>
 
 
 
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type"><a href="Vector.html">Vector</a>:<a href="-_.html"></a>.&lt;3:<a href="-_.html"></a>></span>
+        
 
 
-
-
-
+        </li>
+    </ul>
 
 
 
@@ -493,92 +347,30 @@ become dormant.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
             
-
-    
-
-    
-        <h4 class="name" id="render">
-            <span class="type-signature"></span>render<span class="signature">(object)</span><span class="type-signature"></span>
-        </h4>
-    
-
+<h4 class="name" id="bounds"><span class="type-signature"></span>bounds<span class="type-signature"> :<a href="Vector.html">Vector</a>:<a href="-_.html"></a>.&lt;3:<a href="-_.html"></a>></span></h4>
 
 
 
 
     <div class="description">
-        <p>Keeps the object to render. It doesn't have to be
-rendered immediately.</p>
+        <p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own
+position.</p>
     </div>
 
 
 
-
-
-
-
-
-
-        <h5>Parameters:</h5>
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type"><a href="Vector.html">Vector</a>:<a href="-_.html"></a>.&lt;3:<a href="-_.html"></a>></span>
         
 
-<table class="params">
-    <thead>
-    <tr>
-        
 
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-
-            <td class="type">
-            
-                
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                The object to render.
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
+        </li>
+    </ul>
 
 
 
@@ -624,14 +416,68 @@ rendered immediately.</p>
 
 
 
+        
+            
+<h4 class="name" id="interactions"><span class="type-signature"></span>interactions<span class="type-signature"> :Array:<a href="-_.html"></a>.&lt;<a href="PhysicalInteraction.html">PhysicalInteraction</a>:<a href="-_.html"></a>></span></h4>
+
+
+
+
+    <div class="description">
+        <p>All causal interactions with other objects</p>
+    </div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type">Array:<a href="-_.html"></a>.&lt;<a href="PhysicalInteraction.html">PhysicalInteraction</a>:<a href="-_.html"></a>></span>
+        
+
+
+        </li>
+    </ul>
 
 
 
 
 
+<dl class="details">
 
+    
 
+    
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
 
 
 
@@ -639,6 +485,8 @@ rendered immediately.</p>
 
 
         
+    
+
     
 
     
