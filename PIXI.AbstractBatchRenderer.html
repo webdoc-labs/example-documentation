@@ -46,10 +46,12 @@ reduce to the number of draw calls.</p></div>
             
 
     
+        <h2>Constructor</h2>
+    
 
     
-        <h4 class="name" id="AbstractBatchRenderer">
-            AbstractBatchRenderer
+        <h4 class="name" id="constructor">
+            <span class="type-signature"></span>new PIXI.AbstractBatchRenderer<span class="signature">(renderer)</span><span class="type-signature"></span>
         </h4>
     
 
@@ -58,11 +60,8 @@ reduce to the number of draw calls.</p></div>
 
 
     <div class="description">
-        <p>Renderer dedicated to drawing and batching sprites.</p>
-<p>This is the default batch renderer. It buffers objects
-with texture-based geometries and renders them in
-batches. It uploads multiple textures to the GPU to
-reduce to the number of draw calls.</p>
+        <p>This will hook onto the renderer's <code>contextChange</code>
+and <code>prerender</code> signals.</p>
     </div>
 
 
@@ -71,6 +70,51 @@ reduce to the number of draw calls.</p>
 
 
 
+
+
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+
+            <td class="type">
+            
+                
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The renderer this works for.
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
 
 
 
@@ -85,6 +129,11 @@ reduce to the number of draw calls.</p>
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PIXI.ObjectRenderer.html#constructor">[object Object]</a>
+    </li></ul></dd>
     
 
     
@@ -166,6 +215,518 @@ reduce to the number of draw calls.</p>
 
 
 
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type">number</span>
+        
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="shaderGenerator"><span class="type-signature">(protected) </span>shaderGenerator<span class="type-signature"> :PIXI.BatchShaderGenerator</span></h4>
+
+
+
+
+    <div class="description">
+        <p>This is used to generate a shader that can
+color each vertex based on a <code>aTextureId</code>
+attribute that points to an texture in <code>uSampler</code>.</p>
+<p>This enables the objects with different textures
+to be drawn in the same draw call.</p>
+<p>You can customize your shader by creating your
+custom shader generator.</p>
+    </div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type">PIXI.BatchShaderGenerator</span>
+        
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="geometryClass"><span class="type-signature">(protected) </span>geometryClass<span class="type-signature"> :object</span></h4>
+
+
+
+
+    <div class="description">
+        <p>The class that represents the geometry of objects
+that are going to be batched with this.</p>
+    </div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type">object</span>
+        
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="vertexSize"><span class="type-signature"></span>vertexSize<span class="type-signature"> :number</span></h4>
+
+
+
+
+    <div class="description">
+        <p>Size of data being buffered per vertex in the
+attribute buffers (in floats). By default, the
+batch-renderer plugin uses 6:</p>
+<table>
+<thead>
+<tr>
+<th>aVertexPosition</th>
+<th>2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>aTextureCoords</td>
+<td>2</td>
+</tr>
+<tr>
+<td>aColor</td>
+<td>1</td>
+</tr>
+<tr>
+<td>aTextureId</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+    </div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type">number</span>
+        
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="state"><span class="type-signature"></span>state<span class="type-signature"> :PIXI.State</span></h4>
+
+
+
+
+    <div class="description">
+        <p>The WebGL state in which this renderer will work.</p>
+    </div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type">PIXI.State</span>
+        
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="size"><span class="type-signature"></span>size<span class="type-signature"> :number</span></h4>
+
+
+
+
+    <div class="description">
+        <p>The number of bufferable objects before a flush
+occurs automatically.</p>
+    </div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type">number</span>
+        
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="_shader"><span class="type-signature">(protected) </span>_shader<span class="type-signature"> :PIXI.Shader</span></h4>
+
+
+
+
+    <div class="description">
+        <p>This shader is generated by <code>this.shaderGenerator</code>.</p>
+<p>It is generated specifically to handle the required
+number of textures being batched together.</p>
+    </div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type">PIXI.Shader</span>
+        
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="MAX_TEXTURES"><span class="type-signature"></span>MAX_TEXTURES<span class="type-signature"> :number</span></h4>
+
+
+
+
+    <div class="description">
+        <p>Maximum number of textures that can be uploaded to
+the GPU under the current context. It is initialized
+properly in <code>this.contextChange</code>.</p>
+    </div>
 
 
 
@@ -332,6 +893,79 @@ Shared between all batch renderers because it can be only one &quot;flush&quot; 
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="renderer"><span class="type-signature"></span>renderer<span class="type-signature"> :PIXI.Renderer</span></h4>
+
+
+
+
+    <div class="description">
+        <p>The renderer this manager works for.</p>
+    </div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type">PIXI.Renderer</span>
+        
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PIXI.System.html#renderer">[object Object]</a>
+    </li></ul></dd>
     
 
     
@@ -1668,321 +2302,6 @@ immediately.</p>
 
 
 
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="getAttributeBuffer">
-            <span class="type-signature"></span>getAttributeBuffer<span class="signature">(size)</span><span class="type-signature"> &rarr; {ViewableBuffer}</span>
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Fetches an attribute buffer from <code>this._aBuffers</code> that
-can hold atleast <code>size</code> floats.</p>
-    </div>
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-
-            <td class="type">
-            
-                
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                minimum capacity required
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Returns:</h5>
-
-    
-            
-
-    <div class="param-desc">
-         - buffer than can hold atleast `size` floats
-    </div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-        <span class="param-type">ViewableBuffer</span>
-        
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="getIndexBuffer">
-            <span class="type-signature"></span>getIndexBuffer<span class="signature">(size)</span><span class="type-signature"> &rarr; {Uint16Array}</span>
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Fetches an index buffer from <code>this._iBuffers</code> that can
-has atleast <code>size</code> capacity.</p>
-    </div>
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-
-            <td class="type">
-            
-                
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                minimum required capacity
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Returns:</h5>
-
-    
-            
-
-    <div class="param-desc">
-         - buffer that can fit `size`
-    indices.
-    </div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-        <span class="param-type">Uint16Array</span>
-        
-
-
-    </dd>
-</dl>
-
-    
 
 
 
