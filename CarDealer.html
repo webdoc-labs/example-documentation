@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>webdoc: Class: Vector</title>
+    <title>webdoc: Interface: CarDealer</title>
 
     <script src="scripts/prettify.js"> </script>
     <script src="scripts/lang-css.js"> </script>
@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="main">
-        <h1 class="page-title">Class: Vector</h1>
+        <h1 class="page-title">Interface: CarDealer</h1>
         
 
 
@@ -27,9 +27,11 @@
     
         <h2>
             
-            Vector
+            CarDealer
             
         </h2>
+        
+            <div class="class-description"><p>This is the interface for dealing with car dealers.</p></div>
         
         
 </header>
@@ -38,91 +40,10 @@
     <div class="container-overview">
         
             
-
-    
-        <h2>Constructor</h2>
-    
-
-    
-        <h4 class="name" id="constructor">
-            <span class="type-signature"></span>new Vector<span class="signature">(dimensions, noInit)</span><span class="type-signature"></span>
-        </h4>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-
-            <td class="type">
-            
-            </td>
-
+                <div class="description"><p>This is the interface for dealing with car dealers.</p></div>
             
 
             
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
 
 
 <dl class="details">
@@ -161,72 +82,10 @@
 </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    </div>
-
-    
-        <h3 class="subsection-title">Extends</h3>
-
-        
-
-<ul>
-  
-    <li>Array</li>
-  
-</ul>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
             
-<h4 class="name" id="dimensions"><span class="type-signature"></span>dimensions<span class="type-signature"></span></h4>
-
-
-
-
-    <div class="description">
-        <p>The no. of components of this vector</p>
+        
     </div>
 
-
-
-
-
-
-
-<dl class="details">
-
     
 
     
@@ -239,33 +98,6 @@
 
     
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
     
 
     
@@ -277,8 +109,8 @@
     
 
     
-        <h4 class="name" id="isCompat">
-            <span class="type-signature"></span>isCompat<span class="signature">(vec)</span><span class="type-signature"> &rarr; {boolean}</span>
+        <h4 class="name" id="initiateTransaction">
+            <span class="type-signature"></span>initiateTransaction<span class="signature">()</span><span class="type-signature"></span>
         </h4>
     
 
@@ -287,7 +119,7 @@
 
 
     <div class="description">
-        <p>Whether this and <code>vec</code> are compatible vectors (same dimensions)</p>
+        <p>Initiate a transaction/negotiation with a car dealer</p>
     </div>
 
 
@@ -296,51 +128,6 @@
 
 
 
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-
-            <td class="type">
-            
-                
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
 
 
 
@@ -397,27 +184,6 @@
 
 
 
-    <h5>Returns:</h5>
-
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-        <span class="param-type">boolean</span>
-        
-
-
-    </dd>
-</dl>
-
-    
-
 
 
 
@@ -428,8 +194,8 @@
     
 
     
-        <h4 class="name" id="equalTo">
-            <span class="type-signature"></span>equalTo<span class="signature">(vec)</span><span class="type-signature"> &rarr; {boolean}</span>
+        <h4 class="name" id="offerBid">
+            <span class="type-signature"></span>offerBid<span class="signature">(on, counteroffer)</span><span class="type-signature"></span>
         </h4>
     
 
@@ -438,7 +204,8 @@
 
 
     <div class="description">
-        <p>Whether this and <code>vec</code> are equal vectors</p>
+        <p>Offer a price to buy the car.</p>
+<p>NOTE: This is invalid behaviour if you are the seller in the transaction.</p>
     </div>
 
 
@@ -474,9 +241,6 @@
             
 
             <td class="type">
-            
-                
-
             
             </td>
 
@@ -490,144 +254,11 @@
             </td>
         </tr>
     
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Returns:</h5>
-
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-        <span class="param-type">boolean</span>
-        
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="add">
-            <span class="type-signature"></span>add<span class="signature">(vec)</span><span class="type-signature"></span>
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Add <code>vec</code> to this</p>
-    </div>
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
 
         <tr>
             
 
             <td class="type">
-            
-                
-
             
             </td>
 
@@ -709,14 +340,19 @@
     
 
     
-        <h4 class="name" id="create3D">
-            <span class="type-signature">(static) </span>create3D<span class="signature">(x, y, z)</span><span class="type-signature"></span>
+        <h4 class="name" id="offerAsk">
+            <span class="type-signature"></span>offerAsk<span class="signature">(on, counteroffer)</span><span class="type-signature"></span>
         </h4>
     
 
 
 
 
+
+    <div class="description">
+        <p>Offer a price to sell the car.</p>
+<p>NOTE: This is invalid behaviour if you are the buyer in the transaction.</p>
+    </div>
 
 
 
@@ -763,6 +399,133 @@
                 
             </td>
         </tr>
+    
+
+        <tr>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+        <h4 class="name" id="closeTransaction">
+            <span class="type-signature"></span>closeTransaction<span class="signature">(trans, counteroffer)</span><span class="type-signature"></span>
+        </h4>
+    
+
+
+
+
+
+    <div class="description">
+        <p>Close transaction. If you respond to the counteroffer, then it won't be closed.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
     
 
         <tr>
