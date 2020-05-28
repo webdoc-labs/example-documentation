@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>webdoc: Tutorial: Cars 101</title>
+
+    <script src="scripts/prettify.js"> </script>
+    <script src="scripts/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/tomorrow.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
+</head>
+<body>
+    <div id="main">
+        <h1 class="page-title">Tutorial: Cars 101</h1>
+        
+
+<section>
+
+<header>
+    
+    <ul>
+        <li><a href="ford.html">ford</a></li>
+    </ul>
+    
+
+    <h2>Cars 101</h2>
+</header>
+
+<article>
+    <h1>Car</h1>
+<p>A car is an automobile generally used to transport people on roads. This example package contains<br>
+an API to simulate cars via the {@link Car} class.</p>
+<h2>How to get a Car instance</h2>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> {Car, FordEngine, FordTransmission} <span class="hljs-keyword">from</span> <span class="hljs-string">"@webdoc/example"</span>;
+
+<span class="hljs-comment">// Create a car built by Ford</span>
+<span class="hljs-keyword">const</span> car = <span class="hljs-keyword">new</span> Car({ <span class="hljs-attr">make</span>: <span class="hljs-string">"Ford"</span> });
+
+<span class="hljs-comment">// Customize car infrastructure with ford components</span>
+car.installComponent(<span class="hljs-string">"slot-engine"</span>, <span class="hljs-keyword">new</span> FordEngine({ <span class="hljs-attr">pistons</span>: <span class="hljs-number">8</span> }));
+car.installComponent(<span class="hljs-string">"slot-transmission"</span>, <span class="hljs-keyword">new</span> FordTransmission({ <span class="hljs-attr">drive</span>: <span class="hljs-number">4</span> }));
+
+<span class="hljs-comment">// Place car on road (on Earth)</span>
+car.drop(<span class="hljs-string">"1234 Virtual St, VA, VUSA"</span>, { <span class="hljs-attr">planet</span>: <span class="hljs-string">"Earth"</span> });
+
+<span class="hljs-comment">// Set gear to "drive"</span>
+car.gear(<span class="hljs-string">"D"</span>);
+
+<span class="hljs-comment">// Accelerate 2 m/s every second until we reach 100 m/s and then stop accelerating</span>
+car.accelerate(<span class="hljs-number">2</span>).until(<span class="hljs-number">100</span>).then(<span class="hljs-number">0</span>);
+
+<span class="hljs-comment">// If you have insurance, add a callback to ensure you are insured</span>
+car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> Services.Insurance.initiateClaim(<span class="hljs-string">"&lt;your-insurance-token&gt;"</span>));
+</code></pre>
+<h2>Using financial services</h2>
+<p>If you don't have enough cash in your bank account immediately, you can use financial services to get a credit<br>
+to buy a car. You will have to involve a creditor and use an explicit transaction:</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> transaction = Services.Bank.requestCredit({
+  <span class="hljs-attr">type</span>: <span class="hljs-string">"auto-loan"</span>,
+  <span class="hljs-attr">details</span>: {
+    <span class="hljs-attr">make</span>: <span class="hljs-string">"Ford"</span>,
+    <span class="hljs-attr">model</span>: <span class="hljs-string">"Chevy"</span>
+  }
+});
+
+transaction.items.register(<span class="hljs-keyword">new</span> CarDetails({ <span class="hljs-attr">make</span>: <span class="hljs-string">"Ford"</span>, <span class="hljs-attr">model</span>: <span class="hljs-string">"Chevy"</span> }));
+
+<span class="hljs-keyword">if</span> (transaction.credit.isApproved()) {
+  <span class="hljs-keyword">const</span> car = transaction.execute(<span class="hljs-keyword">new</span> Car({ <span class="hljs-attr">make</span>: <span class="hljs-string">"Ford"</span>, <span class="hljs-attr">model</span>: <span class="hljs-string">"Chevy"</span> }));
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">"You need to generate more cashflow to buy a car at this time."</span>);
+}
+</code></pre>
+<h2>Getting auto-insurance</h2>
+<p>To buy auto-insurance, you must have a car:</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> insurance = Services.Insurance.buy({
+  <span class="hljs-attr">type</span>: <span class="hljs-string">"auto-insurance"</span>,
+  <span class="hljs-attr">items</span>: [car]
+});
+
+insurance.onPremiumPaymentStatusChange(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">console</span>.warn(<span class="hljs-string">"You might want to pay your premium!"</span>));
+
+<span class="hljs-keyword">if</span> (insurance.isApproved()) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Congrats!"</span>);
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">"Low on money, buddy!"</span>);
+}
+</code></pre>
+
+</article>
+
+</section>
+
+    </div>
+    <nav>
+        <h2><a href="index.html">Home</a></h2><h3>Tutorials</h3><ul><li><a href="car.html">car</a></li><li><a href="road.html">road</a></li></ul><h3>Namespaces</h3><ul><li><a href="PIXI.html">PIXI</a></li><li><a href="PIXI.utils.html">PIXI.utils</a></li><li><a href="R.html">R</a></li></ul><h3>Classes</h3><ul><li><a href="Car_.html">Car</a></li><li><a href="Gravity.html">Gravity</a></li><li><a href="PhysicalInteraction.html">PhysicalInteraction</a></li><li><a href="PhysicalObject.html">PhysicalObject</a></li><li><a href="PIXI.AbstractBatchRenderer.html">PIXI.AbstractBatchRenderer</a></li><li><a href="PIXI.AbstractRenderer.html">PIXI.AbstractRenderer</a></li><li><a href="PIXI.ObjectRenderer.html">PIXI.ObjectRenderer</a></li><li><a href="PIXI.System.html">PIXI.System</a></li><li><a href="R.Road.html">R.Road</a></li><li><a href="Vector.html">Vector</a></li></ul><h3>Interfaces</h3><ul><li><a href="CarDealer.html">CarDealer</a></li></ul>
+    </nav>
+    <br class="clear">
+    <footer>
+        Documentation generated by <a href="https://github.com/webdoc-js/webdoc">webdoc 1</a>
+         on Thu May 28 2020 17:41:13 GMT+0000 (Coordinated Universal Time)
+    </footer>
+    <script> prettyPrint(); </script>
+    <script src="scripts/linenumber.js"> </script>
+</body>
+</html>
