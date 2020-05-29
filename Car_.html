@@ -135,7 +135,7 @@ car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt
 
         <tr>
             
-                <td class="name"><code>vin</code></td>
+                <td class="name"><code>bounds</code></td>
             
 
             <td class="type">
@@ -147,7 +147,29 @@ car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt
             
 
             <td class="description last">
+                <p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own
+position.</p>
+
                 
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>interactions</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <p>All causal interactions with other objects</p>
 
                 
             </td>
@@ -219,7 +241,7 @@ car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt
 
         <tr>
             
-                <td class="name"><code>bounds</code></td>
+                <td class="name"><code>vin</code></td>
             
 
             <td class="type">
@@ -231,29 +253,7 @@ car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt
             
 
             <td class="description last">
-                <p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own
-position.</p>
-
                 
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>interactions</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                <p>All causal interactions with other objects</p>
 
                 
             </td>
@@ -414,10 +414,15 @@ position.</p>
 
         
             
-<h4 class="name" id="vin"><span class="type-signature"></span>vin<span class="type-signature"> :number</span></h4>
+<h4 class="name" id="bounds"><span class="type-signature"></span>bounds<span class="type-signature"> :<a href="Vector.html">Vector</a>.&lt;3></span></h4>
 
 
 
+
+    <div class="description">
+        <p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own
+position.</p>
+    </div>
 
 
 
@@ -425,7 +430,7 @@ position.</p>
     <ul>
         <li>
             
-        <span class="param-type">number</span>
+        <span class="param-type"><a href="Vector.html">Vector</a>.&lt;3></span>
         
 
 
@@ -442,6 +447,84 @@ position.</p>
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PhysicalObject.html#bounds">[object Object]</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="interactions"><span class="type-signature"></span>interactions<span class="type-signature"> :Array.&lt;<a href="PhysicalInteraction.html">PhysicalInteraction</a>></span></h4>
+
+
+
+
+    <div class="description">
+        <p>All causal interactions with other objects</p>
+    </div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+        <span class="param-type">Array.&lt;<a href="PhysicalInteraction.html">PhysicalInteraction</a>></span>
+        
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PhysicalObject.html#interactions">[object Object]</a>
+    </li></ul></dd>
     
 
     
@@ -697,15 +780,10 @@ position.</p>
 
         
             
-<h4 class="name" id="bounds"><span class="type-signature"></span>bounds<span class="type-signature"> :<a href="Vector.html">Vector</a>.&lt;3></span></h4>
+<h4 class="name" id="vin"><span class="type-signature"></span>vin<span class="type-signature"> :number</span></h4>
 
 
 
-
-    <div class="description">
-        <p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own
-position.</p>
-    </div>
 
 
 
@@ -713,7 +791,7 @@ position.</p>
     <ul>
         <li>
             
-        <span class="param-type"><a href="Vector.html">Vector</a>.&lt;3></span>
+        <span class="param-type">number</span>
         
 
 
@@ -730,84 +808,6 @@ position.</p>
 
     
 
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="PhysicalObject.html#bounds">[object Object]</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="interactions"><span class="type-signature"></span>interactions<span class="type-signature"> :Array.&lt;<a href="PhysicalInteraction.html">PhysicalInteraction</a>></span></h4>
-
-
-
-
-    <div class="description">
-        <p>All causal interactions with other objects</p>
-    </div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-        <span class="param-type">Array.&lt;<a href="PhysicalInteraction.html">PhysicalInteraction</a>></span>
-        
-
-
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="PhysicalObject.html#interactions">[object Object]</a>
-    </li></ul></dd>
     
 
     
@@ -847,6 +847,136 @@ position.</p>
 
     
         <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+        <h4 class="name" id="registerRetail">
+            <span class="type-signature">(static) </span>registerRetail<span class="signature">(name)</span><span class="type-signature"></span>
+        </h4>
+    
+
+
+
+
+
+    <div class="description">
+        <p>Register a retail dealer for buying a car from</p>
+    </div>
+
+
+
+
+
+
+
+
+
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+
+            <td class="type">
+            
+                
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         
             
@@ -1003,136 +1133,6 @@ position.</p>
 
 
         
-            
-
-    
-
-    
-        <h4 class="name" id="registerRetail">
-            <span class="type-signature">(static) </span>registerRetail<span class="signature">(name)</span><span class="type-signature"></span>
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Register a retail dealer for buying a car from</p>
-    </div>
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-
-            <td class="type">
-            
-                
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
     
 
     
@@ -1154,7 +1154,7 @@ position.</p>
     <br class="clear">
     <footer>
         Documentation generated by <a href="https://github.com/webdoc-js/webdoc">webdoc 1</a>
-         on Thu May 28 2020 17:41:13 GMT+0000 (Coordinated Universal Time)
+         on Fri May 29 2020 16:15:56 GMT+0000 (Coordinated Universal Time)
     </footer>
     <script> prettyPrint(); </script>
     <script src="scripts/linenumber.js"> </script>
