@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>webdoc: Class: PhysicalInteraction</title>
+    <title>webdoc: Class: CoffeeBean</title>
 
     <script src="scripts/prettify.js"> </script>
     <script src="scripts/lang-css.js"> </script>
@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="main">
-        <h1 class="page-title">Class: PhysicalInteraction</h1>
+        <h1 class="page-title">Class: CoffeeBean</h1>
         
 
 
@@ -26,12 +26,11 @@
     
         <h2>
             
-            PhysicalInteraction
+            CoffeeBean
             
         </h2>
         
-            <div class="class-description"><p>A physical interaction is a force causes object positions to be re-evaulated each frame based on
-force's magnitude.</p></div>
+            <div class="class-description"><p>This class illustrates how you can create a Java-bean like component in JavaScript</p></div>
         
         
 </header>
@@ -42,10 +41,12 @@ force's magnitude.</p></div>
             
 
     
+        <h2>Constructor</h2>
+    
 
     
-        <h4 class="name" id="PhysicalInteraction">
-            PhysicalInteraction
+        <h4 class="name" id="constructor">
+            <span class="type-signature"></span>new CoffeeBean<span class="signature">(options<span class="signature-attributes">opt</span>)</span><span class="type-signature">  →  {}</span>
         </h4>
     
 
@@ -53,10 +54,6 @@ force's magnitude.</p></div>
 
 
 
-    <div class="description">
-        <p>A physical interaction is a force causes object positions to be re-evaulated each frame based on
-force's magnitude.</p>
-    </div>
 
 
 
@@ -65,64 +62,131 @@ force's magnitude.</p>
 
 
 
+        <h5>Parameters:</h5>
+        
 
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-    
-
-<table class="properties">
+<table class="params">
     <thead>
     <tr>
         
             <th>Name</th>
         
 
-        
-          <th>Type</th>
-        
+        <th>Type</th>
 
         
+            <th>Attributes</th>
         
+
         
 
         <th class="last">Description</th>
     </tr>
     </thead>
+
     <tbody>
     
 
         <tr>
             
-                <td class="name"><code>GRAVITATIONAL_CONSTANT</code></td>
+                <td class="name"><code>options</code></td>
             
 
+            <td class="type">
             
-                <td class="type">
+                object
+            
+            </td>
+
+            
+                <td class="attributes">
                 
-                    number
+                    &lt;optional><br>
+                
+
+                
+
                 
                 </td>
             
 
             
 
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options.roasted</code></td>
+            
+
+            <td class="type">
+            
+                boolean
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
             
 
             
 
             <td class="description last">
                 
+                
+            </td>
+        </tr>
+    
 
+        <tr>
+            
+                <td class="name"><code>options.maturity</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
                 
             </td>
         </tr>
     
     </tbody>
 </table>
+
+
+
 
 
 
@@ -181,8 +245,7 @@ force's magnitude.</p>
 
 
             
-                <div class="description"><p>A physical interaction is a force causes object positions to be re-evaulated each frame based on
-force's magnitude.</p></div>
+                <div class="description"><p>This class illustrates how you can create a Java-bean like component in JavaScript</p></div>
             
         
     </div>
@@ -204,7 +267,7 @@ force's magnitude.</p></div>
 
         
             
-<h4 class="name" id="GRAVITATIONAL_CONSTANT"><span class="type-signature">(static) </span>GRAVITATIONAL_CONSTANT<span class="type-signature">   :number</span></h4>
+<h4 class="name" id="maturity"><span class="type-signature"></span>maturity<span class="type-signature">   :number</span></h4>
 
 
 
@@ -215,6 +278,65 @@ force's magnitude.</p></div>
     <ul>
         <li>
             number
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="roasted"><span class="type-signature"></span>roasted<span class="type-signature">   :boolean</span></h4>
+
+
+
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            boolean
         </li>
     </ul>
 
@@ -273,8 +395,8 @@ force's magnitude.</p></div>
     
 
     
-        <h4 class="name" id="createGravity">
-            <span class="type-signature">(static) </span>createGravity<span class="signature">(objects)</span><span class="type-signature">  →  {<a href="PhysicalInteraction.html">PhysicalInteraction</a>}</span>
+        <h4 class="name" id="roast">
+            <span class="type-signature"></span>roast<span class="signature">()</span><span class="type-signature">  →  {}</span>
         </h4>
     
 
@@ -283,157 +405,9 @@ force's magnitude.</p></div>
 
 
     <div class="description">
-        <p>Creates a graviational force</p>
-    </div>
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-            <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>objects</code></td>
-            
-
-            <td class="type">
-            
-                Tuple<2, <a href="PhysicalObject.html">PhysicalObject</a>>
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Returns:</h5>
-
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        <a href="PhysicalInteraction.html">PhysicalInteraction</a>
-    </dd>
-</dl>
-
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="force">
-            <span class="type-signature"></span>force<span class="signature">()</span><span class="type-signature">  →  {<a href="Vector.html">Vector</a><3>}</span>
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>This method should be overriden to calculate the force at the given instant.</p>
+        <p>Roast this coffee bean.</p>
+<p>NOTE: You cannot re-roast coffee beans and an error will be thrown if you try to
+roast a roasted coffee bean.</p>
     </div>
 
 
@@ -494,26 +468,18 @@ force's magnitude.</p></div>
 
 
 
+<h5>Throws:</h5>
 
+        
 
-
-    <h5>Returns:</h5>
-
+    <div class="param-desc">
     
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        <a href="Vector.html">Vector</a><3>
-    </dd>
-</dl>
+    </div>
 
 
     
+
+
 
 
 
