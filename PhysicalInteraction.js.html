@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>webdoc: Class: Road</title>
+    <title>webdoc: Source: PhysicalInteraction.js</title>
 
     <script src="scripts/prettify.js"> </script>
     <script src="scripts/lang-css.js"> </script>
@@ -15,154 +15,76 @@
 </head>
 <body>
     <div id="main">
-        <h1 class="page-title">Class: Road</h1>
+        <h1 class="page-title">Source: PhysicalInteraction.js</h1>
         
 
 
 
-
-<section>
-<header>
     
-        <h2>
-            
-            R.Road
-            
-        </h2>
-        
-            <div class="class-description"><p>This is another road class.</p></div>
-        
-        
-</header>
-
-<article>
-    <div class="container-overview">
-        
-            
-
-    
-
-    
-        <h4 class="name" id="Road">
-            Road
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>This is another road class.</p>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="PhysicalObject.js.html#line50">PhysicalObject.js:50</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-                <div class="description"><p>This is another road class.</p></div>
-            
-        
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import {Vector} from "./Vector";
+
+/**
+ * A physical interaction is a force causes object positions to be re-evaulated each frame based on
+ * force's magnitude.
+ */
+export const PhysicalInteraction = (() => {
+  class PhysicalInteraction {
+    constructor(objects) {
+      objects[0].interactions.push(this);
+      objects[1].interactions.push(this);
+      this.objects = objects;
+    }
+
+    /**
+     * This method should be overriden to calculate the force at the given instant.
+     *
+     * @return {Vector&lt;3>}
+     */
+    force() {
+      return Vector.for3D().ZERO;
+    }
+  }
+
+  const EuclideanSpace = {};
+
+  /**
+   * @static
+   * @member {number}
+   */
+  PhysicalInteraction.GRAVITATIONAL_CONSTANT = 1;
+
+  // TODO: webdoc shouldn't document this class as it isn't returned by the initializer function
+  /** This class shouldn't be documented! */
+  class Gravity extends PhysicalInteraction {
+    force() {
+      const massProduct = (this.objects[0].mass * this.objects[1]);
+      const radialDistance = EuclideanSpace.calculateDistance(
+        this.objects[0].position * this.objects[1].position);
+
+      return PhysicalInteraction.GRAVITATIONAL_CONSTANT *
+          massProduct / (radialDistance * radialDistance);
+    }
+  }
+
+  /**
+   * Creates a graviational force
+   *
+   * @static
+   * @method
+   * @param {Tuple&lt;PhysicalObject, 2>} objects
+   * @return {PhysicalInteraction}
+   */
+  PhysicalInteraction.createGravity = function(objects) {
+    return new Gravity(objects);
+  };
+
+  return PhysicalInteraction;
+})();
+</code></pre>
+        </article>
+    </section>
 
 
 
