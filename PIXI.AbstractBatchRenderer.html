@@ -1,787 +1,167 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>webdoc: Class: AbstractBatchRenderer</title>
+    <title>webdoc: AbstractBatchRenderer</title>
 
-    <script src="scripts/prettify.js"> </script>
-    <script src="scripts/lang-css.js"> </script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/tomorrow.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
-    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/default-template.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="scripts/default-template.js"></script>
+    <script src="scripts/prettify.js"></script>
+    <script src="scripts/lang-css.js"></script>
 </head>
 <body>
-    <div id="main">
-        <h1 class="page-title">Class: AbstractBatchRenderer</h1>
-        
+    <div id="template-app">
+      <div class="app-container">
+        <div id="app-bar-root">
+          <!-- AppBar component mounts here -->
+        </div>
+        <div class="app-layout">
+          <nav id="explorer-root">
+            <!-- Explorer component mounted here -->
+          </nav>
+          <div id="content-root">
+            
+    <h1 class="document-title">PIXI.AbstractBatchRenderer</h1>
+    <hr />
 
-
-
-
-<section>
-<header>
+    <code class="signature">protected class AbstractBatchRenderer extends <a href="PIXI.ObjectRenderer.html">PIXI.ObjectRenderer</a></code>
     
-        <h2>
-            
-            PIXI.AbstractBatchRenderer
-            
-        </h2>
-        
-            <div class="class-description"><p>Renderer dedicated to drawing and batching sprites.</p>
+    <hr class="secondary-separator" />
+    <p>Renderer dedicated to drawing and batching sprites.</p>
 <p>This is the default batch renderer. It buffers objects
 with texture-based geometries and renders them in
 batches. It uploads multiple textures to the GPU to
-reduce to the number of draw calls.</p></div>
+reduce to the number of draw calls.</p>
+
+    
+        <h2 class="section-title">Constructor</h2>
+        <hr />
         
-        
-</header>
 
-<article>
-    <div class="container-overview">
-        
-            
+<div class="method member">
+  <p class="member-title"></p>
+  <code class="member-signature">new PIXI.AbstractBatchRenderer(renderer: PIXI.Renderer)</code>
 
-    
-        <h2>Constructor</h2>
-    
-
-    
-        <h4 class="name" id="constructor">
-            new PIXI.AbstractBatchRenderer(renderer)
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>This will hook onto the renderer's <code>contextChange</code>
+  <section class="method-description member-description description">
+    <p>This will hook onto the renderer's <code>contextChange</code>
 and <code>prerender</code> signals.</p>
-    </div>
+  </section>
+</div>
 
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-            <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>renderer</code></td>
-            
-
-            <td class="type">
-            
-                PIXI.Renderer
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                <p>The renderer this works for.</p>
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-    
+      
 
     
 
-    
+<h2 class="section-title">Public Properties</h2>
+<hr />
 
-    
-        <dt class="tag-overrides">Overrides:</dt>
-        <dd class="tag-overrides"><ul class="dummy"><li>
-            <a href="PIXI.ObjectRenderer.html#constructor">PIXI.ObjectRenderer.constructor</a>
-        </li></ul></dd>
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">_drawCallPool</p>
+  <code class="member-signature">static _drawCallPool: Array<PIXI.BatchDrawCall></code>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line141">StreamBuilder.js:141</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-                <div class="description"><p>Renderer dedicated to drawing and batching sprites.</p>
-<p>This is the default batch renderer. It buffers objects
-with texture-based geometries and renders them in
-batches. It uploads multiple textures to the GPU to
-reduce to the number of draw calls.</p></div>
-            
-        
-    </div>
-
-    
-        <h3 class="subsection-title">Extends</h3>
-
-        
-
-<ul>
-  
-    <li><a href="PIXI.ObjectRenderer.html">PIXI.ObjectRenderer</a></li>
-  
-</ul>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<h4 class="name" id="_drawCallPool"><span class="type-signature">(static) </span>_drawCallPool : <span class="type-signature">Array<PIXI.BatchDrawCall></span></h4>
-
-
-
-
-    <div class="description">
-        <p>Pool of <code>BatchDrawCall</code> objects that <code>flush</code> used
+  <section class="method-description member-description description">
+    <p>Pool of <code>BatchDrawCall</code> objects that <code>flush</code> used
 to create &quot;batches&quot; of the objects being rendered.</p>
 <p>These are never re-allocated again.
 Shared between all batch renderers because it can be only one &quot;flush&quot; working at the moment.</p>
-    </div>
+  </section>
+</div>
 
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            Array<PIXI.BatchDrawCall>
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">_textureArrayPool</p>
+  <code class="member-signature">static _textureArrayPool: Array<PIXI.BatchTextureArray></code>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line688">StreamBuilder.js:688</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="_textureArrayPool"><span class="type-signature">(static) </span>_textureArrayPool : <span class="type-signature">Array<PIXI.BatchTextureArray></span></h4>
-
-
-
-
-    <div class="description">
-        <p>Pool of <code>BatchDrawCall</code> objects that <code>flush</code> used
+  <section class="method-description member-description description">
+    <p>Pool of <code>BatchDrawCall</code> objects that <code>flush</code> used
 to create &quot;batches&quot; of the objects being rendered.</p>
 <p>These are never re-allocated again.
 Shared between all batch renderers because it can be only one &quot;flush&quot; working at the moment.</p>
-    </div>
+  </section>
+</div>
 
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            Array<PIXI.BatchTextureArray>
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">bufferSize</p>
+  <code class="member-signature">bufferSize: number</code>
 
+  <section class="method-description member-description description">
     
+  </section>
+</div>
 
-    
-
-    
-
-    
-
-    
-
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">MAX_TEXTURES</p>
+  <code class="member-signature">MAX_TEXTURES: number</code>
 
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line699">StreamBuilder.js:699</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="bufferSize">bufferSize : <span class="type-signature">number</span></h4>
-
-
-
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            number
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line335">StreamBuilder.js:335</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="MAX_TEXTURES">MAX_TEXTURES : <span class="type-signature">number</span></h4>
-
-
-
-
-    <div class="description">
-        <p>Maximum number of textures that can be uploaded to
+  <section class="method-description member-description description">
+    <p>Maximum number of textures that can be uploaded to
 the GPU under the current context. It is initialized
 properly in <code>this.contextChange</code>.</p>
-    </div>
+  </section>
+</div>
 
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            number
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">renderer</p>
+  <code class="member-signature">renderer: PIXI.Renderer</code>
 
-    
+  <section class="method-description member-description description">
+    <p>The renderer this manager works for.</p>
+  </section>
+</div>
 
-    
-
-    
-
-    
-
-    
-
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">size</p>
+  <code class="member-signature">size: number</code>
 
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line315">StreamBuilder.js:315</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-        <dt class="tag-see">See:</dt>
-        <dd class="tag-see">
-            <ul>
-                
-                    <li>PIXI.AbstractBatchRenderer#contextChange</li>
-                
-            </ul>
-        </dd>
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="renderer">renderer : <span class="type-signature">PIXI.Renderer</span></h4>
-
-
-
-
-    <div class="description">
-        <p>The renderer this manager works for.</p>
-    </div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            PIXI.Renderer
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-        <dt class="inherited-from">Inherited From:</dt>
-        <dd class="inherited-from"><ul class="dummy"><li>
-            <a href="PIXI.System.html#renderer">PIXI.System.renderer</a>
-        </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line110">StreamBuilder.js:110</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="size">size : <span class="type-signature">number</span></h4>
-
-
-
-
-    <div class="description">
-        <p>The number of bufferable objects before a flush
+  <section class="method-description member-description description">
+    <p>The number of bufferable objects before a flush
 occurs automatically.</p>
-    </div>
+  </section>
+</div>
 
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            number
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">state</p>
+  <code class="member-signature">state: PIXI.State</code>
 
-    
+  <section class="method-description member-description description">
+    <p>The WebGL state in which this renderer will work.</p>
+  </section>
+</div>
 
-    
-
-    
-
-    
-
-    
-
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">vertexSize</p>
+  <code class="member-signature">vertexSize: number</code>
 
-    
-        <dt class="tag-default">Default Value:</dt>
-        <dd class="tag-default">
-            <ul class="dummy">
-                <li>settings.SPRITE_BATCH_SIZE * 4</li>
-            </ul>
-        </dd>
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line195">StreamBuilder.js:195</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="state">state : <span class="type-signature">PIXI.State</span></h4>
-
-
-
-
-    <div class="description">
-        <p>The WebGL state in which this renderer will work.</p>
-    </div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            PIXI.State
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line188">StreamBuilder.js:188</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="vertexSize">vertexSize : <span class="type-signature">number</span></h4>
-
-
-
-
-    <div class="description">
-        <p>Size of data being buffered per vertex in the
+  <section class="method-description member-description description">
+    <p>Size of data being buffered per vertex in the
 attribute buffers (in floats). By default, the
 batch-renderer plugin uses 6:</p>
 <table>
@@ -806,1834 +186,231 @@ batch-renderer plugin uses 6:</p>
 </tr>
 </tbody>
 </table>
-    </div>
+  </section>
+</div>
 
 
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            number
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
 
     
 
-    
+<h2 class="section-title">Protected Properties</h2>
+<hr />
 
-    
-
-    
-
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">_shader</p>
+  <code class="member-signature">protected _shader: PIXI.Shader</code>
 
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line173">StreamBuilder.js:173</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="_shader"><span class="type-signature">(protected) </span>_shader : <span class="type-signature">PIXI.Shader</span></h4>
-
-
-
-
-    <div class="description">
-        <p>This shader is generated by <code>this.shaderGenerator</code>.</p>
+  <section class="method-description member-description description">
+    <p>This shader is generated by <code>this.shaderGenerator</code>.</p>
 <p>It is generated specifically to handle the required
 number of textures being batched together.</p>
-    </div>
+  </section>
+</div>
 
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            PIXI.Shader
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">geometryClass</p>
+  <code class="member-signature">protected geometryClass: object</code>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line240">StreamBuilder.js:240</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="geometryClass"><span class="type-signature">(protected) </span>geometryClass : <span class="type-signature">object</span></h4>
-
-
-
-
-    <div class="description">
-        <p>The class that represents the geometry of objects
+  <section class="method-description member-description description">
+    <p>The class that represents the geometry of objects
 that are going to be batched with this.</p>
-    </div>
+  </section>
+</div>
 
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            object
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">shaderGenerator</p>
+  <code class="member-signature">protected shaderGenerator: PIXI.BatchShaderGenerator</code>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-default">Default Value:</dt>
-        <dd class="tag-default">
-            <ul class="dummy">
-                <li>PIXI.BatchGeometry</li>
-            </ul>
-        </dd>
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line164">StreamBuilder.js:164</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="shaderGenerator"><span class="type-signature">(protected) </span>shaderGenerator : <span class="type-signature">PIXI.BatchShaderGenerator</span></h4>
-
-
-
-
-    <div class="description">
-        <p>This is used to generate a shader that can
+  <section class="method-description member-description description">
+    <p>This is used to generate a shader that can
 color each vertex based on a <code>aTextureId</code>
 attribute that points to an texture in <code>uSampler</code>.</p>
 <p>This enables the objects with different textures
 to be drawn in the same draw call.</p>
 <p>You can customize your shader by creating your
 custom shader generator.</p>
-    </div>
+  </section>
+</div>
 
 
 
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            PIXI.BatchShaderGenerator
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line149">StreamBuilder.js:149</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="bindAndClearTexArray">
-            bindAndClearTexArray(texArray)
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Bind textures for current rendering</p>
-    </div>
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-            <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>texArray</code></td>
-            
-
-            <td class="type">
-            
-                PIXI.BatchTextureArray
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line495">StreamBuilder.js:495</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
     
 
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="buildDrawCalls">
-            buildDrawCalls(texArray, start, finish)
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Populating drawcalls for rendering</p>
-    </div>
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-            <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>texArray</code></td>
-            
-
-            <td class="type">
-            
-                PIXI.BatchTextureArray
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>start</code></td>
-            
-
-            <td class="type">
-            
-                number
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>finish</code></td>
-            
-
-            <td class="type">
-            
-                number
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+<h2 class="section-title">Public Methods</h2>
+<hr />
 
-    
-
-    
-
-    
-
-    
 
     
 
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line454">StreamBuilder.js:454</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
+<div class="method member">
+  <p class="member-title">bindAndClearTexArray</p>
+  <code class="member-signature">bindAndClearTexArray(texArray: PIXI.BatchTextureArray)</code>
 
-    
+  <section class="method-description member-description description">
+    <p>Bind textures for current rendering</p>
+  </section>
+</div>
 
-    
 
     
-</dl>
-
-
-
-
-
-
-
-
-
 
+<div class="method member">
+  <p class="member-title">buildDrawCalls</p>
+  <code class="member-signature">buildDrawCalls(texArray: PIXI.BatchTextureArray, start: number, finish: number)</code>
 
+  <section class="method-description member-description description">
+    <p>Populating drawcalls for rendering</p>
+  </section>
+</div>
 
 
-
-
-
-
-
-
-
-        
-            
-
-    
-
     
-        <h4 class="name" id="contextChange">
-            contextChange()
-        </h4>
-    
-
-
-
 
+<div class="method member">
+  <p class="member-title">contextChange</p>
+  <code class="member-signature">contextChange()</code>
 
-    <div class="description">
-        <p>Handles the <code>contextChange</code> signal.</p>
+  <section class="method-description member-description description">
+    <p>Handles the <code>contextChange</code> signal.</p>
 <p>It calculates <code>this.MAX_TEXTURES</code> and allocating the
 packed-geometry object pool.</p>
-    </div>
+  </section>
+</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line342">StreamBuilder.js:342</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="destroy">
-            destroy()
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Destroys this <code>AbstractBatchRenderer</code>. It cannot be used again.</p>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-        <dt class="tag-overrides">Overrides:</dt>
-        <dd class="tag-overrides"><ul class="dummy"><li>
-            <a href="PIXI.ObjectRenderer.html#destroy">PIXI.ObjectRenderer.destroy</a>
-        </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line582">StreamBuilder.js:582</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="drawBatches">
-            drawBatches()
-        </h4>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
     
 
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#lineNaN">StreamBuilder.js:NaN</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="flush">
-            flush()
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Renders the content <em>now</em> and empties the current batch.</p>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-        <dt class="tag-overrides">Overrides:</dt>
-        <dd class="tag-overrides"><ul class="dummy"><li>
-            <a href="PIXI.ObjectRenderer.html#flush">PIXI.ObjectRenderer.flush</a>
-        </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line545">StreamBuilder.js:545</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="initFlushBuffers">
-            initFlushBuffers()
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Makes sure that static and dynamic flush pooled objects have correct dimensions</p>
-    </div>
-
-
-
-
-
-
-
-
-
+<div class="method member">
+  <p class="member-title">destroy</p>
+  <code class="member-signature">destroy()</code>
 
+  <section class="method-description member-description description">
+    <p>Destroys this <code>AbstractBatchRenderer</code>. It cannot be used again.</p>
+  </section>
+</div>
 
 
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
     
 
-    
-
-    
-
-    
+<div class="method member">
+  <p class="member-title">drawBatches</p>
+  <code class="member-signature">drawBatches()</code>
 
+  <section class="method-description member-description description">
     
+  </section>
+</div>
 
-    
 
     
 
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line367">StreamBuilder.js:367</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
+<div class="method member">
+  <p class="member-title">flush</p>
+  <code class="member-signature">flush()</code>
 
-    
+  <section class="method-description member-description description">
+    <p>Renders the content <em>now</em> and empties the current batch.</p>
+  </section>
+</div>
 
-    
 
     
-</dl>
-
 
+<div class="method member">
+  <p class="member-title">initFlushBuffers</p>
+  <code class="member-signature">initFlushBuffers()</code>
 
+  <section class="method-description member-description description">
+    <p>Makes sure that static and dynamic flush pooled objects have correct dimensions</p>
+  </section>
+</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
     
-
-    
-        <h4 class="name" id="onPrerender">
-            onPrerender()
-        </h4>
-    
-
-
-
 
+<div class="method member">
+  <p class="member-title">onPrerender</p>
+  <code class="member-signature">onPrerender()</code>
 
-    <div class="description">
-        <p>Handles the <code>prerender</code> signal.</p>
+  <section class="method-description member-description description">
+    <p>Handles the <code>prerender</code> signal.</p>
 <p>It ensures that flushes start from the first geometry
 object again.</p>
-    </div>
+  </section>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">packInterleavedGeometry</p>
+  <code class="member-signature">packInterleavedGeometry(element: PIXI.Sprite, attributeBuffer: PIXI.ViewableBuffer, indexBuffer: Uint16Array, aIndex: number, iIndex: number)</code>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line386">StreamBuilder.js:386</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="packInterleavedGeometry">
-            packInterleavedGeometry(element, attributeBuffer, indexBuffer, aIndex, iIndex)
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Takes the four batching parameters of <code>element</code>, interleaves
+  <section class="method-description member-description description">
+    <p>Takes the four batching parameters of <code>element</code>, interleaves
 and pushes them into the batching attribute/index buffers given.</p>
 <p>It uses these properties: <code>vertexData</code> <code>uvs</code>, <code>textureId</code> and
 <code>indicies</code>. It also uses the &quot;tint&quot; of the base-texture, if
 present.</p>
-    </div>
+  </section>
+</div>
 
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-            <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>element</code></td>
-            
-
-            <td class="type">
-            
-                PIXI.Sprite
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                <p>element being rendered</p>
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>attributeBuffer</code></td>
-            
-
-            <td class="type">
-            
-                PIXI.ViewableBuffer
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                <p>attribute buffer.</p>
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>indexBuffer</code></td>
-            
-
-            <td class="type">
-            
-                Uint16Array
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                <p>index buffer</p>
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>aIndex</code></td>
-            
-
-            <td class="type">
-            
-                number
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                <p>number of floats already in the attribute buffer</p>
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>iIndex</code></td>
-            
-
-            <td class="type">
-            
-                number
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                <p>number of indices already in <code>indexBuffer</code></p>
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">render</p>
+  <code class="member-signature">render(element: PIXI.DisplayObject)</code>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line648">StreamBuilder.js:648</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="render">
-            render(element)
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Buffers the &quot;batchable&quot; object. It need not be rendered
+  <section class="method-description member-description description">
+    <p>Buffers the &quot;batchable&quot; object. It need not be rendered
 immediately.</p>
+  </section>
+</div>
+
+
+    
+
+<div class="method member">
+  <p class="member-title">start</p>
+  <code class="member-signature">start()</code>
+
+  <section class="method-description member-description description">
+    <p>Starts a new sprite batch.</p>
+  </section>
+</div>
+
+
+    
+
+<div class="method member">
+  <p class="member-title">stop</p>
+  <code class="member-signature">stop()</code>
+
+  <section class="method-description member-description description">
+    <p>Stops and flushes the current batch.</p>
+  </section>
+</div>
+
+
+
+    
+
+
+          </div>
+          <div></div>
+        </div>
+      </div>
     </div>
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-            <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>element</code></td>
-            
-
-            <td class="type">
-            
-                PIXI.DisplayObject
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                <p>the element to render when
-using this renderer</p>
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-        <dt class="tag-overrides">Overrides:</dt>
-        <dd class="tag-overrides"><ul class="dummy"><li>
-            <a href="PIXI.ObjectRenderer.html#render">PIXI.ObjectRenderer.render</a>
-        </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line395">StreamBuilder.js:395</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="start">
-            start()
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Starts a new sprite batch.</p>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-        <dt class="tag-overrides">Overrides:</dt>
-        <dd class="tag-overrides"><ul class="dummy"><li>
-            <a href="PIXI.ObjectRenderer.html#start">PIXI.ObjectRenderer.start</a>
-        </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line565">StreamBuilder.js:565</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="stop">
-            stop()
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Stops and flushes the current batch.</p>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-        <dt class="tag-overrides">Overrides:</dt>
-        <dd class="tag-overrides"><ul class="dummy"><li>
-            <a href="PIXI.ObjectRenderer.html#stop">PIXI.ObjectRenderer.stop</a>
-        </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line576">StreamBuilder.js:576</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-    </div>
-    <nav>
-        <h2><a href="index.html">Home</a></h2><h3>Tutorials</h3><ul><li><a href="car.html">car</a></li><li><a href="road.html">road</a></li></ul><h3>Namespaces</h3><ul><li><a href="PIXI.html">PIXI</a></li><li><a href="PIXI.utils.html">utils</a></li><li><a href="R.html">R</a></li><li><a href="Ts.html">Ts</a></li></ul><h3>Classes</h3><ul><li><a href="Bean.html">Bean</a></li><li><a href="Car_.html">Car</a></li><li><a href="CoffeeBean.html">CoffeeBean</a></li><li><a href="Gravity.html">Gravity</a></li><li><a href="PhysicalInteraction.html">PhysicalInteraction</a></li><li><a href="PhysicalObject.html">PhysicalObject</a></li><li><a href="PIXI.AbstractBatchRenderer.html">AbstractBatchRenderer</a></li><li><a href="PIXI.AbstractRenderer.html">AbstractRenderer</a></li><li><a href="PIXI.ObjectRenderer.html">ObjectRenderer</a></li><li><a href="PIXI.System.html">System</a></li><li><a href="PIXI.TilingSprite.html">TilingSprite</a></li><li><a href="R.Road.html">Road</a></li><li><a href="Ts.Transaction.html">Transaction</a></li><li><a href="Vector.html">Vector</a></li></ul><h3>Interfaces</h3><ul><li><a href="CarDealer.html">CarDealer</a></li></ul>
-    </nav>
-    <br class="clear">
-    <footer>
-        Documentation generated by <a href="https://github.com/webdoc-js/webdoc">webdoc 1</a>
-        
-    </footer>
     <script> prettyPrint(); </script>
     <script src="scripts/linenumber.js"> </script>
 </body>

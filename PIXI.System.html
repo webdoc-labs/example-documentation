@@ -1,406 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>webdoc: Class: System</title>
+    <title>webdoc: System</title>
 
-    <script src="scripts/prettify.js"> </script>
-    <script src="scripts/lang-css.js"> </script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/tomorrow.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
-    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/default-template.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="scripts/default-template.js"></script>
+    <script src="scripts/prettify.js"></script>
+    <script src="scripts/lang-css.js"></script>
 </head>
 <body>
-    <div id="main">
-        <h1 class="page-title">Class: System</h1>
+    <div id="template-app">
+      <div class="app-container">
+        <div id="app-bar-root">
+          <!-- AppBar component mounts here -->
+        </div>
+        <div class="app-layout">
+          <nav id="explorer-root">
+            <!-- Explorer component mounted here -->
+          </nav>
+          <div id="content-root">
+            
+    <h1 class="document-title">PIXI.System</h1>
+    <hr />
+
+    <code class="signature">class System</code>
+    
+    <hr class="secondary-separator" />
+    <p>System is a base class used for extending systems used by the <a href="PIXI.AbstractRenderer.html">PIXI.AbstractRenderer</a>.</p>
+<p>Search more here: <a href="https://www.google.com/">https://www.google.com/</a></p>
+
+    
+        <h2 class="section-title">Constructor</h2>
+        <hr />
         
 
+<div class="method member">
+  <p class="member-title"></p>
+  <code class="member-signature">new PIXI.System(renderer: PIXI.Renderer)</code>
 
-
-
-<section>
-<header>
+  <section class="method-description member-description description">
     
-        <h2>
-            
-            PIXI.System
-            
-        </h2>
-        
-            <div class="class-description"><p>System is a base class used for extending systems used by the <a href="PIXI.AbstractRenderer.html">PIXI.AbstractRenderer</a>.</p>
-<p>Search more here: <a href="https://www.google.com/">https://www.google.com/</a></p></div>
-        
-        
-</header>
+  </section>
+</div>
 
-<article>
-    <div class="container-overview">
-        
-            
-
-    
-        <h2>Constructor</h2>
-    
-
-    
-        <h4 class="name" id="constructor">
-            new PIXI.System(renderer)
-        </h4>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-            <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>renderer</code></td>
-            
-
-            <td class="type">
-            
-                PIXI.Renderer
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                <p>The renderer this manager works for.</p>
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-    
+      
 
     
 
-    
+<h2 class="section-title">Public Properties</h2>
+<hr />
 
-    
-
-    
-
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">renderer</p>
+  <code class="member-signature">renderer: PIXI.Renderer</code>
+
+  <section class="method-description member-description description">
+    <p>The renderer this manager works for.</p>
+  </section>
+</div>
+
+
 
     
-
     
 
-    
+<h2 class="section-title">Public Methods</h2>
+<hr />
 
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line106">StreamBuilder.js:106</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
 
     
 
+<div class="method member">
+  <p class="member-title">destroy</p>
+  <code class="member-signature">destroy()</code>
+
+  <section class="method-description member-description description">
+    <p>Generic destroy methods to be overridden by the subclass</p>
+  </section>
+</div>
+
+
+
     
 
-    
-</dl>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-                <div class="description"><p>System is a base class used for extending systems used by the <a href="PIXI.AbstractRenderer.html">PIXI.AbstractRenderer</a>.</p>
-<p>Search more here: <a href="https://www.google.com/">https://www.google.com/</a></p></div>
-            
-        
+          </div>
+          <div></div>
+        </div>
+      </div>
     </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<h4 class="name" id="renderer">renderer : <span class="type-signature">PIXI.Renderer</span></h4>
-
-
-
-
-    <div class="description">
-        <p>The renderer this manager works for.</p>
-    </div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            PIXI.Renderer
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line110">StreamBuilder.js:110</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="destroy">
-            destroy()
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Generic destroy methods to be overridden by the subclass</p>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="StreamBuilder.js.html#line117">StreamBuilder.js:117</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-    </div>
-    <nav>
-        <h2><a href="index.html">Home</a></h2><h3>Tutorials</h3><ul><li><a href="car.html">car</a></li><li><a href="road.html">road</a></li></ul><h3>Namespaces</h3><ul><li><a href="PIXI.html">PIXI</a></li><li><a href="PIXI.utils.html">utils</a></li><li><a href="R.html">R</a></li><li><a href="Ts.html">Ts</a></li></ul><h3>Classes</h3><ul><li><a href="Bean.html">Bean</a></li><li><a href="Car_.html">Car</a></li><li><a href="CoffeeBean.html">CoffeeBean</a></li><li><a href="Gravity.html">Gravity</a></li><li><a href="PhysicalInteraction.html">PhysicalInteraction</a></li><li><a href="PhysicalObject.html">PhysicalObject</a></li><li><a href="PIXI.AbstractBatchRenderer.html">AbstractBatchRenderer</a></li><li><a href="PIXI.AbstractRenderer.html">AbstractRenderer</a></li><li><a href="PIXI.ObjectRenderer.html">ObjectRenderer</a></li><li><a href="PIXI.System.html">System</a></li><li><a href="PIXI.TilingSprite.html">TilingSprite</a></li><li><a href="R.Road.html">Road</a></li><li><a href="Ts.Transaction.html">Transaction</a></li><li><a href="Vector.html">Vector</a></li></ul><h3>Interfaces</h3><ul><li><a href="CarDealer.html">CarDealer</a></li></ul>
-    </nav>
-    <br class="clear">
-    <footer>
-        Documentation generated by <a href="https://github.com/webdoc-js/webdoc">webdoc 1</a>
-        
-    </footer>
     <script> prettyPrint(); </script>
     <script src="scripts/linenumber.js"> </script>
 </body>

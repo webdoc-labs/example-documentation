@@ -1,773 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>webdoc: Class: PhysicalObject</title>
+    <title>webdoc: PhysicalObject</title>
 
-    <script src="scripts/prettify.js"> </script>
-    <script src="scripts/lang-css.js"> </script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/tomorrow.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
-    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/default-template.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="scripts/default-template.js"></script>
+    <script src="scripts/prettify.js"></script>
+    <script src="scripts/lang-css.js"></script>
 </head>
 <body>
-    <div id="main">
-        <h1 class="page-title">Class: PhysicalObject</h1>
-        
-
-
-
-
-<section>
-<header>
-    
-        <h2>
+    <div id="template-app">
+      <div class="app-container">
+        <div id="app-bar-root">
+          <!-- AppBar component mounts here -->
+        </div>
+        <div class="app-layout">
+          <nav id="explorer-root">
+            <!-- Explorer component mounted here -->
+          </nav>
+          <div id="content-root">
             
-            PhysicalObject
-            
-        </h2>
-        
-            <div class="class-description"><p>Represents a physical-object and its intrinsic properties. This is useful for approximating
-extended objects as a uniform, continous body mass (ignoring its particulate composition).</p></div>
-        
-        
-</header>
+    <h1 class="document-title">PhysicalObject</h1>
+    <hr />
 
-<article>
-    <div class="container-overview">
-        
-            
-
+    <code class="signature">class PhysicalObject</code>
     
-
-    
-        <h4 class="name" id="PhysicalObject">
-            PhysicalObject
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Represents a physical-object and its intrinsic properties. This is useful for approximating
+    <hr class="secondary-separator" />
+    <p>Represents a physical-object and its intrinsic properties. This is useful for approximating
 extended objects as a uniform, continous body mass (ignoring its particulate composition).</p>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
 
     
+
     
 
-<table class="properties">
-    <thead>
-    <tr>
-        
-            <th>Name</th>
-        
+<h2 class="section-title">Public Properties</h2>
+<hr />
 
-        
-          <th>Type</th>
-        
 
-        
-        
-            <th>Default</th>
-        
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
     
 
-        <tr>
-            
-                <td class="name"><code>bounds</code></td>
-            
+<div class="method member">
+  <p class="member-title">bounds</p>
+  <code class="member-signature">bounds: <a href="Vector.html">Vector</a><3></code>
 
-            
-                <td class="type">
-                
-                    <a href="Vector.html">Vector</a><3>
-                
-                </td>
-            
-
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                <p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own
+  <section class="method-description member-description description">
+    <p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own
 position.</p>
+  </section>
+</div>
 
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>interactions</code></td>
-            
-
-            
-                <td class="type">
-                
-                    Array<<a href="PhysicalInteraction.html">PhysicalInteraction</a>>
-                
-                </td>
-            
-
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                <p>All causal interactions with other objects</p>
-
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>mass</code></td>
-            
-
-            
-                <td class="type">
-                
-                    number
-                
-                </td>
-            
-
-            
-
-            
-                <td class="default">
-                
-                    0
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                <p>The mass of this object in kilograms.</p>
-
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>position</code></td>
-            
-
-            
-                <td class="type">
-                
-                    <a href="Vector.html">Vector</a><3>
-                
-                </td>
-            
-
-            
-
-            
-                <td class="default">
-                
-                    [0, 0, 0]
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                <p>The absolute position of this object's center of mass (in the universal reference frame)</p>
-
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>velocity</code></td>
-            
-
-            
-                <td class="type">
-                
-                    <a href="Vector.html">Vector</a><3>
-                
-                </td>
-            
-
-            
-
-            
-                <td class="default">
-                
-                    [0, 0, 0]
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                <p>The absolute velocity of this object (in the universal reference frame)</p>
-
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-<dl class="details">
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">interactions</p>
+  <code class="member-signature">interactions: Array<<a href="PhysicalInteraction.html">PhysicalInteraction</a>></code>
 
-    
+  <section class="method-description member-description description">
+    <p>All causal interactions with other objects</p>
+  </section>
+</div>
 
-    
-
-    
-
-    
-
-    
-
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">mass</p>
+  <code class="member-signature">mass: number</code>
 
-    
+  <section class="method-description member-description description">
+    <p>The mass of this object in kilograms.</p>
+  </section>
+</div>
 
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="PhysicalObject.js.html#line3">PhysicalObject.js:3</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
 
     
 
+<div class="method member">
+  <p class="member-title">position</p>
+  <code class="member-signature">position: <a href="Vector.html">Vector</a><3></code>
+
+  <section class="method-description member-description description">
+    <p>The absolute position of this object's center of mass (in the universal reference frame)</p>
+  </section>
+</div>
+
+
     
 
+<div class="method member">
+  <p class="member-title">velocity</p>
+  <code class="member-signature">velocity: <a href="Vector.html">Vector</a><3></code>
+
+  <section class="method-description member-description description">
+    <p>The absolute velocity of this object (in the universal reference frame)</p>
+  </section>
+</div>
+
+
+
     
-</dl>
+    
+    
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-                <div class="description"><p>Represents a physical-object and its intrinsic properties. This is useful for approximating
-extended objects as a uniform, continous body mass (ignoring its particulate composition).</p></div>
-            
-        
+          </div>
+          <div></div>
+        </div>
+      </div>
     </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<h4 class="name" id="bounds">bounds : <span class="type-signature"><a href="Vector.html">Vector</a><3></span></h4>
-
-
-
-
-    <div class="description">
-        <p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own
-position.</p>
-    </div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            <a href="Vector.html">Vector</a><3>
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="PhysicalObject.js.html#line33">PhysicalObject.js:33</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="interactions">interactions : <span class="type-signature">Array<<a href="PhysicalInteraction.html">PhysicalInteraction</a>></span></h4>
-
-
-
-
-    <div class="description">
-        <p>All causal interactions with other objects</p>
-    </div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            Array<<a href="PhysicalInteraction.html">PhysicalInteraction</a>>
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="PhysicalObject.js.html#line41">PhysicalObject.js:41</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="mass">mass : <span class="type-signature">number</span></h4>
-
-
-
-
-    <div class="description">
-        <p>The mass of this object in kilograms.</p>
-    </div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            number
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-default">Default Value:</dt>
-        <dd class="tag-default">
-            <ul class="dummy">
-                <li>0</li>
-            </ul>
-        </dd>
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="PhysicalObject.js.html#line9">PhysicalObject.js:9</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="position">position : <span class="type-signature"><a href="Vector.html">Vector</a><3></span></h4>
-
-
-
-
-    <div class="description">
-        <p>The absolute position of this object's center of mass (in the universal reference frame)</p>
-    </div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            <a href="Vector.html">Vector</a><3>
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-default">Default Value:</dt>
-        <dd class="tag-default">
-            <ul class="dummy">
-                <li>[0, 0, 0]</li>
-            </ul>
-        </dd>
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="PhysicalObject.js.html#line17">PhysicalObject.js:17</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="velocity">velocity : <span class="type-signature"><a href="Vector.html">Vector</a><3></span></h4>
-
-
-
-
-    <div class="description">
-        <p>The absolute velocity of this object (in the universal reference frame)</p>
-    </div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            <a href="Vector.html">Vector</a><3>
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-default">Default Value:</dt>
-        <dd class="tag-default">
-            <ul class="dummy">
-                <li>[0, 0, 0]</li>
-            </ul>
-        </dd>
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="PhysicalObject.js.html#line25">PhysicalObject.js:25</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-    </div>
-    <nav>
-        <h2><a href="index.html">Home</a></h2><h3>Tutorials</h3><ul><li><a href="car.html">car</a></li><li><a href="road.html">road</a></li></ul><h3>Namespaces</h3><ul><li><a href="PIXI.html">PIXI</a></li><li><a href="PIXI.utils.html">utils</a></li><li><a href="R.html">R</a></li><li><a href="Ts.html">Ts</a></li></ul><h3>Classes</h3><ul><li><a href="Bean.html">Bean</a></li><li><a href="Car_.html">Car</a></li><li><a href="CoffeeBean.html">CoffeeBean</a></li><li><a href="Gravity.html">Gravity</a></li><li><a href="PhysicalInteraction.html">PhysicalInteraction</a></li><li><a href="PhysicalObject.html">PhysicalObject</a></li><li><a href="PIXI.AbstractBatchRenderer.html">AbstractBatchRenderer</a></li><li><a href="PIXI.AbstractRenderer.html">AbstractRenderer</a></li><li><a href="PIXI.ObjectRenderer.html">ObjectRenderer</a></li><li><a href="PIXI.System.html">System</a></li><li><a href="PIXI.TilingSprite.html">TilingSprite</a></li><li><a href="R.Road.html">Road</a></li><li><a href="Ts.Transaction.html">Transaction</a></li><li><a href="Vector.html">Vector</a></li></ul><h3>Interfaces</h3><ul><li><a href="CarDealer.html">CarDealer</a></li></ul>
-    </nav>
-    <br class="clear">
-    <footer>
-        Documentation generated by <a href="https://github.com/webdoc-js/webdoc">webdoc 1</a>
-        
-    </footer>
     <script> prettyPrint(); </script>
     <script src="scripts/linenumber.js"> </script>
 </body>

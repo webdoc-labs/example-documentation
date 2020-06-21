@@ -1,938 +1,108 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>webdoc: Interface: CarDealer</title>
+    <title>webdoc: CarDealer</title>
 
-    <script src="scripts/prettify.js"> </script>
-    <script src="scripts/lang-css.js"> </script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/tomorrow.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
-    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/default-template.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="scripts/default-template.js"></script>
+    <script src="scripts/prettify.js"></script>
+    <script src="scripts/lang-css.js"></script>
 </head>
 <body>
-    <div id="main">
-        <h1 class="page-title">Interface: CarDealer</h1>
-        
-
-
-
-
-<section>
-<header>
-    
-        <h2>
+    <div id="template-app">
+      <div class="app-container">
+        <div id="app-bar-root">
+          <!-- AppBar component mounts here -->
+        </div>
+        <div class="app-layout">
+          <nav id="explorer-root">
+            <!-- Explorer component mounted here -->
+          </nav>
+          <div id="content-root">
             
-            CarDealer
-            
-        </h2>
-        
-            <div class="class-description"><p>This is the interface for dealing with car dealers.</p></div>
-        
-        
-</header>
-
-<article>
-    <div class="container-overview">
-        
-            
-                <div class="description"><p>This is the interface for dealing with car dealers.</p></div>
-            
-
-            
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="Car.ts.html#line26">Car.ts:26</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-            
-        
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="closeTransaction">
-            closeTransaction<span class="signature">(trans, counteroffer)</span><span class="type-signature">  →  {trans is <a href="Ts.Transaction.html">Ts.Transaction</a>}</span>
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Close transaction. If you respond to the counteroffer, then it won't be closed.</p>
-    </div>
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-            <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>trans</code></td>
-            
-
-            <td class="type">
-            
-                <a href="Ts.Transaction.html">Ts.Transaction</a>
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>counteroffer</code></td>
-            
-
-            <td class="type">
-            
-                (...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) => void
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <h1 class="document-title">CarDealer</h1>
+    <hr />
 
+    <code class="signature">interface CarDealer</code>
     
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="Car.ts.html#line58">Car.ts:58</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <h5>Returns:</h5>
-
-        
-                
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        trans is <a href="Ts.Transaction.html">Ts.Transaction</a>
-    </dd>
-</dl>
-
-
-        
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="initiateTransaction">
-            initiateTransaction<span class="signature">(x<span class="signature-attributes">opt</span>)</span><span class="type-signature">  →  {typeof <a href="Ts.Transaction.html">Ts.Transaction</a>}</span>
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Initiate a transaction/negotiation with a car dealer</p>
-    </div>
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-            <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-            <th>Attributes</th>
-        
-
-        
+    <hr class="secondary-separator" />
+    <p>This is the interface for dealing with car dealers.</p>
 
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>x</code></td>
-            
-
-            <td class="type">
-            
-                object
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                <p>info</p>
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
     
 
     
-
-    
-
-    
-
-    
-
     
-
     
 
-    
+<h2 class="section-title">Public Methods</h2>
+<hr />
 
-    
 
     
 
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="Car.ts.html#line32">Car.ts:32</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
+<div class="method member">
+  <p class="member-title">closeTransaction</p>
+  <code class="member-signature">closeTransaction(trans: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) => void) → {trans is <a href="Ts.Transaction.html">Ts.Transaction</a>} </code>
 
-    
+  <section class="method-description member-description description">
+    <p>Close transaction. If you respond to the counteroffer, then it won't be closed.</p>
+  </section>
+</div>
 
-    
 
     
-</dl>
 
+<div class="method member">
+  <p class="member-title">initiateTransaction</p>
+  <code class="member-signature">initiateTransaction(x: object) → {typeof <a href="Ts.Transaction.html">Ts.Transaction</a>} </code>
 
+  <section class="method-description member-description description">
+    <p>Initiate a transaction/negotiation with a car dealer</p>
+  </section>
+</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-        <h5>Returns:</h5>
-
-        
-                
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        typeof <a href="Ts.Transaction.html">Ts.Transaction</a>
-    </dd>
-</dl>
-
-
-        
-
-
-
-
-
-        
-            
-
-    
-
     
-        <h4 class="name" id="offerAsk">
-            offerAsk<span class="signature">(on, counteroffer<span class="signature-attributes">opt</span>, test)</span><span class="type-signature">  →  {boolean}</span>
-        </h4>
-    
-
-
-
 
+<div class="method member">
+  <p class="member-title">offerAsk</p>
+  <code class="member-signature">offerAsk(on: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (t: <a href="Car.html">Car</a>) => void, test: { [testProperty in keyof keyof] }: number) → {boolean} </code>
 
-    <div class="description">
-        <p>Offer a price to sell the car.</p>
+  <section class="method-description member-description description">
+    <p>Offer a price to sell the car.</p>
 <p>NOTE: This is invalid behaviour if you are the buyer in the transaction.</p>
-    </div>
+  </section>
+</div>
 
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-            <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-            <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>on</code></td>
-            
-
-            <td class="type">
-            
-                <a href="Ts.Transaction.html">Ts.Transaction</a>
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>counteroffer</code></td>
-            
-
-            <td class="type">
-            
-                (t: <a href="Car_.html">Car</a>) => void
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>test</code></td>
-            
-
-            <td class="type">
-            
-                { [testProperty in keyof keyof] }: number
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-    
 
     
 
-    
+<div class="method member">
+  <p class="member-title">offerBid</p>
+  <code class="member-signature">offerBid(on: { t : <a href="Ts.Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts.Transaction.html">Ts.Transaction</a>[] }, counteroffer: <a href="Car.html">Car</a> | <a href="Vector.html">Vector</a>) → {boolean} </code>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="Car.ts.html#line49">Car.ts:49</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <h5>Returns:</h5>
-
-        
-                
-
-    <div class="param-desc">
-        <p>type inference is working</p>
-    </div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        boolean
-    </dd>
-</dl>
-
-
-        
-
-
-
-
-
-        
-            
-
-    
-
-    
-        <h4 class="name" id="offerBid">
-            offerBid<span class="signature">(on<span class="signature-attributes">opt</span>, &hellip;counteroffer<span class="signature-attributes">opt</span>)</span><span class="type-signature">  →  {boolean}</span>
-        </h4>
-    
-
-
-
-
-
-    <div class="description">
-        <p>Offer a price to buy the car.</p>
+  <section class="method-description member-description description">
+    <p>Offer a price to buy the car.</p>
 <p>NOTE: This is invalid behaviour if you are the seller in the transaction.</p>
+  </section>
+</div>
+
+
+
+    
+
+
+          </div>
+          <div></div>
+        </div>
+      </div>
     </div>
-
-
-
-
-
-
-
-
-
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-            <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-            <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>on</code></td>
-            
-
-            <td class="type">
-            
-                { t : <a href="Ts.Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts.Transaction.html">Ts.Transaction</a>[] }
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-
-        <tr>
-            
-                <td class="name"><code>counteroffer</code></td>
-            
-
-            <td class="type">
-            
-                <a href="Car_.html">Car</a> | <a href="Vector.html">Vector</a>
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="tag-source">Source:</dt>
-        <dd class="tag-source">
-            <ul class="dummy">
-                <li>
-                    
-                        <a href="Car.ts.html#line39">Car.ts:39</a>
-                    
-                </li>
-            </ul>
-        </dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <h5>Returns:</h5>
-
-        
-                
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        boolean
-    </dd>
-</dl>
-
-
-        
-
-
-
-
-
-        
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-    </div>
-    <nav>
-        <h2><a href="index.html">Home</a></h2><h3>Tutorials</h3><ul><li><a href="car.html">car</a></li><li><a href="road.html">road</a></li></ul><h3>Namespaces</h3><ul><li><a href="PIXI.html">PIXI</a></li><li><a href="PIXI.utils.html">utils</a></li><li><a href="R.html">R</a></li><li><a href="Ts.html">Ts</a></li></ul><h3>Classes</h3><ul><li><a href="Bean.html">Bean</a></li><li><a href="Car_.html">Car</a></li><li><a href="CoffeeBean.html">CoffeeBean</a></li><li><a href="Gravity.html">Gravity</a></li><li><a href="PhysicalInteraction.html">PhysicalInteraction</a></li><li><a href="PhysicalObject.html">PhysicalObject</a></li><li><a href="PIXI.AbstractBatchRenderer.html">AbstractBatchRenderer</a></li><li><a href="PIXI.AbstractRenderer.html">AbstractRenderer</a></li><li><a href="PIXI.ObjectRenderer.html">ObjectRenderer</a></li><li><a href="PIXI.System.html">System</a></li><li><a href="PIXI.TilingSprite.html">TilingSprite</a></li><li><a href="R.Road.html">Road</a></li><li><a href="Ts.Transaction.html">Transaction</a></li><li><a href="Vector.html">Vector</a></li></ul><h3>Interfaces</h3><ul><li><a href="CarDealer.html">CarDealer</a></li></ul>
-    </nav>
-    <br class="clear">
-    <footer>
-        Documentation generated by <a href="https://github.com/webdoc-js/webdoc">webdoc 1</a>
-        
-    </footer>
     <script> prettyPrint(); </script>
     <script src="scripts/linenumber.js"> </script>
 </body>

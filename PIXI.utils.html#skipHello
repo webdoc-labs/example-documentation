@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>webdoc: Test Template</title>
+    <title>webdoc: skipHello</title>
 
     <link type="text/css" rel="stylesheet" href="styles/default-template.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
@@ -26,15 +26,20 @@
           </nav>
           <div id="content-root">
             
+    <h1 class="document-title">PIXI.utils.skipHello</h1>
+    <hr />
 
-    <h1>@webdoc/example</h1>
-<p>Example documented package.</p>
-<p>This package contains all sorts of fun stuff while demonstrating what things webdoc can document.</p>
-<h2>Usage</h2>
-<ul>
-<li><code>npm run generate</code> will rebuild webdoc &amp; then run it in this package. The docs are outputted into <code>docs</code>.</li>
-</ul>
+    <code class="signature">skipHello() → {void} </code>
+    
+    <hr class="secondary-separator" />
+    <p>Skips the hello message of renderers that are created after this is run.</p>
 
+    
+
+    
+    
+    
+    
 
 
           </div>
