@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title>webdoc: Vector</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/default-template.css">
+    <link type="text/css" rel="stylesheet" href="styles/default-template.css" />
+    <link type ="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
@@ -43,15 +44,18 @@
 
 
     
+    <div class="method member">
+        <p class="member-title">dimensions</p>
+        <code class="member-signature">dimensions: number</code>
 
-<div class="method member">
-  <p class="member-title">dimensions</p>
-  <code class="member-signature">dimensions: number</code>
+        <section class="method-description member-description description">
+            <p>The no. of components of this vector</p>
+        </section>
 
-  <section class="method-description member-description description">
-    <p>The no. of components of this vector</p>
-  </section>
-</div>
+        
+        <br />
+        
+    </div>
 
 
 
@@ -63,39 +67,232 @@
 
 
     
+    <div class="method member">
+        <p class="member-title">add</p>
+        <code class="member-signature">add(vec: <a href="Vector.html">Vector</a>)</code>
 
-<div class="method member">
-  <p class="member-title">add</p>
-  <code class="member-signature">add(vec: <a href="Vector.html">Vector</a>)</code>
+        <section class="method-description member-description description">
+            <p>Add <code>vec</code> to this</p>
+        </section>
 
-  <section class="method-description member-description description">
-    <p>Add <code>vec</code> to this</p>
-  </section>
-</div>
+        
+            
+    <table class="parameters">
+        <caption>Parameters:</caption>
+        <thead>
+            <tr>
+                  
+                      <th>Name</th>
+                  
+
+                  <th>Type</th>
+
+                  
+
+                  
+
+                  <th class="last">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    
+                        <td class="name"><code>vec</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code><a href="Vector.html">Vector</a></code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">equalTo</p>
+        <code class="member-signature">equalTo(vec: <a href="Vector.html">Vector</a>) → {boolean} </code>
 
-<div class="method member">
-  <p class="member-title">equalTo</p>
-  <code class="member-signature">equalTo(vec: <a href="Vector.html">Vector</a>) → {boolean} </code>
+        <section class="method-description member-description description">
+            <p>Whether this and <code>vec</code> are equal vectors</p>
+        </section>
 
-  <section class="method-description member-description description">
-    <p>Whether this and <code>vec</code> are equal vectors</p>
-  </section>
-</div>
+        
+            
+    <table class="parameters">
+        <caption>Parameters:</caption>
+        <thead>
+            <tr>
+                  
+                      <th>Name</th>
+                  
+
+                  <th>Type</th>
+
+                  
+
+                  
+
+                  <th class="last">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    
+                        <td class="name"><code>vec</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code><a href="Vector.html">Vector</a></code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+        
+        <br />
+        
+            
+    <table class="returns headless-table">
+        <caption>Returns:</caption>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td>
+                        
+                            <code>boolean</code>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">isCompat</p>
+        <code class="member-signature">isCompat(vec: <a href="Vector.html">Vector</a>) → {boolean} </code>
 
-<div class="method member">
-  <p class="member-title">isCompat</p>
-  <code class="member-signature">isCompat(vec: <a href="Vector.html">Vector</a>) → {boolean} </code>
+        <section class="method-description member-description description">
+            <p>Whether this and <code>vec</code> are compatible vectors (same dimensions)</p>
+        </section>
 
-  <section class="method-description member-description description">
-    <p>Whether this and <code>vec</code> are compatible vectors (same dimensions)</p>
-  </section>
-</div>
+        
+            
+    <table class="parameters">
+        <caption>Parameters:</caption>
+        <thead>
+            <tr>
+                  
+                      <th>Name</th>
+                  
+
+                  <th>Type</th>
+
+                  
+
+                  
+
+                  <th class="last">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    
+                        <td class="name"><code>vec</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code><a href="Vector.html">Vector</a></code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+        
+        <br />
+        
+            
+    <table class="returns headless-table">
+        <caption>Returns:</caption>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td>
+                        
+                            <code>boolean</code>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+        
+    </div>
 
 
 

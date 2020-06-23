@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title>webdoc: AbstractBatchRenderer</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/default-template.css">
+    <link type="text/css" rel="stylesheet" href="styles/default-template.css" />
+    <link type ="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
@@ -42,16 +43,63 @@ reduce to the number of draw calls.</p>
         <h2 class="section-title">Constructor</h2>
         <hr />
         
+    <div class="method member">
+        <p class="member-title"></p>
+        <code class="member-signature">new PIXI.AbstractBatchRenderer(renderer: PIXI.Renderer)</code>
 
-<div class="method member">
-  <p class="member-title"></p>
-  <code class="member-signature">new PIXI.AbstractBatchRenderer(renderer: PIXI.Renderer)</code>
-
-  <section class="method-description member-description description">
-    <p>This will hook onto the renderer's <code>contextChange</code>
+        <section class="method-description member-description description">
+            <p>This will hook onto the renderer's <code>contextChange</code>
 and <code>prerender</code> signals.</p>
-  </section>
-</div>
+        </section>
+
+        
+            
+    <table class="parameters">
+        <caption>Parameters:</caption>
+        <thead>
+            <tr>
+                  
+                      <th>Name</th>
+                  
+
+                  <th>Type</th>
+
+                  
+
+                  
+
+                  <th class="last">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    
+                        <td class="name"><code>renderer</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code>PIXI.Renderer</code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        <p>The renderer this works for.</p>
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+        
+        <br />
+        
+    </div>
 
       
 
@@ -62,106 +110,126 @@ and <code>prerender</code> signals.</p>
 
 
     
+    <div class="method member">
+        <p class="member-title">_drawCallPool</p>
+        <code class="member-signature">static _drawCallPool: Array<PIXI.BatchDrawCall></code>
 
-<div class="method member">
-  <p class="member-title">_drawCallPool</p>
-  <code class="member-signature">static _drawCallPool: Array<PIXI.BatchDrawCall></code>
-
-  <section class="method-description member-description description">
-    <p>Pool of <code>BatchDrawCall</code> objects that <code>flush</code> used
+        <section class="method-description member-description description">
+            <p>Pool of <code>BatchDrawCall</code> objects that <code>flush</code> used
 to create &quot;batches&quot; of the objects being rendered.</p>
 <p>These are never re-allocated again.
 Shared between all batch renderers because it can be only one &quot;flush&quot; working at the moment.</p>
-  </section>
-</div>
+        </section>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">_textureArrayPool</p>
+        <code class="member-signature">static _textureArrayPool: Array<PIXI.BatchTextureArray></code>
 
-<div class="method member">
-  <p class="member-title">_textureArrayPool</p>
-  <code class="member-signature">static _textureArrayPool: Array<PIXI.BatchTextureArray></code>
-
-  <section class="method-description member-description description">
-    <p>Pool of <code>BatchDrawCall</code> objects that <code>flush</code> used
+        <section class="method-description member-description description">
+            <p>Pool of <code>BatchDrawCall</code> objects that <code>flush</code> used
 to create &quot;batches&quot; of the objects being rendered.</p>
 <p>These are never re-allocated again.
 Shared between all batch renderers because it can be only one &quot;flush&quot; working at the moment.</p>
-  </section>
-</div>
+        </section>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">bufferSize</p>
+        <code class="member-signature">bufferSize: number</code>
 
-<div class="method member">
-  <p class="member-title">bufferSize</p>
-  <code class="member-signature">bufferSize: number</code>
+        <section class="method-description member-description description">
+            
+        </section>
 
-  <section class="method-description member-description description">
+        
+        <br />
+        
+    </div>
+
+
     
-  </section>
-</div>
+    <div class="method member">
+        <p class="member-title">MAX_TEXTURES</p>
+        <code class="member-signature">MAX_TEXTURES: number</code>
 
-
-    
-
-<div class="method member">
-  <p class="member-title">MAX_TEXTURES</p>
-  <code class="member-signature">MAX_TEXTURES: number</code>
-
-  <section class="method-description member-description description">
-    <p>Maximum number of textures that can be uploaded to
+        <section class="method-description member-description description">
+            <p>Maximum number of textures that can be uploaded to
 the GPU under the current context. It is initialized
 properly in <code>this.contextChange</code>.</p>
-  </section>
-</div>
+        </section>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">renderer</p>
+        <code class="member-signature">renderer: PIXI.Renderer</code>
 
-<div class="method member">
-  <p class="member-title">renderer</p>
-  <code class="member-signature">renderer: PIXI.Renderer</code>
+        <section class="method-description member-description description">
+            <p>The renderer this manager works for.</p>
+        </section>
 
-  <section class="method-description member-description description">
-    <p>The renderer this manager works for.</p>
-  </section>
-</div>
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">size</p>
+        <code class="member-signature">size: number</code>
 
-<div class="method member">
-  <p class="member-title">size</p>
-  <code class="member-signature">size: number</code>
-
-  <section class="method-description member-description description">
-    <p>The number of bufferable objects before a flush
+        <section class="method-description member-description description">
+            <p>The number of bufferable objects before a flush
 occurs automatically.</p>
-  </section>
-</div>
+        </section>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">state</p>
+        <code class="member-signature">state: PIXI.State</code>
 
-<div class="method member">
-  <p class="member-title">state</p>
-  <code class="member-signature">state: PIXI.State</code>
+        <section class="method-description member-description description">
+            <p>The WebGL state in which this renderer will work.</p>
+        </section>
 
-  <section class="method-description member-description description">
-    <p>The WebGL state in which this renderer will work.</p>
-  </section>
-</div>
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">vertexSize</p>
+        <code class="member-signature">vertexSize: number</code>
 
-<div class="method member">
-  <p class="member-title">vertexSize</p>
-  <code class="member-signature">vertexSize: number</code>
-
-  <section class="method-description member-description description">
-    <p>Size of data being buffered per vertex in the
+        <section class="method-description member-description description">
+            <p>Size of data being buffered per vertex in the
 attribute buffers (in floats). By default, the
 batch-renderer plugin uses 6:</p>
 <table>
@@ -186,8 +254,12 @@ batch-renderer plugin uses 6:</p>
 </tr>
 </tbody>
 </table>
-  </section>
-</div>
+        </section>
+
+        
+        <br />
+        
+    </div>
 
 
 
@@ -198,48 +270,57 @@ batch-renderer plugin uses 6:</p>
 
 
     
+    <div class="method member">
+        <p class="member-title">_shader</p>
+        <code class="member-signature">protected _shader: PIXI.Shader</code>
 
-<div class="method member">
-  <p class="member-title">_shader</p>
-  <code class="member-signature">protected _shader: PIXI.Shader</code>
-
-  <section class="method-description member-description description">
-    <p>This shader is generated by <code>this.shaderGenerator</code>.</p>
+        <section class="method-description member-description description">
+            <p>This shader is generated by <code>this.shaderGenerator</code>.</p>
 <p>It is generated specifically to handle the required
 number of textures being batched together.</p>
-  </section>
-</div>
+        </section>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">geometryClass</p>
+        <code class="member-signature">protected geometryClass: object</code>
 
-<div class="method member">
-  <p class="member-title">geometryClass</p>
-  <code class="member-signature">protected geometryClass: object</code>
-
-  <section class="method-description member-description description">
-    <p>The class that represents the geometry of objects
+        <section class="method-description member-description description">
+            <p>The class that represents the geometry of objects
 that are going to be batched with this.</p>
-  </section>
-</div>
+        </section>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">shaderGenerator</p>
+        <code class="member-signature">protected shaderGenerator: PIXI.BatchShaderGenerator</code>
 
-<div class="method member">
-  <p class="member-title">shaderGenerator</p>
-  <code class="member-signature">protected shaderGenerator: PIXI.BatchShaderGenerator</code>
-
-  <section class="method-description member-description description">
-    <p>This is used to generate a shader that can
+        <section class="method-description member-description description">
+            <p>This is used to generate a shader that can
 color each vertex based on a <code>aTextureId</code>
 attribute that points to an texture in <code>uSampler</code>.</p>
 <p>This enables the objects with different textures
 to be drawn in the same draw call.</p>
 <p>You can customize your shader by creating your
 custom shader generator.</p>
-  </section>
-</div>
+        </section>
+
+        
+        <br />
+        
+    </div>
 
 
 
@@ -250,156 +331,489 @@ custom shader generator.</p>
 
 
     
+    <div class="method member">
+        <p class="member-title">bindAndClearTexArray</p>
+        <code class="member-signature">bindAndClearTexArray(texArray: PIXI.BatchTextureArray)</code>
 
-<div class="method member">
-  <p class="member-title">bindAndClearTexArray</p>
-  <code class="member-signature">bindAndClearTexArray(texArray: PIXI.BatchTextureArray)</code>
+        <section class="method-description member-description description">
+            <p>Bind textures for current rendering</p>
+        </section>
 
-  <section class="method-description member-description description">
-    <p>Bind textures for current rendering</p>
-  </section>
-</div>
+        
+            
+    <table class="parameters">
+        <caption>Parameters:</caption>
+        <thead>
+            <tr>
+                  
+                      <th>Name</th>
+                  
+
+                  <th>Type</th>
+
+                  
+
+                  
+
+                  <th class="last">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    
+                        <td class="name"><code>texArray</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code>PIXI.BatchTextureArray</code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">buildDrawCalls</p>
+        <code class="member-signature">buildDrawCalls(texArray: PIXI.BatchTextureArray, start: number, finish: number)</code>
 
-<div class="method member">
-  <p class="member-title">buildDrawCalls</p>
-  <code class="member-signature">buildDrawCalls(texArray: PIXI.BatchTextureArray, start: number, finish: number)</code>
+        <section class="method-description member-description description">
+            <p>Populating drawcalls for rendering</p>
+        </section>
 
-  <section class="method-description member-description description">
-    <p>Populating drawcalls for rendering</p>
-  </section>
-</div>
+        
+            
+    <table class="parameters">
+        <caption>Parameters:</caption>
+        <thead>
+            <tr>
+                  
+                      <th>Name</th>
+                  
+
+                  <th>Type</th>
+
+                  
+
+                  
+
+                  <th class="last">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    
+                        <td class="name"><code>texArray</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code>PIXI.BatchTextureArray</code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    
+                        <td class="name"><code>start</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code>number</code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    
+                        <td class="name"><code>finish</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code>number</code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">contextChange</p>
+        <code class="member-signature">contextChange()</code>
 
-<div class="method member">
-  <p class="member-title">contextChange</p>
-  <code class="member-signature">contextChange()</code>
-
-  <section class="method-description member-description description">
-    <p>Handles the <code>contextChange</code> signal.</p>
+        <section class="method-description member-description description">
+            <p>Handles the <code>contextChange</code> signal.</p>
 <p>It calculates <code>this.MAX_TEXTURES</code> and allocating the
 packed-geometry object pool.</p>
-  </section>
-</div>
+        </section>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">destroy</p>
+        <code class="member-signature">destroy()</code>
 
-<div class="method member">
-  <p class="member-title">destroy</p>
-  <code class="member-signature">destroy()</code>
+        <section class="method-description member-description description">
+            <p>Destroys this <code>AbstractBatchRenderer</code>. It cannot be used again.</p>
+        </section>
 
-  <section class="method-description member-description description">
-    <p>Destroys this <code>AbstractBatchRenderer</code>. It cannot be used again.</p>
-  </section>
-</div>
-
-
-    
-
-<div class="method member">
-  <p class="member-title">drawBatches</p>
-  <code class="member-signature">drawBatches()</code>
-
-  <section class="method-description member-description description">
-    
-  </section>
-</div>
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">drawBatches</p>
+        <code class="member-signature">drawBatches()</code>
 
-<div class="method member">
-  <p class="member-title">flush</p>
-  <code class="member-signature">flush()</code>
+        <section class="method-description member-description description">
+            
+        </section>
 
-  <section class="method-description member-description description">
-    <p>Renders the content <em>now</em> and empties the current batch.</p>
-  </section>
-</div>
-
-
-    
-
-<div class="method member">
-  <p class="member-title">initFlushBuffers</p>
-  <code class="member-signature">initFlushBuffers()</code>
-
-  <section class="method-description member-description description">
-    <p>Makes sure that static and dynamic flush pooled objects have correct dimensions</p>
-  </section>
-</div>
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">flush</p>
+        <code class="member-signature">flush()</code>
 
-<div class="method member">
-  <p class="member-title">onPrerender</p>
-  <code class="member-signature">onPrerender()</code>
+        <section class="method-description member-description description">
+            <p>Renders the content <em>now</em> and empties the current batch.</p>
+        </section>
 
-  <section class="method-description member-description description">
-    <p>Handles the <code>prerender</code> signal.</p>
+        
+        <br />
+        
+    </div>
+
+
+    
+    <div class="method member">
+        <p class="member-title">initFlushBuffers</p>
+        <code class="member-signature">initFlushBuffers()</code>
+
+        <section class="method-description member-description description">
+            <p>Makes sure that static and dynamic flush pooled objects have correct dimensions</p>
+        </section>
+
+        
+        <br />
+        
+    </div>
+
+
+    
+    <div class="method member">
+        <p class="member-title">onPrerender</p>
+        <code class="member-signature">onPrerender()</code>
+
+        <section class="method-description member-description description">
+            <p>Handles the <code>prerender</code> signal.</p>
 <p>It ensures that flushes start from the first geometry
 object again.</p>
-  </section>
-</div>
+        </section>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">packInterleavedGeometry</p>
+        <code class="member-signature">packInterleavedGeometry(element: PIXI.Sprite, attributeBuffer: PIXI.ViewableBuffer, indexBuffer: Uint16Array, aIndex: number, iIndex: number)</code>
 
-<div class="method member">
-  <p class="member-title">packInterleavedGeometry</p>
-  <code class="member-signature">packInterleavedGeometry(element: PIXI.Sprite, attributeBuffer: PIXI.ViewableBuffer, indexBuffer: Uint16Array, aIndex: number, iIndex: number)</code>
-
-  <section class="method-description member-description description">
-    <p>Takes the four batching parameters of <code>element</code>, interleaves
+        <section class="method-description member-description description">
+            <p>Takes the four batching parameters of <code>element</code>, interleaves
 and pushes them into the batching attribute/index buffers given.</p>
 <p>It uses these properties: <code>vertexData</code> <code>uvs</code>, <code>textureId</code> and
 <code>indicies</code>. It also uses the &quot;tint&quot; of the base-texture, if
 present.</p>
-  </section>
-</div>
+        </section>
+
+        
+            
+    <table class="parameters">
+        <caption>Parameters:</caption>
+        <thead>
+            <tr>
+                  
+                      <th>Name</th>
+                  
+
+                  <th>Type</th>
+
+                  
+
+                  
+
+                  <th class="last">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    
+                        <td class="name"><code>element</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code>PIXI.Sprite</code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        <p>element being rendered</p>
+                    </td>
+                </tr>
+            
+                <tr>
+                    
+                        <td class="name"><code>attributeBuffer</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code>PIXI.ViewableBuffer</code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        <p>attribute buffer.</p>
+                    </td>
+                </tr>
+            
+                <tr>
+                    
+                        <td class="name"><code>indexBuffer</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code>Uint16Array</code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        <p>index buffer</p>
+                    </td>
+                </tr>
+            
+                <tr>
+                    
+                        <td class="name"><code>aIndex</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code>number</code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        <p>number of floats already in the attribute buffer</p>
+                    </td>
+                </tr>
+            
+                <tr>
+                    
+                        <td class="name"><code>iIndex</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code>number</code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        <p>number of indices already in <code>indexBuffer</code></p>
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">render</p>
+        <code class="member-signature">render(element: PIXI.DisplayObject)</code>
 
-<div class="method member">
-  <p class="member-title">render</p>
-  <code class="member-signature">render(element: PIXI.DisplayObject)</code>
-
-  <section class="method-description member-description description">
-    <p>Buffers the &quot;batchable&quot; object. It need not be rendered
+        <section class="method-description member-description description">
+            <p>Buffers the &quot;batchable&quot; object. It need not be rendered
 immediately.</p>
-  </section>
-</div>
+        </section>
+
+        
+            
+    <table class="parameters">
+        <caption>Parameters:</caption>
+        <thead>
+            <tr>
+                  
+                      <th>Name</th>
+                  
+
+                  <th>Type</th>
+
+                  
+
+                  
+
+                  <th class="last">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    
+                        <td class="name"><code>element</code></td>
+                    
+
+                    <td class="type">
+                    
+                        <code>PIXI.DisplayObject</code>
+                    
+                    </td>
+
+                    
+
+                    
+
+                    <td class="description last-column">
+                        <p>the element to render when
+using this renderer</p>
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">start</p>
+        <code class="member-signature">start()</code>
 
-<div class="method member">
-  <p class="member-title">start</p>
-  <code class="member-signature">start()</code>
+        <section class="method-description member-description description">
+            <p>Starts a new sprite batch.</p>
+        </section>
 
-  <section class="method-description member-description description">
-    <p>Starts a new sprite batch.</p>
-  </section>
-</div>
+        
+        <br />
+        
+    </div>
 
 
     
+    <div class="method member">
+        <p class="member-title">stop</p>
+        <code class="member-signature">stop()</code>
 
-<div class="method member">
-  <p class="member-title">stop</p>
-  <code class="member-signature">stop()</code>
+        <section class="method-description member-description description">
+            <p>Stops and flushes the current batch.</p>
+        </section>
 
-  <section class="method-description member-description description">
-    <p>Stops and flushes the current batch.</p>
-  </section>
-</div>
+        
+        <br />
+        
+    </div>
 
 
 
