@@ -31,10 +31,10 @@
     <hr />
 
     <code class="signature">class ObjectRenderer extends <a href="PIXI.System.html">PIXI.System</a></code>
-    
+
     <hr class="secondary-separator" />
-    <p>Base for a common object renderer that can be used as a
-system renderer plugin.</p>
+    <p>Base for a common object renderer that can be used as a system renderer plugin.</p>
+    
 
     
         <h2 class="section-title">Constructor</h2>
@@ -45,6 +45,7 @@ system renderer plugin.</p>
         <code class="member-signature">new PIXI.ObjectRenderer(renderer: PIXI.Renderer)</code>
 
         <section class="method-description member-description description">
+            
             
         </section>
 
@@ -112,6 +113,7 @@ system renderer plugin.</p>
 
         <section class="method-description member-description description">
             <p>The renderer this manager works for.</p>
+            
         </section>
 
         
@@ -134,6 +136,7 @@ system renderer plugin.</p>
         <code class="member-signature">destroy()</code>
 
         <section class="method-description member-description description">
+            
             <p>Generic destruction method that frees all resources. This
 should be called by subclasses.</p>
         </section>
@@ -150,6 +153,7 @@ should be called by subclasses.</p>
         <code class="member-signature">flush()</code>
 
         <section class="method-description member-description description">
+            
             <p>Stub method that should be used to empty the current
 batch by rendering objects now.</p>
         </section>
@@ -166,6 +170,7 @@ batch by rendering objects now.</p>
         <code class="member-signature">render(object: PIXI.DisplayObject)</code>
 
         <section class="method-description member-description description">
+            
             <p>Keeps the object to render. It doesn't have to be
 rendered immediately.</p>
         </section>
@@ -226,6 +231,7 @@ rendered immediately.</p>
         <code class="member-signature">start()</code>
 
         <section class="method-description member-description description">
+            
             <p>Stub method that initializes any state required before
 rendering starts. It is different from the <code>prerender</code>
 signal, which occurs every frame, in that it is called
@@ -244,6 +250,7 @@ whenever an object requests <em>this</em> renderer specifically.</p>
         <code class="member-signature">stop()</code>
 
         <section class="method-description member-description description">
+            
             <p>Stops the renderer. It should free up any state and
 become dormant.</p>
         </section>

@@ -31,9 +31,10 @@
     <hr />
 
     <code class="signature">skipHello() → {void} </code>
-    
+
     <hr class="secondary-separator" />
     <p>Skips the hello message of renderers that are created after this is run.</p>
+    
 
     
 
