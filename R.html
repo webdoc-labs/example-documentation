@@ -1,169 +1,138 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>webdoc: R</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/default-template.css" />
-    <link type ="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
     <script src="scripts/prettify.js"></script>
     <script src="scripts/lang-css.js"></script>
-</head>
-<body>
-    <div id="template-app">
-      <div class="app-container">
-        <div id="app-bar-root">
-          <!-- AppBar component mounts here -->
-        </div>
-        <div class="app-layout">
-          <nav id="explorer-root">
-            <!-- Explorer component mounted here -->
-          </nav>
-          <div id="content-root">
-            
-    <h1 class="document-title">R</h1>
-    <hr />
-
-    <code class="signature">namespace R</code>
-
-    <hr class="secondary-separator" />
-    <p>A namespace dedicated to road manipulation utilites.</p>
-    
-
-    
-
-    
-
-<h2 class="section-title">Public Properties</h2>
-<hr />
-
-
-    
-    <div class="method member">
-        <p class="member-title">DEFAULT_LANES</p>
-        <code class="member-signature">static DEFAULT_LANES</code>
-
-        <section class="method-description member-description description">
-            <p>The default no. of lanes per one side of road</p>
-            
-        </section>
-
+  </head>
+  <body class="docs">
+    <header class="header" id="header-mount-point"></header>
+    <article class="page">
+      <div class="page-explorer" id="explorer-mount-point"></div>
+      <div class="page-content">
         
-        <br />
-        
-    </div>
+<div class="document">
+  <h1 class="document__title">R</h1>
+  <pre class="signature"><code>namespace R</code></pre>
 
 
+  <div class="document__brief"><p>A namespace dedicated to road manipulation utilites.</p></div>
+  <div class="ducument__description"></div>
 
+  
+
+  
+<div class="members">
+  <h2 class="members__category">Public Properties</h2>
+
+  
     
+<div class="member">
+  <h3 class="member__title">DEFAULT_LANES</h3>
+  <pre class="signature"><code>static DEFAULT_LANES</code></pre>
+
+
+  <div class="member__brief"><p>The default no. of lanes per one side of road</p></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+</div>
+
+  
+</div>
+
+  
+  
+<div class="members">
+  <h2 class="members__category">Public Methods</h2>
+
+  
     
+<div class="member">
+  <h3 class="member__title">buildRoad</h3>
+  <pre class="signature"><code>buildRoad(address: string) → {Road}</code></pre>
 
-<h2 class="section-title">Public Methods</h2>
-<hr />
 
+  <div class="member__brief"><p>Builds a road</p></div>
+  <div class="member__desctiption"></div>
 
+  
     
-    <div class="method member">
-        <p class="member-title">buildRoad</p>
-        <code class="member-signature">buildRoad(address: string) → {Road} </code>
+<table class="parameters">
+  <caption>Parameters:</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      
+      
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">
+        <pre><code>address</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>string</code></pre>
+      </td>
+      
+      
+      <td class="description"></td>
+    </tr>
+  </tbody>
+</table>
 
-        <section class="method-description member-description description">
-            <p>Builds a road</p>
-            
-        </section>
+  
 
-        
-            
-    <table class="parameters">
-        <caption>Parameters:</caption>
-        <thead>
-            <tr>
-                  
-                      <th>Name</th>
-                  
-
-                  <th>Type</th>
-
-                  
-
-                  
-
-                  <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    
-                        <td class="name"><code>address</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>string</code>
-                    
-                    </td>
-
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-        <br />
-        
-            
-    <table class="returns headless-table">
-        <caption>Returns:</caption>
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    <td>
-                        
-                            <code>Road</code>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-    </div>
-
-
-
+  
     
+<table class="returns">
+  <caption>Returns:</caption>
+  <thead class="returns-head">
+    <tr>
+      <th class="returns-head__type">Type</th>
+      <th class="returns-head__description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="returns-body">
+    <tr class="returns-body__row">
+      <td class="returns-body__type">
+        <pre><code>Road</code></pre>
+      </td>
+      <td class="returns-body__description"></td>
+    </tr>
+  </tbody>
+</table>
+
+  
+</div>
+
+  
+</div>
+
+  
+</div>
 
 
-          </div>
-          <div></div>
-        </div>
       </div>
-    </div>
-    <script> prettyPrint(); </script>
+      <div class="page-members" id="member-mount-point"></div>
+    </article>
+    <footer class="footer" id="footer-mount-point"></footer>
+    <script>prettyPrint();</script>
     <script src="scripts/linenumber.js"> </script>
-</body>
+  </body>
 </html>

@@ -1,250 +1,184 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>webdoc: CoffeeBean</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/default-template.css" />
-    <link type ="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
     <script src="scripts/prettify.js"></script>
     <script src="scripts/lang-css.js"></script>
-</head>
-<body>
-    <div id="template-app">
-      <div class="app-container">
-        <div id="app-bar-root">
-          <!-- AppBar component mounts here -->
-        </div>
-        <div class="app-layout">
-          <nav id="explorer-root">
-            <!-- Explorer component mounted here -->
-          </nav>
-          <div id="content-root">
-            
-    <h1 class="document-title">CoffeeBean</h1>
-    <hr />
+  </head>
+  <body class="docs">
+    <header class="header" id="header-mount-point"></header>
+    <article class="page">
+      <div class="page-explorer" id="explorer-mount-point"></div>
+      <div class="page-content">
+        
+<div class="document">
+  <h1 class="document__title">CoffeeBean</h1>
+  <pre class="signature"><code>class CoffeeBean extends <a href="Bean.html">Bean</a></code></pre>
 
-    <code class="signature">class CoffeeBean extends <a href="Bean.html">Bean</a></code>
 
-    <hr class="secondary-separator" />
-    <p>This class illustrates how you can create a Java-bean like component in JavaScript</p>
+  <div class="document__brief"><p>This class illustrates how you can create a Java-bean like component in JavaScript</p></div>
+  <div class="ducument__description"></div>
+
+  
+      <div class="members">
+        <h2 class="members__category">Constructor</h2>
+        
+<div class="member">
+  <h3 class="member__title"></h3>
+  <pre class="signature"><code>new CoffeeBean(options: object)</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__desctiption"></div>
+
+  
     
-
-    
-        <h2 class="section-title">Constructor</h2>
-        <hr />
-        
-    <div class="method member">
-        <p class="member-title"></p>
-        <code class="member-signature">new CoffeeBean(options: object)</code>
-
-        <section class="method-description member-description description">
-            
-            
-        </section>
-
-        
-            
-    <table class="parameters">
-        <caption>Parameters:</caption>
-        <thead>
-            <tr>
-                  
-                      <th>Name</th>
-                  
-
-                  <th>Type</th>
-
-                  
-                      <th>Attributes</th>
-                  
-
-                  
-
-                  <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    
-                        <td class="name"><code>options</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>object</code>
-                    
-                    </td>
-
-                    
-                        <td class="attributes">
-                        
-                            &lt;optional><br>
-                        
-
-                        
-
-                        
-                        </td>
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    
-                        <td class="name"><code>options.roasted</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>boolean</code>
-                    
-                    </td>
-
-                    
-                        <td class="attributes">
-                        
-                            &lt;optional><br>
-                        
-
-                        
-
-                        
-                        </td>
-                    
-
-                    
-
-                    <td class="description last-column">
-                        <p>whether the bean is <code>roasted</code></p>
-                    </td>
-                </tr>
-            
-                <tr>
-                    
-                        <td class="name"><code>options.maturity</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>number</code>
-                    
-                    </td>
-
-                    
-                        <td class="attributes">
-                        
-                            &lt;optional><br>
-                        
-
-                        
-
-                        
-                        </td>
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-        <br />
-        
-    </div>
-
+<table class="parameters">
+  <caption>Parameters:</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Attributes</th>
       
-
-    
-
-<h2 class="section-title">Public Properties</h2>
-<hr />
-
-
-    
-    <div class="method member">
-        <p class="member-title">maturity</p>
-        <code class="member-signature">maturity: number</code>
-
-        <section class="method-description member-description description">
-            
-            
-        </section>
-
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">
+        <pre><code>options</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>object</code></pre>
+      </td>
+      <td class="attributes">
+        <p>&lt;optional&gt;</p>
         
-        <br />
         
-    </div>
-
-
-    
-    <div class="method member">
-        <p class="member-title">roasted</p>
-        <code class="member-signature">roasted: boolean</code>
-
-        <section class="method-description member-description description">
-            
-            
-        </section>
-
+      </td>
+      
+      <td class="description"></td>
+    </tr><tr>
+      <td class="name">
+        <pre><code>options.roasted</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>boolean</code></pre>
+      </td>
+      <td class="attributes">
+        <p>&lt;optional&gt;</p>
         
-        <br />
         
-    </div>
-
-
-
-    
-    
-
-<h2 class="section-title">Public Methods</h2>
-<hr />
-
-
-    
-    <div class="method member">
-        <p class="member-title">roast</p>
-        <code class="member-signature">roast()</code>
-
-        <section class="method-description member-description description">
-            <p>Roast this coffee bean.</p>
-            <p>NOTE: You cannot re-roast coffee beans and an error will be thrown if you try to
-roast a roasted coffee bean.</p>
-        </section>
-
+      </td>
+      
+      <td class="description"><p>whether the bean is <code>roasted</code></p></td>
+    </tr><tr>
+      <td class="name">
+        <pre><code>options.maturity</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>number</code></pre>
+      </td>
+      <td class="attributes">
+        <p>&lt;optional&gt;</p>
         
-        <br />
         
-    </div>
+      </td>
+      
+      <td class="description"></td>
+    </tr>
+  </tbody>
+</table>
 
+  
 
+  
+</div>
 
-    
-
-
-          </div>
-          <div></div>
-        </div>
       </div>
-    </div>
-    <script> prettyPrint(); </script>
+    
+
+  
+<div class="members">
+  <h2 class="members__category">Public Properties</h2>
+
+  
+    
+<div class="member">
+  <h3 class="member__title">maturity</h3>
+  <pre class="signature"><code>maturity: number</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+</div>
+
+  
+    
+<div class="member">
+  <h3 class="member__title">roasted</h3>
+  <pre class="signature"><code>roasted: boolean</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+</div>
+
+  
+</div>
+
+  
+  
+<div class="members">
+  <h2 class="members__category">Public Methods</h2>
+
+  
+    
+<div class="member">
+  <h3 class="member__title">roast</h3>
+  <pre class="signature"><code>roast()</code></pre>
+
+
+  <div class="member__brief"><p>Roast this coffee bean.</p></div>
+  <div class="member__desctiption"><p>NOTE: You cannot re-roast coffee beans and an error will be thrown if you try to
+roast a roasted coffee bean.</p></div>
+
+  
+
+  
+</div>
+
+  
+</div>
+
+  
+</div>
+
+
+      </div>
+      <div class="page-members" id="member-mount-point"></div>
+    </article>
+    <footer class="footer" id="footer-mount-point"></footer>
+    <script>prettyPrint();</script>
     <script src="scripts/linenumber.js"> </script>
-</body>
+  </body>
 </html>

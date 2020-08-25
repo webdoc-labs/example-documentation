@@ -1,212 +1,174 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>webdoc: PhysicalInteraction</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/default-template.css" />
-    <link type ="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
     <script src="scripts/prettify.js"></script>
     <script src="scripts/lang-css.js"></script>
-</head>
-<body>
-    <div id="template-app">
-      <div class="app-container">
-        <div id="app-bar-root">
-          <!-- AppBar component mounts here -->
-        </div>
-        <div class="app-layout">
-          <nav id="explorer-root">
-            <!-- Explorer component mounted here -->
-          </nav>
-          <div id="content-root">
-            
-    <h1 class="document-title">PhysicalInteraction</h1>
-    <hr />
-
-    <code class="signature">class PhysicalInteraction</code>
-
-    <hr class="secondary-separator" />
-    
-    <p>A physical interaction is a force causes object positions to be re-evaulated each frame based on
-force's magnitude.</p>
-
-    
-
-    
-
-<h2 class="section-title">Public Properties</h2>
-<hr />
-
-
-    
-    <div class="method member">
-        <p class="member-title">GRAVITATIONAL_CONSTANT</p>
-        <code class="member-signature">static GRAVITATIONAL_CONSTANT: number</code>
-
-        <section class="method-description member-description description">
-            
-            
-        </section>
-
+  </head>
+  <body class="docs">
+    <header class="header" id="header-mount-point"></header>
+    <article class="page">
+      <div class="page-explorer" id="explorer-mount-point"></div>
+      <div class="page-content">
         
-        <br />
-        
-    </div>
+<div class="document">
+  <h1 class="document__title">PhysicalInteraction</h1>
+  <pre class="signature"><code>class PhysicalInteraction</code></pre>
 
 
+  <div class="document__brief"></div>
+  <div class="ducument__description"><p>A physical interaction is a force causes object positions to be re-evaulated each frame based on
+force's magnitude.</p></div>
 
+  
+
+  
+<div class="members">
+  <h2 class="members__category">Public Properties</h2>
+
+  
     
+<div class="member">
+  <h3 class="member__title">GRAVITATIONAL_CONSTANT</h3>
+  <pre class="signature"><code>static GRAVITATIONAL_CONSTANT: number</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+</div>
+
+  
+</div>
+
+  
+  
+<div class="members">
+  <h2 class="members__category">Public Methods</h2>
+
+  
     
+<div class="member">
+  <h3 class="member__title">createGravity</h3>
+  <pre class="signature"><code>static createGravity(objects: Tuple<2, <a href="PhysicalObject.html">PhysicalObject</a>>) → {<a href="PhysicalInteraction.html">PhysicalInteraction</a>}</code></pre>
 
-<h2 class="section-title">Public Methods</h2>
-<hr />
 
+  <div class="member__brief"><p>Creates a graviational force</p></div>
+  <div class="member__desctiption"></div>
 
+  
     
-    <div class="method member">
-        <p class="member-title">createGravity</p>
-        <code class="member-signature">static createGravity(objects: Tuple<2, <a href="PhysicalObject.html">PhysicalObject</a>>) → {<a href="PhysicalInteraction.html">PhysicalInteraction</a>} </code>
+<table class="parameters">
+  <caption>Parameters:</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      
+      
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">
+        <pre><code>objects</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>Tuple<2, <a href="PhysicalObject.html">PhysicalObject</a>></code></pre>
+      </td>
+      
+      
+      <td class="description"></td>
+    </tr>
+  </tbody>
+</table>
 
-        <section class="method-description member-description description">
-            <p>Creates a graviational force</p>
-            
-        </section>
+  
 
-        
-            
-    <table class="parameters">
-        <caption>Parameters:</caption>
-        <thead>
-            <tr>
-                  
-                      <th>Name</th>
-                  
-
-                  <th>Type</th>
-
-                  
-
-                  
-
-                  <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    
-                        <td class="name"><code>objects</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>Tuple<2, <a href="PhysicalObject.html">PhysicalObject</a>></code>
-                    
-                    </td>
-
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-        <br />
-        
-            
-    <table class="returns headless-table">
-        <caption>Returns:</caption>
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    <td>
-                        
-                            <code><a href="PhysicalInteraction.html">PhysicalInteraction</a></code>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-    </div>
-
-
+  
     
-    <div class="method member">
-        <p class="member-title">force</p>
-        <code class="member-signature">force() → {<a href="Vector.html">Vector</a><3>} </code>
+<table class="returns">
+  <caption>Returns:</caption>
+  <thead class="returns-head">
+    <tr>
+      <th class="returns-head__type">Type</th>
+      <th class="returns-head__description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="returns-body">
+    <tr class="returns-body__row">
+      <td class="returns-body__type">
+        <pre><code><a href="PhysicalInteraction.html">PhysicalInteraction</a></code></pre>
+      </td>
+      <td class="returns-body__description"></td>
+    </tr>
+  </tbody>
+</table>
 
-        <section class="method-description member-description description">
-            <p>This method should be overriden to calculate the force at the given instant.</p>
-            
-        </section>
+  
+</div>
 
-        
-        <br />
-        
-            
-    <table class="returns headless-table">
-        <caption>Returns:</caption>
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    <td>
-                        
-                            <code><a href="Vector.html">Vector</a><3></code>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-    </div>
-
-
-
+  
     
+<div class="member">
+  <h3 class="member__title">force</h3>
+  <pre class="signature"><code>force() → {<a href="Vector.html">Vector</a><3>}</code></pre>
 
 
-          </div>
-          <div></div>
-        </div>
+  <div class="member__brief"><p>This method should be overriden to calculate the force at the given instant.</p></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+    
+<table class="returns">
+  <caption>Returns:</caption>
+  <thead class="returns-head">
+    <tr>
+      <th class="returns-head__type">Type</th>
+      <th class="returns-head__description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="returns-body">
+    <tr class="returns-body__row">
+      <td class="returns-body__type">
+        <pre><code><a href="Vector.html">Vector</a><3></code></pre>
+      </td>
+      <td class="returns-body__description"></td>
+    </tr>
+  </tbody>
+</table>
+
+  
+</div>
+
+  
+</div>
+
+  
+</div>
+
+
       </div>
-    </div>
-    <script> prettyPrint(); </script>
+      <div class="page-members" id="member-mount-point"></div>
+    </article>
+    <footer class="footer" id="footer-mount-point"></footer>
+    <script>prettyPrint();</script>
     <script src="scripts/linenumber.js"> </script>
-</body>
+  </body>
 </html>

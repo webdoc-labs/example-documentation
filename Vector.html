@@ -1,315 +1,244 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>webdoc: Vector</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/default-template.css" />
-    <link type ="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
     <script src="scripts/prettify.js"></script>
     <script src="scripts/lang-css.js"></script>
-</head>
-<body>
-    <div id="template-app">
-      <div class="app-container">
-        <div id="app-bar-root">
-          <!-- AppBar component mounts here -->
-        </div>
-        <div class="app-layout">
-          <nav id="explorer-root">
-            <!-- Explorer component mounted here -->
-          </nav>
-          <div id="content-root">
-            
-    <h1 class="document-title">Vector</h1>
-    <hr />
+  </head>
+  <body class="docs">
+    <header class="header" id="header-mount-point"></header>
+    <article class="page">
+      <div class="page-explorer" id="explorer-mount-point"></div>
+      <div class="page-content">
+        
+<div class="document">
+  <h1 class="document__title">Vector</h1>
+  <pre class="signature"><code>class Vector extends Array</code></pre>
 
-    <code class="signature">class Vector extends Array</code>
 
-    <hr class="secondary-separator" />
+  <div class="document__brief"></div>
+  <div class="ducument__description"></div>
+
+  
+
+  
+<div class="members">
+  <h2 class="members__category">Public Properties</h2>
+
+  
     
+<div class="member">
+  <h3 class="member__title">dimensions</h3>
+  <pre class="signature"><code>dimensions: number</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__desctiption"><p>The no. of components of this vector</p></div>
+
+  
+
+  
+</div>
+
+  
+</div>
+
+  
+  
+<div class="members">
+  <h2 class="members__category">Public Methods</h2>
+
+  
     
+<div class="member">
+  <h3 class="member__title">add</h3>
+  <pre class="signature"><code>add(vec: <a href="Vector.html">Vector</a>)</code></pre>
 
+
+  <div class="member__brief"><p>Add <code>vec</code> to this</p></div>
+  <div class="member__desctiption"></div>
+
+  
     
+<table class="parameters">
+  <caption>Parameters:</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      
+      
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">
+        <pre><code>vec</code></pre>
+      </td>
+      <td class="type">
+        <pre><code><a href="Vector.html">Vector</a></code></pre>
+      </td>
+      
+      
+      <td class="description"></td>
+    </tr>
+  </tbody>
+</table>
 
+  
+
+  
+</div>
+
+  
     
+<div class="member">
+  <h3 class="member__title">equalTo</h3>
+  <pre class="signature"><code>equalTo(vec: <a href="Vector.html">Vector</a>) → {boolean}</code></pre>
 
-<h2 class="section-title">Public Properties</h2>
-<hr />
 
+  <div class="member__brief"><p>Whether this and <code>vec</code> are equal vectors</p></div>
+  <div class="member__desctiption"></div>
 
+  
     
-    <div class="method member">
-        <p class="member-title">dimensions</p>
-        <code class="member-signature">dimensions: number</code>
+<table class="parameters">
+  <caption>Parameters:</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      
+      
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">
+        <pre><code>vec</code></pre>
+      </td>
+      <td class="type">
+        <pre><code><a href="Vector.html">Vector</a></code></pre>
+      </td>
+      
+      
+      <td class="description"></td>
+    </tr>
+  </tbody>
+</table>
 
-        <section class="method-description member-description description">
-            
-            <p>The no. of components of this vector</p>
-        </section>
+  
 
-        
-        <br />
-        
-    </div>
-
-
-
+  
     
+<table class="returns">
+  <caption>Returns:</caption>
+  <thead class="returns-head">
+    <tr>
+      <th class="returns-head__type">Type</th>
+      <th class="returns-head__description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="returns-body">
+    <tr class="returns-body__row">
+      <td class="returns-body__type">
+        <pre><code>boolean</code></pre>
+      </td>
+      <td class="returns-body__description"></td>
+    </tr>
+  </tbody>
+</table>
+
+  
+</div>
+
+  
     
+<div class="member">
+  <h3 class="member__title">isCompat</h3>
+  <pre class="signature"><code>isCompat(vec: <a href="Vector.html">Vector</a>) → {boolean}</code></pre>
 
-<h2 class="section-title">Public Methods</h2>
-<hr />
 
+  <div class="member__brief"></div>
+  <div class="member__desctiption"><p>Whether this and <code>vec</code> are compatible vectors (same dimensions)</p></div>
 
+  
     
-    <div class="method member">
-        <p class="member-title">add</p>
-        <code class="member-signature">add(vec: <a href="Vector.html">Vector</a>)</code>
+<table class="parameters">
+  <caption>Parameters:</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      
+      
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">
+        <pre><code>vec</code></pre>
+      </td>
+      <td class="type">
+        <pre><code><a href="Vector.html">Vector</a></code></pre>
+      </td>
+      
+      
+      <td class="description"></td>
+    </tr>
+  </tbody>
+</table>
 
-        <section class="method-description member-description description">
-            <p>Add <code>vec</code> to this</p>
-            
-        </section>
+  
 
-        
-            
-    <table class="parameters">
-        <caption>Parameters:</caption>
-        <thead>
-            <tr>
-                  
-                      <th>Name</th>
-                  
-
-                  <th>Type</th>
-
-                  
-
-                  
-
-                  <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    
-                        <td class="name"><code>vec</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code><a href="Vector.html">Vector</a></code>
-                    
-                    </td>
-
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-        <br />
-        
-    </div>
-
-
+  
     
-    <div class="method member">
-        <p class="member-title">equalTo</p>
-        <code class="member-signature">equalTo(vec: <a href="Vector.html">Vector</a>) → {boolean} </code>
+<table class="returns">
+  <caption>Returns:</caption>
+  <thead class="returns-head">
+    <tr>
+      <th class="returns-head__type">Type</th>
+      <th class="returns-head__description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="returns-body">
+    <tr class="returns-body__row">
+      <td class="returns-body__type">
+        <pre><code>boolean</code></pre>
+      </td>
+      <td class="returns-body__description"></td>
+    </tr>
+  </tbody>
+</table>
 
-        <section class="method-description member-description description">
-            <p>Whether this and <code>vec</code> are equal vectors</p>
-            
-        </section>
+  
+</div>
 
-        
-            
-    <table class="parameters">
-        <caption>Parameters:</caption>
-        <thead>
-            <tr>
-                  
-                      <th>Name</th>
-                  
+  
+</div>
 
-                  <th>Type</th>
-
-                  
-
-                  
-
-                  <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    
-                        <td class="name"><code>vec</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code><a href="Vector.html">Vector</a></code>
-                    
-                    </td>
-
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-        <br />
-        
-            
-    <table class="returns headless-table">
-        <caption>Returns:</caption>
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    <td>
-                        
-                            <code>boolean</code>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-    </div>
+  
+</div>
 
 
-    
-    <div class="method member">
-        <p class="member-title">isCompat</p>
-        <code class="member-signature">isCompat(vec: <a href="Vector.html">Vector</a>) → {boolean} </code>
-
-        <section class="method-description member-description description">
-            
-            <p>Whether this and <code>vec</code> are compatible vectors (same dimensions)</p>
-        </section>
-
-        
-            
-    <table class="parameters">
-        <caption>Parameters:</caption>
-        <thead>
-            <tr>
-                  
-                      <th>Name</th>
-                  
-
-                  <th>Type</th>
-
-                  
-
-                  
-
-                  <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    
-                        <td class="name"><code>vec</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code><a href="Vector.html">Vector</a></code>
-                    
-                    </td>
-
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-        <br />
-        
-            
-    <table class="returns headless-table">
-        <caption>Returns:</caption>
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    <td>
-                        
-                            <code>boolean</code>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-    </div>
-
-
-
-    
-
-
-          </div>
-          <div></div>
-        </div>
       </div>
-    </div>
-    <script> prettyPrint(); </script>
+      <div class="page-members" id="member-mount-point"></div>
+    </article>
+    <footer class="footer" id="footer-mount-point"></footer>
+    <script>prettyPrint();</script>
     <script src="scripts/linenumber.js"> </script>
-</body>
+  </body>
 </html>

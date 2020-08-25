@@ -1,55 +1,48 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>webdoc: Ts</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/default-template.css" />
-    <link type ="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
     <script src="scripts/prettify.js"></script>
     <script src="scripts/lang-css.js"></script>
-</head>
-<body>
-    <div id="template-app">
-      <div class="app-container">
-        <div id="app-bar-root">
-          <!-- AppBar component mounts here -->
-        </div>
-        <div class="app-layout">
-          <nav id="explorer-root">
-            <!-- Explorer component mounted here -->
-          </nav>
-          <div id="content-root">
-            
-    <h1 class="document-title">Ts</h1>
-    <hr />
-
-    <code class="signature">namespace Ts</code>
-
-    <hr class="secondary-separator" />
-    
-    
-
-    
-
-    
-    
-    
-    
+  </head>
+  <body class="docs">
+    <header class="header" id="header-mount-point"></header>
+    <article class="page">
+      <div class="page-explorer" id="explorer-mount-point"></div>
+      <div class="page-content">
+        
+<div class="document">
+  <h1 class="document__title">Ts</h1>
+  <pre class="signature"><code>namespace Ts</code></pre>
 
 
-          </div>
-          <div></div>
-        </div>
+  <div class="document__brief"></div>
+  <div class="ducument__description"></div>
+
+  
+
+  
+  
+  
+  
+</div>
+
+
       </div>
-    </div>
-    <script> prettyPrint(); </script>
+      <div class="page-members" id="member-mount-point"></div>
+    </article>
+    <footer class="footer" id="footer-mount-point"></footer>
+    <script>prettyPrint();</script>
     <script src="scripts/linenumber.js"> </script>
-</body>
+  </body>
 </html>

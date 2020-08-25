@@ -1,549 +1,370 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>webdoc: CarDealer</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/default-template.css" />
-    <link type ="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
     <script src="scripts/prettify.js"></script>
     <script src="scripts/lang-css.js"></script>
-</head>
-<body>
-    <div id="template-app">
-      <div class="app-container">
-        <div id="app-bar-root">
-          <!-- AppBar component mounts here -->
-        </div>
-        <div class="app-layout">
-          <nav id="explorer-root">
-            <!-- Explorer component mounted here -->
-          </nav>
-          <div id="content-root">
-            
-    <h1 class="document-title">CarDealer</h1>
-    <hr />
+  </head>
+  <body class="docs">
+    <header class="header" id="header-mount-point"></header>
+    <article class="page">
+      <div class="page-explorer" id="explorer-mount-point"></div>
+      <div class="page-content">
+        
+<div class="document">
+  <h1 class="document__title">CarDealer</h1>
+  <pre class="signature"><code>interface CarDealer</code></pre>
 
-    <code class="signature">interface CarDealer</code>
 
-    <hr class="secondary-separator" />
-    <p>This is the interface for dealing with car dealers.</p>
+  <div class="document__brief"><p>This is the interface for dealing with car dealers.</p></div>
+  <div class="ducument__description"></div>
+
+  
+
+  
+  
+  
+<div class="members">
+  <h2 class="members__category">Public Methods</h2>
+
+  
     
+<div class="member">
+  <h3 class="member__title">closeTransaction</h3>
+  <pre class="signature"><code>closeTransaction(trans: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) => void) → {trans is <a href="Ts.Transaction.html">Ts.Transaction</a>}</code></pre>
 
+
+  <div class="member__brief"><p>Close transaction. If you respond to the counteroffer, then it won't be closed.</p></div>
+  <div class="member__desctiption"></div>
+
+  
     
+<table class="parameters">
+  <caption>Parameters:</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      
+      
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">
+        <pre><code>trans</code></pre>
+      </td>
+      <td class="type">
+        <pre><code><a href="Ts.Transaction.html">Ts.Transaction</a></code></pre>
+      </td>
+      
+      
+      <td class="description"></td>
+    </tr><tr>
+      <td class="name">
+        <pre><code>counteroffer</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>(...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) => void</code></pre>
+      </td>
+      
+      
+      <td class="description"></td>
+    </tr>
+  </tbody>
+</table>
 
+  
+
+  
     
+<table class="returns">
+  <caption>Returns:</caption>
+  <thead class="returns-head">
+    <tr>
+      <th class="returns-head__type">Type</th>
+      <th class="returns-head__description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="returns-body">
+    <tr class="returns-body__row">
+      <td class="returns-body__type">
+        <pre><code>trans is <a href="Ts.Transaction.html">Ts.Transaction</a></code></pre>
+      </td>
+      <td class="returns-body__description"></td>
+    </tr>
+  </tbody>
+</table>
+
+  
+</div>
+
+  
     
+<div class="member">
+  <h3 class="member__title">initiateTransaction</h3>
+  <pre class="signature"><code>initiateTransaction(x: object) → {typeof <a href="Ts.Transaction.html">Ts.Transaction</a>}</code></pre>
+
+
+  <div class="member__brief"><p>Initiate a transaction/negotiation with a car dealer</p></div>
+  <div class="member__desctiption"></div>
+
+  
     
+<table class="parameters">
+  <caption>Parameters:</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Attributes</th>
+      
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">
+        <pre><code>x</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>object</code></pre>
+      </td>
+      <td class="attributes">
+        <p>&lt;optional&gt;</p>
+        
+        
+      </td>
+      
+      <td class="description"><p>info</p></td>
+    </tr>
+  </tbody>
+</table>
 
-<h2 class="section-title">Public Methods</h2>
-<hr />
+  
 
-
+  
     
-    <div class="method member">
-        <p class="member-title">closeTransaction</p>
-        <code class="member-signature">closeTransaction(trans: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) => void) → {trans is <a href="Ts.Transaction.html">Ts.Transaction</a>} </code>
+<table class="returns">
+  <caption>Returns:</caption>
+  <thead class="returns-head">
+    <tr>
+      <th class="returns-head__type">Type</th>
+      <th class="returns-head__description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="returns-body">
+    <tr class="returns-body__row">
+      <td class="returns-body__type">
+        <pre><code>typeof <a href="Ts.Transaction.html">Ts.Transaction</a></code></pre>
+      </td>
+      <td class="returns-body__description"></td>
+    </tr>
+  </tbody>
+</table>
 
-        <section class="method-description member-description description">
-            <p>Close transaction. If you respond to the counteroffer, then it won't be closed.</p>
-            
-        </section>
+  
+</div>
 
-        
-            
-    <table class="parameters">
-        <caption>Parameters:</caption>
-        <thead>
-            <tr>
-                  
-                      <th>Name</th>
-                  
-
-                  <th>Type</th>
-
-                  
-
-                  
-
-                  <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    
-                        <td class="name"><code>trans</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code><a href="Ts.Transaction.html">Ts.Transaction</a></code>
-                    
-                    </td>
-
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    
-                        <td class="name"><code>counteroffer</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>(...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) => void</code>
-                    
-                    </td>
-
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-        <br />
-        
-            
-    <table class="returns headless-table">
-        <caption>Returns:</caption>
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    <td>
-                        
-                            <code>trans is <a href="Ts.Transaction.html">Ts.Transaction</a></code>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-    </div>
-
-
+  
     
-    <div class="method member">
-        <p class="member-title">initiateTransaction</p>
-        <code class="member-signature">initiateTransaction(x: object) → {typeof <a href="Ts.Transaction.html">Ts.Transaction</a>} </code>
-
-        <section class="method-description member-description description">
-            <p>Initiate a transaction/negotiation with a car dealer</p>
-            
-        </section>
-
-        
-            
-    <table class="parameters">
-        <caption>Parameters:</caption>
-        <thead>
-            <tr>
-                  
-                      <th>Name</th>
-                  
-
-                  <th>Type</th>
-
-                  
-                      <th>Attributes</th>
-                  
-
-                  
-
-                  <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    
-                        <td class="name"><code>x</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>object</code>
-                    
-                    </td>
-
-                    
-                        <td class="attributes">
-                        
-                            &lt;optional><br>
-                        
-
-                        
-
-                        
-                        </td>
-                    
-
-                    
-
-                    <td class="description last-column">
-                        <p>info</p>
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-        <br />
-        
-            
-    <table class="returns headless-table">
-        <caption>Returns:</caption>
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    <td>
-                        
-                            <code>typeof <a href="Ts.Transaction.html">Ts.Transaction</a></code>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-    </div>
+<div class="member">
+  <h3 class="member__title">offerAsk</h3>
+  <pre class="signature"><code>offerAsk(on: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (t: <a href="Car.html">Car</a>) => void, test: { [testProperty in keyof keyof] }: number) → {boolean}</code></pre>
 
 
+  <div class="member__brief"><p>Offer a price to sell the car.</p></div>
+  <div class="member__desctiption"><p>NOTE: This is invalid behaviour if you are the buyer in the transaction.</p></div>
+
+  
     
-    <div class="method member">
-        <p class="member-title">offerAsk</p>
-        <code class="member-signature">offerAsk(on: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (t: <a href="Car.html">Car</a>) => void, test: { [testProperty in keyof keyof] }: number) → {boolean} </code>
-
-        <section class="method-description member-description description">
-            <p>Offer a price to sell the car.</p>
-            <p>NOTE: This is invalid behaviour if you are the buyer in the transaction.</p>
-        </section>
-
+<table class="parameters">
+  <caption>Parameters:</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Attributes</th>
+      
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">
+        <pre><code>on</code></pre>
+      </td>
+      <td class="type">
+        <pre><code><a href="Ts.Transaction.html">Ts.Transaction</a></code></pre>
+      </td>
+      <td class="attributes">
         
-            
-    <table class="parameters">
-        <caption>Parameters:</caption>
-        <thead>
-            <tr>
-                  
-                      <th>Name</th>
-                  
-
-                  <th>Type</th>
-
-                  
-                      <th>Attributes</th>
-                  
-
-                  
-
-                  <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    
-                        <td class="name"><code>on</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code><a href="Ts.Transaction.html">Ts.Transaction</a></code>
-                    
-                    </td>
-
-                    
-                        <td class="attributes">
-                        
-
-                        
-
-                        
-                        </td>
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    
-                        <td class="name"><code>counteroffer</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>(t: <a href="Car.html">Car</a>) => void</code>
-                    
-                    </td>
-
-                    
-                        <td class="attributes">
-                        
-                            &lt;optional><br>
-                        
-
-                        
-
-                        
-                        </td>
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    
-                        <td class="name"><code>test</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>{ [testProperty in keyof keyof] }: number</code>
-                    
-                    </td>
-
-                    
-                        <td class="attributes">
-                        
-
-                        
-
-                        
-                        </td>
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
         
-        <br />
         
-            
-    <table class="returns headless-table">
-        <caption>Returns:</caption>
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    <td>
-                        
-                            <code>boolean</code>
-                        
-                    </td>
-                    <td>
-                        
-                            <p>type inference is working</p>
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
+      </td>
+      
+      <td class="description"></td>
+    </tr><tr>
+      <td class="name">
+        <pre><code>counteroffer</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>(t: <a href="Car.html">Car</a>) => void</code></pre>
+      </td>
+      <td class="attributes">
+        <p>&lt;optional&gt;</p>
         
-    </div>
+        
+      </td>
+      
+      <td class="description"></td>
+    </tr><tr>
+      <td class="name">
+        <pre><code>test</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>{ [testProperty in keyof keyof] }: number</code></pre>
+      </td>
+      <td class="attributes">
+        
+        
+        
+      </td>
+      
+      <td class="description"></td>
+    </tr>
+  </tbody>
+</table>
 
+  
 
+  
     
-    <div class="method member">
-        <p class="member-title">offerBid</p>
-        <code class="member-signature">offerBid(on: { t : <a href="Ts.Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts.Transaction.html">Ts.Transaction</a>[] }, counteroffer: <a href="Car.html">Car</a> | <a href="Vector.html">Vector</a>) → {boolean} </code>
+<table class="returns">
+  <caption>Returns:</caption>
+  <thead class="returns-head">
+    <tr>
+      <th class="returns-head__type">Type</th>
+      <th class="returns-head__description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="returns-body">
+    <tr class="returns-body__row">
+      <td class="returns-body__type">
+        <pre><code>boolean</code></pre>
+      </td>
+      <td class="returns-body__description"><p>type inference is working</p></td>
+    </tr>
+  </tbody>
+</table>
 
-        <section class="method-description member-description description">
-            <p>Offer a price to buy the car.</p>
-            <p>NOTE: This is invalid behaviour if you are the seller in the transaction.</p>
-        </section>
+  
+</div>
 
-        
-            
-    <table class="parameters">
-        <caption>Parameters:</caption>
-        <thead>
-            <tr>
-                  
-                      <th>Name</th>
-                  
-
-                  <th>Type</th>
-
-                  
-                      <th>Attributes</th>
-                  
-
-                  
-
-                  <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    
-                        <td class="name"><code>on</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>{ t : <a href="Ts.Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts.Transaction.html">Ts.Transaction</a>[] }</code>
-                    
-                    </td>
-
-                    
-                        <td class="attributes">
-                        
-                            &lt;optional><br>
-                        
-
-                        
-
-                        
-                        </td>
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    
-                        <td class="name"><code>counteroffer</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code><a href="Car.html">Car</a> | <a href="Vector.html">Vector</a></code>
-                    
-                    </td>
-
-                    
-                        <td class="attributes">
-                        
-                            &lt;optional><br>
-                        
-
-                        
-
-                        
-                        </td>
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-        <br />
-        
-            
-    <table class="returns headless-table">
-        <caption>Returns:</caption>
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    <td>
-                        
-                            <code>boolean</code>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-    </div>
-
-
-
+  
     
+<div class="member">
+  <h3 class="member__title">offerBid</h3>
+  <pre class="signature"><code>offerBid(on: { t : <a href="Ts.Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts.Transaction.html">Ts.Transaction</a>[] }, counteroffer: <a href="Car.html">Car</a> | <a href="Vector.html">Vector</a>) → {boolean}</code></pre>
 
 
-          </div>
-          <div></div>
-        </div>
+  <div class="member__brief"><p>Offer a price to buy the car.</p></div>
+  <div class="member__desctiption"><p>NOTE: This is invalid behaviour if you are the seller in the transaction.</p></div>
+
+  
+    
+<table class="parameters">
+  <caption>Parameters:</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Attributes</th>
+      
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">
+        <pre><code>on</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>{ t : <a href="Ts.Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts.Transaction.html">Ts.Transaction</a>[] }</code></pre>
+      </td>
+      <td class="attributes">
+        <p>&lt;optional&gt;</p>
+        
+        
+      </td>
+      
+      <td class="description"></td>
+    </tr><tr>
+      <td class="name">
+        <pre><code>counteroffer</code></pre>
+      </td>
+      <td class="type">
+        <pre><code><a href="Car.html">Car</a> | <a href="Vector.html">Vector</a></code></pre>
+      </td>
+      <td class="attributes">
+        <p>&lt;optional&gt;</p>
+        
+        
+      </td>
+      
+      <td class="description"></td>
+    </tr>
+  </tbody>
+</table>
+
+  
+
+  
+    
+<table class="returns">
+  <caption>Returns:</caption>
+  <thead class="returns-head">
+    <tr>
+      <th class="returns-head__type">Type</th>
+      <th class="returns-head__description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="returns-body">
+    <tr class="returns-body__row">
+      <td class="returns-body__type">
+        <pre><code>boolean</code></pre>
+      </td>
+      <td class="returns-body__description"></td>
+    </tr>
+  </tbody>
+</table>
+
+  
+</div>
+
+  
+</div>
+
+  
+</div>
+
+
       </div>
-    </div>
-    <script> prettyPrint(); </script>
+      <div class="page-members" id="member-mount-point"></div>
+    </article>
+    <footer class="footer" id="footer-mount-point"></footer>
+    <script>prettyPrint();</script>
     <script src="scripts/linenumber.js"> </script>
-</body>
+  </body>
 </html>

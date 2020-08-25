@@ -1,40 +1,33 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>webdoc: Car</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/default-template.css" />
-    <link type ="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="scripts/default-template.js"></script>
     <script src="scripts/prettify.js"></script>
     <script src="scripts/lang-css.js"></script>
-</head>
-<body>
-    <div id="template-app">
-      <div class="app-container">
-        <div id="app-bar-root">
-          <!-- AppBar component mounts here -->
-        </div>
-        <div class="app-layout">
-          <nav id="explorer-root">
-            <!-- Explorer component mounted here -->
-          </nav>
-          <div id="content-root">
-            
-    <h1 class="document-title">Car</h1>
-    <hr />
+  </head>
+  <body class="docs">
+    <header class="header" id="header-mount-point"></header>
+    <article class="page">
+      <div class="page-explorer" id="explorer-mount-point"></div>
+      <div class="page-content">
+        
+<div class="document">
+  <h1 class="document__title">Car</h1>
+  <pre class="signature"><code>class Car extends <a href="PhysicalObject.html">PhysicalObject</a></code></pre>
 
-    <code class="signature">class Car extends <a href="PhysicalObject.html">PhysicalObject</a></code>
 
-    <hr class="secondary-separator" />
-    <p><em>Simulation</em> for a automobile that can drive on a manifold surface.</p>
-    <pre><code class="hljs language-js"><span class="hljs-keyword">const</span> car = <span class="hljs-keyword">new</span> Car({ <span class="hljs-attr">make</span>: <span class="hljs-string">"Ferrari"</span> });
+  <div class="document__brief"><p><em>Simulation</em> for a automobile that can drive on a manifold surface.</p></div>
+  <div class="ducument__description"><pre><code class="hljs language-js"><span class="hljs-keyword">const</span> car = <span class="hljs-keyword">new</span> Car({ <span class="hljs-attr">make</span>: <span class="hljs-string">"Ferrari"</span> });
 
 car.installComponent(<span class="hljs-string">"interior"</span>, <span class="hljs-keyword">new</span> AirConditioner());
 car.installComponent(<span class="hljs-string">"exterior"</span>, <span class="hljs-keyword">new</span> Bumper());
@@ -43,287 +36,236 @@ car.gear(<span class="hljs-string">"D"</span>);
 car.accelerate(<span class="hljs-number">2</span>).until(<span class="hljs-number">65</span>).then(<span class="hljs-number">0</span>);
 
 car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> Services.Insurance.initiateClaim(<span class="hljs-string">"abcdefghi-ticket"</span>));
-</code></pre>
+</code></pre></div>
 
+  
+
+  
+<div class="members">
+  <h2 class="members__category">Public Properties</h2>
+
+  
     
+<div class="member">
+  <h3 class="member__title">DEFAULT_DRIVE_SHIFT</h3>
+  <pre class="signature"><code>static DEFAULT_DRIVE_SHIFT: string</code></pre>
 
+
+  <div class="member__brief"></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+</div>
+
+  
     
+<div class="member">
+  <h3 class="member__title">bounds</h3>
+  <pre class="signature"><code>bounds: <a href="Vector.html">Vector</a><3></code></pre>
 
-<h2 class="section-title">Public Properties</h2>
-<hr />
 
+  <div class="member__brief"></div>
+  <div class="member__desctiption"><p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own
+position.</p></div>
 
+  
+
+  
+</div>
+
+  
     
-    <div class="method member">
-        <p class="member-title">DEFAULT_DRIVE_SHIFT</p>
-        <code class="member-signature">static DEFAULT_DRIVE_SHIFT: string</code>
-
-        <section class="method-description member-description description">
-            
-            
-        </section>
-
-        
-        <br />
-        
-    </div>
+<div class="member">
+  <h3 class="member__title">interactions</h3>
+  <pre class="signature"><code>interactions: Array<<a href="PhysicalInteraction.html">PhysicalInteraction</a>></code></pre>
 
 
+  <div class="member__brief"><p>All causal interactions with other objects</p></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+</div>
+
+  
     
-    <div class="method member">
-        <p class="member-title">bounds</p>
-        <code class="member-signature">bounds: <a href="Vector.html">Vector</a><3></code>
-
-        <section class="method-description member-description description">
-            
-            <p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own
-position.</p>
-        </section>
-
-        
-        <br />
-        
-    </div>
+<div class="member">
+  <h3 class="member__title">mass</h3>
+  <pre class="signature"><code>mass: number</code></pre>
 
 
+  <div class="member__brief"><p>The mass of this object in kilograms.</p></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+</div>
+
+  
     
-    <div class="method member">
-        <p class="member-title">interactions</p>
-        <code class="member-signature">interactions: Array<<a href="PhysicalInteraction.html">PhysicalInteraction</a>></code>
-
-        <section class="method-description member-description description">
-            <p>All causal interactions with other objects</p>
-            
-        </section>
-
-        
-        <br />
-        
-    </div>
+<div class="member">
+  <h3 class="member__title">position</h3>
+  <pre class="signature"><code>position: <a href="Vector.html">Vector</a><3></code></pre>
 
 
+  <div class="member__brief"><p>The absolute position of this object's center of mass (in the universal reference frame)</p></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+</div>
+
+  
     
-    <div class="method member">
-        <p class="member-title">mass</p>
-        <code class="member-signature">mass: number</code>
-
-        <section class="method-description member-description description">
-            <p>The mass of this object in kilograms.</p>
-            
-        </section>
-
-        
-        <br />
-        
-    </div>
+<div class="member">
+  <h3 class="member__title">velocity</h3>
+  <pre class="signature"><code>velocity: <a href="Vector.html">Vector</a><3></code></pre>
 
 
+  <div class="member__brief"><p>The absolute velocity of this object (in the universal reference frame)</p></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+</div>
+
+  
     
-    <div class="method member">
-        <p class="member-title">position</p>
-        <code class="member-signature">position: <a href="Vector.html">Vector</a><3></code>
-
-        <section class="method-description member-description description">
-            <p>The absolute position of this object's center of mass (in the universal reference frame)</p>
-            
-        </section>
-
-        
-        <br />
-        
-    </div>
+<div class="member">
+  <h3 class="member__title">vin</h3>
+  <pre class="signature"><code>vin: number</code></pre>
 
 
+  <div class="member__brief"></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+</div>
+
+  
+</div>
+
+  
+  
+<div class="members">
+  <h2 class="members__category">Public Methods</h2>
+
+  
     
-    <div class="method member">
-        <p class="member-title">velocity</p>
-        <code class="member-signature">velocity: <a href="Vector.html">Vector</a><3></code>
-
-        <section class="method-description member-description description">
-            <p>The absolute velocity of this object (in the universal reference frame)</p>
-            
-        </section>
-
-        
-        <br />
-        
-    </div>
+<div class="member">
+  <h3 class="member__title">registerRetail</h3>
+  <pre class="signature"><code>static registerRetail(name: string)</code></pre>
 
 
+  <div class="member__brief"><p>Register a retail dealer for buying a car from</p></div>
+  <div class="member__desctiption"></div>
+
+  
     
-    <div class="method member">
-        <p class="member-title">vin</p>
-        <code class="member-signature">vin: number</code>
+<table class="parameters">
+  <caption>Parameters:</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      
+      
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">
+        <pre><code>name</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>string</code></pre>
+      </td>
+      
+      
+      <td class="description"></td>
+    </tr>
+  </tbody>
+</table>
 
-        <section class="method-description member-description description">
-            
-            
-        </section>
+  
 
-        
-        <br />
-        
-    </div>
+  
+</div>
 
-
-
+  
     
+<div class="member">
+  <h3 class="member__title">onCrash</h3>
+  <pre class="signature"><code>onCrash(callback: Function)</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__desctiption"></div>
+
+  
     
+<table class="parameters">
+  <caption>Parameters:</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      
+      
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">
+        <pre><code>callback</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>Function</code></pre>
+      </td>
+      
+      
+      <td class="description"></td>
+    </tr><tr>
+      <td class="name">
+        <pre><code>callback.name</code></pre>
+      </td>
+      <td class="type">
+        <pre><code>string</code></pre>
+      </td>
+      
+      
+      <td class="description"></td>
+    </tr>
+  </tbody>
+</table>
 
-<h2 class="section-title">Public Methods</h2>
-<hr />
+  
 
+  
+</div>
 
-    
-    <div class="method member">
-        <p class="member-title">registerRetail</p>
-        <code class="member-signature">static registerRetail(name: string)</code>
+  
+</div>
 
-        <section class="method-description member-description description">
-            <p>Register a retail dealer for buying a car from</p>
-            
-        </section>
-
-        
-            
-    <table class="parameters">
-        <caption>Parameters:</caption>
-        <thead>
-            <tr>
-                  
-                      <th>Name</th>
-                  
-
-                  <th>Type</th>
-
-                  
-
-                  
-
-                  <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    
-                        <td class="name"><code>name</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>string</code>
-                    
-                    </td>
-
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-        <br />
-        
-    </div>
+  
+</div>
 
 
-    
-    <div class="method member">
-        <p class="member-title">onCrash</p>
-        <code class="member-signature">onCrash(callback: Function)</code>
-
-        <section class="method-description member-description description">
-            
-            
-        </section>
-
-        
-            
-    <table class="parameters">
-        <caption>Parameters:</caption>
-        <thead>
-            <tr>
-                  
-                      <th>Name</th>
-                  
-
-                  <th>Type</th>
-
-                  
-
-                  
-
-                  <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                <tr>
-                    
-                        <td class="name"><code>callback</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>Function</code>
-                    
-                    </td>
-
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    
-                        <td class="name"><code>callback.name</code></td>
-                    
-
-                    <td class="type">
-                    
-                        <code>string</code>
-                    
-                    </td>
-
-                    
-
-                    
-
-                    <td class="description last-column">
-                        
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
-
-        
-        <br />
-        
-    </div>
-
-
-
-    
-
-
-          </div>
-          <div></div>
-        </div>
       </div>
-    </div>
-    <script> prettyPrint(); </script>
+      <div class="page-members" id="member-mount-point"></div>
+    </article>
+    <footer class="footer" id="footer-mount-point"></footer>
+    <script>prettyPrint();</script>
     <script src="scripts/linenumber.js"> </script>
-</body>
+  </body>
 </html>
