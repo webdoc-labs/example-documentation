@@ -19,11 +19,12 @@
     <header class="header" id="header-mount-point"></header>
     <article class="page">
       <div class="page-explorer" id="explorer-mount-point"></div>
-      <div class="page-content">
-        
-<div class="document">
-  <h1 class="document__title">Car</h1>
-  <pre class="signature"><code>class Car extends <a href="PhysicalObject.html">PhysicalObject</a></code></pre>
+      
+      
+<div class="page-content">
+  <div class="document">
+    <h1 class="document__title">Car</h1>
+    <pre class="signature"><code>class Car extends <a href="PhysicalObject.html">PhysicalObject</a></code></pre>
 
 
   <div class="document__brief"><p><em>Simulation</em> for a automobile that can drive on a manifold surface.</p></div>
@@ -38,15 +39,15 @@ car.accelerate(<span class="hljs-number">2</span>).until(<span class="hljs-numbe
 car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> Services.Insurance.initiateClaim(<span class="hljs-string">"abcdefghi-ticket"</span>));
 </code></pre></div>
 
-  
+    
 
-  
+    
 <div class="members">
   <h2 class="members__category">Public Properties</h2>
 
   
     
-<div class="member">
+<div class="member" id="DEFAULT_DRIVE_SHIFT">
   <h3 class="member__title">DEFAULT_DRIVE_SHIFT</h3>
   <pre class="signature"><code>static DEFAULT_DRIVE_SHIFT: string</code></pre>
 
@@ -61,7 +62,7 @@ car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt
 
   
     
-<div class="member">
+<div class="member" id="bounds">
   <h3 class="member__title">bounds</h3>
   <pre class="signature"><code>bounds: <a href="Vector.html">Vector</a><3></code></pre>
 
@@ -77,7 +78,7 @@ position.</p></div>
 
   
     
-<div class="member">
+<div class="member" id="interactions">
   <h3 class="member__title">interactions</h3>
   <pre class="signature"><code>interactions: Array<<a href="PhysicalInteraction.html">PhysicalInteraction</a>></code></pre>
 
@@ -92,7 +93,7 @@ position.</p></div>
 
   
     
-<div class="member">
+<div class="member" id="mass">
   <h3 class="member__title">mass</h3>
   <pre class="signature"><code>mass: number</code></pre>
 
@@ -107,7 +108,7 @@ position.</p></div>
 
   
     
-<div class="member">
+<div class="member" id="position">
   <h3 class="member__title">position</h3>
   <pre class="signature"><code>position: <a href="Vector.html">Vector</a><3></code></pre>
 
@@ -122,7 +123,7 @@ position.</p></div>
 
   
     
-<div class="member">
+<div class="member" id="velocity">
   <h3 class="member__title">velocity</h3>
   <pre class="signature"><code>velocity: <a href="Vector.html">Vector</a><3></code></pre>
 
@@ -137,7 +138,7 @@ position.</p></div>
 
   
     
-<div class="member">
+<div class="member" id="vin">
   <h3 class="member__title">vin</h3>
   <pre class="signature"><code>vin: number</code></pre>
 
@@ -153,14 +154,14 @@ position.</p></div>
   
 </div>
 
-  
-  
+    
+    
 <div class="members">
   <h2 class="members__category">Public Methods</h2>
 
   
     
-<div class="member">
+<div class="member" id="registerRetail">
   <h3 class="member__title">registerRetail</h3>
   <pre class="signature"><code>static registerRetail(name: string)</code></pre>
 
@@ -203,7 +204,7 @@ position.</p></div>
 
   
     
-<div class="member">
+<div class="member" id="onCrash">
   <h3 class="member__title">onCrash</h3>
   <pre class="signature"><code>onCrash(callback: Function)</code></pre>
 
@@ -257,12 +258,56 @@ position.</p></div>
   
 </div>
 
+    
+  </div>
+</div>
+<nav class="members-explorer">
+    
+<div class="members-explorer__container">
+  
+
+<div>
+  <span class="members-explorer__category-title">Public Properties</span>
+  <ul class="members-explorer__category-list">
+    
+      <li class="members-explorer__item"><a href="Car.html#DEFAULT_DRIVE_SHIFT">DEFAULT_DRIVE_SHIFT</a></li>
+    
+      <li class="members-explorer__item"><a href="Car.html#bounds">bounds</a></li>
+    
+      <li class="members-explorer__item"><a href="Car.html#interactions">interactions</a></li>
+    
+      <li class="members-explorer__item"><a href="Car.html#mass">mass</a></li>
+    
+      <li class="members-explorer__item"><a href="Car.html#position">position</a></li>
+    
+      <li class="members-explorer__item"><a href="Car.html#velocity">velocity</a></li>
+    
+      <li class="members-explorer__item"><a href="Car.html#vin">vin</a></li>
+    
+  </ul>
+</div>
+
+  
+  
+
+<div>
+  <span class="members-explorer__category-title">Public Methods</span>
+  <ul class="members-explorer__category-list">
+    
+      <li class="members-explorer__item"><a href="Car.html#registerRetail">registerRetail</a></li>
+    
+      <li class="members-explorer__item"><a href="Car.html#onCrash">onCrash</a></li>
+    
+  </ul>
+</div>
+
   
 </div>
 
 
-      </div>
-      <div class="page-members" id="member-mount-point"></div>
+</nav>
+
+
     </article>
     <footer class="footer" id="footer-mount-point"></footer>
     <script>prettyPrint();</script>

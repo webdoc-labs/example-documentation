@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>webdoc: TRANSFORM_MODE</title>
+
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="scripts/default-template.js"></script>
+    <script src="scripts/prettify.js"></script>
+    <script src="scripts/lang-css.js"></script>
+  </head>
+  <body class="docs">
+    <header class="header" id="header-mount-point"></header>
+    <article class="page">
+      <div class="page-explorer" id="explorer-mount-point"></div>
+      
+      
+<div class="page-content">
+  <div class="document">
+    <h1 class="document__title">PIXI.TRANSFORM_MODE</h1>
+    <pre class="signature"><code>static TRANSFORM_MODE: number</code></pre>
+
+
+  <div class="document__brief"><p>Constants that specify the transform type.</p></div>
+  <div class="ducument__description"></div>
+
+    
+
+    
+<div class="members">
+  <h2 class="members__category">Public Properties</h2>
+
+  
+    
+<div class="member" id="DYNAMIC">
+  <h3 class="member__title">DYNAMIC</h3>
+  <pre class="signature"><code>static DYNAMIC: number</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+</div>
+
+  
+    
+<div class="member" id="STATIC">
+  <h3 class="member__title">STATIC</h3>
+  <pre class="signature"><code>static STATIC: number</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__desctiption"></div>
+
+  
+
+  
+</div>
+
+  
+</div>
+
+    
+    
+    
+  </div>
+</div>
+<nav class="members-explorer">
+    
+<div class="members-explorer__container">
+  
+
+<div>
+  <span class="members-explorer__category-title">Public Properties</span>
+  <ul class="members-explorer__category-list">
+    
+      <li class="members-explorer__item"><a href="PIXI.html#TRANSFORM_MODE#DYNAMIC">DYNAMIC</a></li>
+    
+      <li class="members-explorer__item"><a href="PIXI.html#TRANSFORM_MODE#STATIC">STATIC</a></li>
+    
+  </ul>
+</div>
+
+  
+  
+  
+</div>
+
+
+</nav>
+
+
+    </article>
+    <footer class="footer" id="footer-mount-point"></footer>
+    <script>prettyPrint();</script>
+    <script src="scripts/linenumber.js"> </script>
+  </body>
+</html>
