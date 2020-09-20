@@ -15,20 +15,22 @@
     <script src="scripts/prettify.js"></script>
     <script src="scripts/lang-css.js"></script>
   </head>
-  <body class="docs">
-    <header class="header" id="header-mount-point"></header>
-    <article class="page">
-      <div class="page-explorer" id="explorer-mount-point"></div>
-      
-      
+  <body class="root">
+    <div class="docs">
+      <header class="header" id="header-mount-point"></header>
+      <article class="page">
+        <div class="page-explorer" id="explorer-mount-point"></div>
+        
+        
 <div class="page-content">
   <div class="document">
     <h1 class="document__title">CarDealer</h1>
-    <pre class="signature"><code>interface CarDealer</code></pre>
+    
+<pre class="signature__container"><code class="signature">interface CarDealer</code></pre>
 
 
-  <div class="document__brief"><p>This is the interface for dealing with car dealers.</p></div>
-  <div class="ducument__description"></div>
+    <div class="document__brief"><p>This is the interface for dealing with car dealers.</p></div>
+    <div class="document__description"></div>
 
     
 
@@ -42,46 +44,47 @@
     
 <div class="member" id="closeTransaction">
   <h3 class="member__title">closeTransaction</h3>
-  <pre class="signature"><code>closeTransaction(trans: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) => void) → {trans is <a href="Ts.Transaction.html">Ts.Transaction</a>}</code></pre>
+  
+<pre class="signature__container"><code class="signature">closeTransaction(trans: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) => void) → {trans is <a href="Ts.Transaction.html">Ts.Transaction</a>}</code></pre>
 
 
   <div class="member__brief"><p>Close transaction. If you respond to the counteroffer, then it won't be closed.</p></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
     
-<table class="parameters">
-  <caption>Parameters:</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
+<table class="member-parameters">
+  <caption class="member-parameters__caption">Parameters:</caption>
+  <thead class="member-parameters__head">
+    <tr class="member-parameter-header">
+      <th class="member-parameter-header__name">Name</th>
+      <th class="member-parameter-header__type">Type</th>
       
       
-      <th>Description</th>
+      <th class="member-parameter-header__description">Description</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="name">
-        <pre><code>trans</code></pre>
+  <tbody class="member-parameters__body">
+    <tr class="member-parameter">
+      <td class="member-parameter__name">
+        trans
       </td>
-      <td class="type">
-        <pre><code><a href="Ts.Transaction.html">Ts.Transaction</a></code></pre>
-      </td>
-      
-      
-      <td class="description"></td>
-    </tr><tr>
-      <td class="name">
-        <pre><code>counteroffer</code></pre>
-      </td>
-      <td class="type">
-        <pre><code>(...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) => void</code></pre>
+      <td class="member-parameter__type">
+        <a href="Ts.Transaction.html">Ts.Transaction</a>
       </td>
       
       
-      <td class="description"></td>
+      <td class="member-parameter__description"></td>
+    </tr><tr class="member-parameter">
+      <td class="member-parameter__name">
+        counteroffer
+      </td>
+      <td class="member-parameter__type">
+        (...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) => void
+      </td>
+      
+      
+      <td class="member-parameter__description"></td>
     </tr>
   </tbody>
 </table>
@@ -90,20 +93,20 @@
 
   
     
-<table class="returns">
-  <caption>Returns:</caption>
-  <thead class="returns-head">
-    <tr>
-      <th class="returns-head__type">Type</th>
-      <th class="returns-head__description">Description</th>
+<table class="member-returns">
+  <caption class="member-returns__caption">Returns:</caption>
+  <thead class="member-returns__head">
+    <tr class="member-returns-header">
+      <th class="member-returns-header__type">Type</th>
+      <th class="member-returns-header__description">Description</th>
     </tr>
   </thead>
-  <tbody class="returns-body">
-    <tr class="returns-body__row">
-      <td class="returns-body__type">
+  <tbody class="member-returns__body">
+    <tr class="member-return">
+      <td class="member-return__type">
         <pre><code>trans is <a href="Ts.Transaction.html">Ts.Transaction</a></code></pre>
       </td>
-      <td class="returns-body__description"></td>
+      <td class="member-return__description"></td>
     </tr>
   </tbody>
 </table>
@@ -115,40 +118,41 @@
     
 <div class="member" id="initiateTransaction">
   <h3 class="member__title">initiateTransaction</h3>
-  <pre class="signature"><code>initiateTransaction(x: object) → {typeof <a href="Ts.Transaction.html">Ts.Transaction</a>}</code></pre>
+  
+<pre class="signature__container"><code class="signature">initiateTransaction(x: object) → {typeof <a href="Ts.Transaction.html">Ts.Transaction</a>}</code></pre>
 
 
   <div class="member__brief"><p>Initiate a transaction/negotiation with a car dealer</p></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
     
-<table class="parameters">
-  <caption>Parameters:</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Attributes</th>
+<table class="member-parameters">
+  <caption class="member-parameters__caption">Parameters:</caption>
+  <thead class="member-parameters__head">
+    <tr class="member-parameter-header">
+      <th class="member-parameter-header__name">Name</th>
+      <th class="member-parameter-header__type">Type</th>
+      <th class="member-parameter-header__attributes">Attributes</th>
       
-      <th>Description</th>
+      <th class="member-parameter-header__description">Description</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="name">
-        <pre><code>x</code></pre>
+  <tbody class="member-parameters__body">
+    <tr class="member-parameter">
+      <td class="member-parameter__name">
+        x
       </td>
-      <td class="type">
-        <pre><code>object</code></pre>
+      <td class="member-parameter__type">
+        object
       </td>
-      <td class="attributes">
+      <td class="member-parameter__attributes">
         <p>&lt;optional&gt;</p>
         
         
       </td>
       
-      <td class="description"><p>info</p></td>
+      <td class="member-parameter__description"><p>info</p></td>
     </tr>
   </tbody>
 </table>
@@ -157,20 +161,20 @@
 
   
     
-<table class="returns">
-  <caption>Returns:</caption>
-  <thead class="returns-head">
-    <tr>
-      <th class="returns-head__type">Type</th>
-      <th class="returns-head__description">Description</th>
+<table class="member-returns">
+  <caption class="member-returns__caption">Returns:</caption>
+  <thead class="member-returns__head">
+    <tr class="member-returns-header">
+      <th class="member-returns-header__type">Type</th>
+      <th class="member-returns-header__description">Description</th>
     </tr>
   </thead>
-  <tbody class="returns-body">
-    <tr class="returns-body__row">
-      <td class="returns-body__type">
+  <tbody class="member-returns__body">
+    <tr class="member-return">
+      <td class="member-return__type">
         <pre><code>typeof <a href="Ts.Transaction.html">Ts.Transaction</a></code></pre>
       </td>
-      <td class="returns-body__description"></td>
+      <td class="member-return__description"></td>
     </tr>
   </tbody>
 </table>
@@ -182,68 +186,69 @@
     
 <div class="member" id="offerAsk">
   <h3 class="member__title">offerAsk</h3>
-  <pre class="signature"><code>offerAsk(on: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (t: <a href="Car.html">Car</a>) => void, test: { [testProperty in keyof keyof] }: number) → {boolean}</code></pre>
+  
+<pre class="signature__container"><code class="signature">offerAsk(on: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (t: <a href="Car.html">Car</a>) => void, test: { [testProperty in keyof keyof] }: number) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Offer a price to sell the car.</p></div>
-  <div class="member__desctiption"><p>NOTE: This is invalid behaviour if you are the buyer in the transaction.</p></div>
+  <div class="member__description"><p>NOTE: This is invalid behaviour if you are the buyer in the transaction.</p></div>
 
   
     
-<table class="parameters">
-  <caption>Parameters:</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Attributes</th>
+<table class="member-parameters">
+  <caption class="member-parameters__caption">Parameters:</caption>
+  <thead class="member-parameters__head">
+    <tr class="member-parameter-header">
+      <th class="member-parameter-header__name">Name</th>
+      <th class="member-parameter-header__type">Type</th>
+      <th class="member-parameter-header__attributes">Attributes</th>
       
-      <th>Description</th>
+      <th class="member-parameter-header__description">Description</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="name">
-        <pre><code>on</code></pre>
+  <tbody class="member-parameters__body">
+    <tr class="member-parameter">
+      <td class="member-parameter__name">
+        on
       </td>
-      <td class="type">
-        <pre><code><a href="Ts.Transaction.html">Ts.Transaction</a></code></pre>
+      <td class="member-parameter__type">
+        <a href="Ts.Transaction.html">Ts.Transaction</a>
       </td>
-      <td class="attributes">
+      <td class="member-parameter__attributes">
         
         
         
       </td>
       
-      <td class="description"></td>
-    </tr><tr>
-      <td class="name">
-        <pre><code>counteroffer</code></pre>
+      <td class="member-parameter__description"></td>
+    </tr><tr class="member-parameter">
+      <td class="member-parameter__name">
+        counteroffer
       </td>
-      <td class="type">
-        <pre><code>(t: <a href="Car.html">Car</a>) => void</code></pre>
+      <td class="member-parameter__type">
+        (t: <a href="Car.html">Car</a>) => void
       </td>
-      <td class="attributes">
+      <td class="member-parameter__attributes">
         <p>&lt;optional&gt;</p>
         
         
       </td>
       
-      <td class="description"></td>
-    </tr><tr>
-      <td class="name">
-        <pre><code>test</code></pre>
+      <td class="member-parameter__description"></td>
+    </tr><tr class="member-parameter">
+      <td class="member-parameter__name">
+        test
       </td>
-      <td class="type">
-        <pre><code>{ [testProperty in keyof keyof] }: number</code></pre>
+      <td class="member-parameter__type">
+        { [testProperty in keyof keyof] }: number
       </td>
-      <td class="attributes">
+      <td class="member-parameter__attributes">
         
         
         
       </td>
       
-      <td class="description"></td>
+      <td class="member-parameter__description"></td>
     </tr>
   </tbody>
 </table>
@@ -252,20 +257,20 @@
 
   
     
-<table class="returns">
-  <caption>Returns:</caption>
-  <thead class="returns-head">
-    <tr>
-      <th class="returns-head__type">Type</th>
-      <th class="returns-head__description">Description</th>
+<table class="member-returns">
+  <caption class="member-returns__caption">Returns:</caption>
+  <thead class="member-returns__head">
+    <tr class="member-returns-header">
+      <th class="member-returns-header__type">Type</th>
+      <th class="member-returns-header__description">Description</th>
     </tr>
   </thead>
-  <tbody class="returns-body">
-    <tr class="returns-body__row">
-      <td class="returns-body__type">
+  <tbody class="member-returns__body">
+    <tr class="member-return">
+      <td class="member-return__type">
         <pre><code>boolean</code></pre>
       </td>
-      <td class="returns-body__description"><p>type inference is working</p></td>
+      <td class="member-return__description"><p>type inference is working</p></td>
     </tr>
   </tbody>
 </table>
@@ -277,54 +282,55 @@
     
 <div class="member" id="offerBid">
   <h3 class="member__title">offerBid</h3>
-  <pre class="signature"><code>offerBid(on: { t : <a href="Ts.Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts.Transaction.html">Ts.Transaction</a>[] }, counteroffer: <a href="Car.html">Car</a> | <a href="Vector.html">Vector</a>) → {boolean}</code></pre>
+  
+<pre class="signature__container"><code class="signature">offerBid(on: { t : <a href="Ts.Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts.Transaction.html">Ts.Transaction</a>[] }, counteroffer: <a href="Car.html">Car</a> | <a href="Vector.html">Vector</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Offer a price to buy the car.</p></div>
-  <div class="member__desctiption"><p>NOTE: This is invalid behaviour if you are the seller in the transaction.</p></div>
+  <div class="member__description"><p>NOTE: This is invalid behaviour if you are the seller in the transaction.</p></div>
 
   
     
-<table class="parameters">
-  <caption>Parameters:</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Attributes</th>
+<table class="member-parameters">
+  <caption class="member-parameters__caption">Parameters:</caption>
+  <thead class="member-parameters__head">
+    <tr class="member-parameter-header">
+      <th class="member-parameter-header__name">Name</th>
+      <th class="member-parameter-header__type">Type</th>
+      <th class="member-parameter-header__attributes">Attributes</th>
       
-      <th>Description</th>
+      <th class="member-parameter-header__description">Description</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="name">
-        <pre><code>on</code></pre>
+  <tbody class="member-parameters__body">
+    <tr class="member-parameter">
+      <td class="member-parameter__name">
+        on
       </td>
-      <td class="type">
-        <pre><code>{ t : <a href="Ts.Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts.Transaction.html">Ts.Transaction</a>[] }</code></pre>
+      <td class="member-parameter__type">
+        { t : <a href="Ts.Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts.Transaction.html">Ts.Transaction</a>[] }
       </td>
-      <td class="attributes">
+      <td class="member-parameter__attributes">
         <p>&lt;optional&gt;</p>
         
         
       </td>
       
-      <td class="description"></td>
-    </tr><tr>
-      <td class="name">
-        <pre><code>counteroffer</code></pre>
+      <td class="member-parameter__description"></td>
+    </tr><tr class="member-parameter">
+      <td class="member-parameter__name">
+        counteroffer
       </td>
-      <td class="type">
-        <pre><code><a href="Car.html">Car</a> | <a href="Vector.html">Vector</a></code></pre>
+      <td class="member-parameter__type">
+        <a href="Car.html">Car</a> | <a href="Vector.html">Vector</a>
       </td>
-      <td class="attributes">
+      <td class="member-parameter__attributes">
         <p>&lt;optional&gt;</p>
         
         
       </td>
       
-      <td class="description"></td>
+      <td class="member-parameter__description"></td>
     </tr>
   </tbody>
 </table>
@@ -333,20 +339,20 @@
 
   
     
-<table class="returns">
-  <caption>Returns:</caption>
-  <thead class="returns-head">
-    <tr>
-      <th class="returns-head__type">Type</th>
-      <th class="returns-head__description">Description</th>
+<table class="member-returns">
+  <caption class="member-returns__caption">Returns:</caption>
+  <thead class="member-returns__head">
+    <tr class="member-returns-header">
+      <th class="member-returns-header__type">Type</th>
+      <th class="member-returns-header__description">Description</th>
     </tr>
   </thead>
-  <tbody class="returns-body">
-    <tr class="returns-body__row">
-      <td class="returns-body__type">
+  <tbody class="member-returns__body">
+    <tr class="member-return">
+      <td class="member-return__type">
         <pre><code>boolean</code></pre>
       </td>
-      <td class="returns-body__description"></td>
+      <td class="member-return__description"></td>
     </tr>
   </tbody>
 </table>
@@ -360,38 +366,36 @@
     
   </div>
 </div>
-<nav class="members-explorer">
-    
-<div class="members-explorer__container">
+
+<nav class="page-members-explorer">
   
   
   
 
-<div>
-  <span class="members-explorer__category-title">Public Methods</span>
-  <ul class="members-explorer__category-list">
+<div class="page-members-explorer-category">
+  <h3 class="page-members-explorer-category__title">Public Methods</h3>
+  <ul class="page-members-explorer-category__items">
     
-      <li class="members-explorer__item"><a href="CarDealer.html#closeTransaction">closeTransaction</a></li>
+      <li class="page-members-explorer__item"><a href="CarDealer.html#closeTransaction">closeTransaction</a></li>
     
-      <li class="members-explorer__item"><a href="CarDealer.html#initiateTransaction">initiateTransaction</a></li>
+      <li class="page-members-explorer__item"><a href="CarDealer.html#initiateTransaction">initiateTransaction</a></li>
     
-      <li class="members-explorer__item"><a href="CarDealer.html#offerAsk">offerAsk</a></li>
+      <li class="page-members-explorer__item"><a href="CarDealer.html#offerAsk">offerAsk</a></li>
     
-      <li class="members-explorer__item"><a href="CarDealer.html#offerBid">offerBid</a></li>
+      <li class="page-members-explorer__item"><a href="CarDealer.html#offerBid">offerBid</a></li>
     
   </ul>
 </div>
 
   
-</div>
-
-
 </nav>
 
 
-    </article>
-    <footer class="footer" id="footer-mount-point"></footer>
-    <script>prettyPrint();</script>
-    <script src="scripts/linenumber.js"> </script>
-  </body>
+
+      </article>
+      <footer class="footer" id="footer-mount-point"></footer>
+      <script>prettyPrint();</script>
+      <script src="scripts/linenumber.js"> </script>
+    </body>
+  </div>
 </html>

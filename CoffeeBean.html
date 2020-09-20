@@ -15,89 +15,95 @@
     <script src="scripts/prettify.js"></script>
     <script src="scripts/lang-css.js"></script>
   </head>
-  <body class="docs">
-    <header class="header" id="header-mount-point"></header>
-    <article class="page">
-      <div class="page-explorer" id="explorer-mount-point"></div>
-      
-      
+  <body class="root">
+    <div class="docs">
+      <header class="header" id="header-mount-point"></header>
+      <article class="page">
+        <div class="page-explorer" id="explorer-mount-point"></div>
+        
+        
 <div class="page-content">
   <div class="document">
     <h1 class="document__title">CoffeeBean</h1>
-    <pre class="signature"><code>class CoffeeBean extends <a href="Bean.html">Bean</a></code></pre>
+    
+<pre class="signature__container"><code class="signature">class CoffeeBean extends <a href="Bean.html">Bean</a></code></pre>
 
 
-  <div class="document__brief"><p>This class illustrates how you can create a Java-bean like component in JavaScript</p></div>
-  <div class="ducument__description"></div>
+    <div class="document__brief"><p>This class illustrates how you can create a Java-bean like component in JavaScript</p></div>
+    <div class="document__description"></div>
 
     
-        <div class="members">
-          <h2 class="members__category">Constructor</h2>
-          
-<div class="member" id="constructor">
-  <h3 class="member__title"></h3>
-  <pre class="signature"><code>new CoffeeBean(options: object)</code></pre>
-
-
-  <div class="member__brief"></div>
-  <div class="member__desctiption"></div>
+      
+<div class="members">
+  <h2 class="members__category">Constructor</h2>
 
   
     
-<table class="parameters">
-  <caption>Parameters:</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Attributes</th>
+<div class="member" id="constructor">
+  <h3 class="member__title"></h3>
+  
+<pre class="signature__container"><code class="signature">new CoffeeBean(options: object)</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__description"></div>
+
+  
+    
+<table class="member-parameters">
+  <caption class="member-parameters__caption">Parameters:</caption>
+  <thead class="member-parameters__head">
+    <tr class="member-parameter-header">
+      <th class="member-parameter-header__name">Name</th>
+      <th class="member-parameter-header__type">Type</th>
+      <th class="member-parameter-header__attributes">Attributes</th>
       
-      <th>Description</th>
+      <th class="member-parameter-header__description">Description</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="name">
-        <pre><code>options</code></pre>
+  <tbody class="member-parameters__body">
+    <tr class="member-parameter">
+      <td class="member-parameter__name">
+        options
       </td>
-      <td class="type">
-        <pre><code>object</code></pre>
+      <td class="member-parameter__type">
+        object
       </td>
-      <td class="attributes">
+      <td class="member-parameter__attributes">
         <p>&lt;optional&gt;</p>
         
         
       </td>
       
-      <td class="description"></td>
-    </tr><tr>
-      <td class="name">
-        <pre><code>options.roasted</code></pre>
+      <td class="member-parameter__description"></td>
+    </tr><tr class="member-parameter">
+      <td class="member-parameter__name">
+        options.roasted
       </td>
-      <td class="type">
-        <pre><code>boolean</code></pre>
+      <td class="member-parameter__type">
+        boolean
       </td>
-      <td class="attributes">
+      <td class="member-parameter__attributes">
         <p>&lt;optional&gt;</p>
         
         
       </td>
       
-      <td class="description"><p>whether the bean is <code>roasted</code></p></td>
-    </tr><tr>
-      <td class="name">
-        <pre><code>options.maturity</code></pre>
+      <td class="member-parameter__description"><p>whether the bean is <code>roasted</code></p></td>
+    </tr><tr class="member-parameter">
+      <td class="member-parameter__name">
+        options.maturity
       </td>
-      <td class="type">
-        <pre><code>number</code></pre>
+      <td class="member-parameter__type">
+        number
       </td>
-      <td class="attributes">
+      <td class="member-parameter__attributes">
         <p>&lt;optional&gt;</p>
         
         
       </td>
       
-      <td class="description"></td>
+      <td class="member-parameter__description"></td>
     </tr>
   </tbody>
 </table>
@@ -107,8 +113,10 @@
   
 </div>
 
-        </div>
-      
+  
+</div>
+
+    
 
     
 <div class="members">
@@ -118,11 +126,12 @@
     
 <div class="member" id="maturity">
   <h3 class="member__title">maturity</h3>
-  <pre class="signature"><code>maturity: number</code></pre>
+  
+<pre class="signature__container"><code class="signature">maturity: number</code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
 
@@ -133,11 +142,12 @@
     
 <div class="member" id="roasted">
   <h3 class="member__title">roasted</h3>
-  <pre class="signature"><code>roasted: boolean</code></pre>
+  
+<pre class="signature__container"><code class="signature">roasted: boolean</code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
 
@@ -156,11 +166,12 @@
     
 <div class="member" id="roast">
   <h3 class="member__title">roast</h3>
-  <pre class="signature"><code>roast()</code></pre>
+  
+<pre class="signature__container"><code class="signature">roast()</code></pre>
 
 
   <div class="member__brief"><p>Roast this coffee bean.</p></div>
-  <div class="member__desctiption"><p>NOTE: You cannot re-roast coffee beans and an error will be thrown if you try to
+  <div class="member__description"><p>NOTE: You cannot re-roast coffee beans and an error will be thrown if you try to
 roast a roasted coffee bean.</p></div>
 
   
@@ -174,18 +185,17 @@ roast a roasted coffee bean.</p></div>
     
   </div>
 </div>
-<nav class="members-explorer">
-    
-<div class="members-explorer__container">
+
+<nav class="page-members-explorer">
   
 
-<div>
-  <span class="members-explorer__category-title">Public Properties</span>
-  <ul class="members-explorer__category-list">
+<div class="page-members-explorer-category">
+  <h3 class="page-members-explorer-category__title">Public Properties</h3>
+  <ul class="page-members-explorer-category__items">
     
-      <li class="members-explorer__item"><a href="CoffeeBean.html#maturity">maturity</a></li>
+      <li class="page-members-explorer__item"><a href="CoffeeBean.html#maturity">maturity</a></li>
     
-      <li class="members-explorer__item"><a href="CoffeeBean.html#roasted">roasted</a></li>
+      <li class="page-members-explorer__item"><a href="CoffeeBean.html#roasted">roasted</a></li>
     
   </ul>
 </div>
@@ -193,25 +203,24 @@ roast a roasted coffee bean.</p></div>
   
   
 
-<div>
-  <span class="members-explorer__category-title">Public Methods</span>
-  <ul class="members-explorer__category-list">
+<div class="page-members-explorer-category">
+  <h3 class="page-members-explorer-category__title">Public Methods</h3>
+  <ul class="page-members-explorer-category__items">
     
-      <li class="members-explorer__item"><a href="CoffeeBean.html#roast">roast</a></li>
+      <li class="page-members-explorer__item"><a href="CoffeeBean.html#roast">roast</a></li>
     
   </ul>
 </div>
 
   
-</div>
-
-
 </nav>
 
 
-    </article>
-    <footer class="footer" id="footer-mount-point"></footer>
-    <script>prettyPrint();</script>
-    <script src="scripts/linenumber.js"> </script>
-  </body>
+
+      </article>
+      <footer class="footer" id="footer-mount-point"></footer>
+      <script>prettyPrint();</script>
+      <script src="scripts/linenumber.js"> </script>
+    </body>
+  </div>
 </html>

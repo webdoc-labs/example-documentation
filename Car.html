@@ -15,20 +15,22 @@
     <script src="scripts/prettify.js"></script>
     <script src="scripts/lang-css.js"></script>
   </head>
-  <body class="docs">
-    <header class="header" id="header-mount-point"></header>
-    <article class="page">
-      <div class="page-explorer" id="explorer-mount-point"></div>
-      
-      
+  <body class="root">
+    <div class="docs">
+      <header class="header" id="header-mount-point"></header>
+      <article class="page">
+        <div class="page-explorer" id="explorer-mount-point"></div>
+        
+        
 <div class="page-content">
   <div class="document">
     <h1 class="document__title">Car</h1>
-    <pre class="signature"><code>class Car extends <a href="PhysicalObject.html">PhysicalObject</a></code></pre>
+    
+<pre class="signature__container"><code class="signature">class Car extends <a href="PhysicalObject.html">PhysicalObject</a></code></pre>
 
 
-  <div class="document__brief"><p><em>Simulation</em> for a automobile that can drive on a manifold surface.</p></div>
-  <div class="ducument__description"><pre><code class="hljs language-js"><span class="hljs-keyword">const</span> car = <span class="hljs-keyword">new</span> Car({ <span class="hljs-attr">make</span>: <span class="hljs-string">"Ferrari"</span> });
+    <div class="document__brief"><p><em>Simulation</em> for a automobile that can drive on a manifold surface.</p></div>
+    <div class="document__description"><pre><code class="hljs language-js"><span class="hljs-keyword">const</span> car = <span class="hljs-keyword">new</span> Car({ <span class="hljs-attr">make</span>: <span class="hljs-string">"Ferrari"</span> });
 
 car.installComponent(<span class="hljs-string">"interior"</span>, <span class="hljs-keyword">new</span> AirConditioner());
 car.installComponent(<span class="hljs-string">"exterior"</span>, <span class="hljs-keyword">new</span> Bumper());
@@ -40,6 +42,8 @@ car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt
 </code></pre></div>
 
     
+      
+    
 
     
 <div class="members">
@@ -49,11 +53,12 @@ car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt
     
 <div class="member" id="DEFAULT_DRIVE_SHIFT">
   <h3 class="member__title">DEFAULT_DRIVE_SHIFT</h3>
-  <pre class="signature"><code>static DEFAULT_DRIVE_SHIFT: string</code></pre>
+  
+<pre class="signature__container"><code class="signature">static DEFAULT_DRIVE_SHIFT: string</code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
 
@@ -64,11 +69,12 @@ car.onCrash(<span class="hljs-function"><span class="hljs-params">()</span> =&gt
     
 <div class="member" id="bounds">
   <h3 class="member__title">bounds</h3>
-  <pre class="signature"><code>bounds: <a href="Vector.html">Vector</a><3></code></pre>
+  
+<pre class="signature__container"><code class="signature">bounds: <a href="Vector.html">Vector</a><3></code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"><p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own
+  <div class="member__description"><p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own
 position.</p></div>
 
   
@@ -80,11 +86,12 @@ position.</p></div>
     
 <div class="member" id="interactions">
   <h3 class="member__title">interactions</h3>
-  <pre class="signature"><code>interactions: Array<<a href="PhysicalInteraction.html">PhysicalInteraction</a>></code></pre>
+  
+<pre class="signature__container"><code class="signature">interactions: Array<<a href="PhysicalInteraction.html">PhysicalInteraction</a>></code></pre>
 
 
   <div class="member__brief"><p>All causal interactions with other objects</p></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
 
@@ -95,11 +102,12 @@ position.</p></div>
     
 <div class="member" id="mass">
   <h3 class="member__title">mass</h3>
-  <pre class="signature"><code>mass: number</code></pre>
+  
+<pre class="signature__container"><code class="signature">mass: number</code></pre>
 
 
   <div class="member__brief"><p>The mass of this object in kilograms.</p></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
 
@@ -110,11 +118,12 @@ position.</p></div>
     
 <div class="member" id="position">
   <h3 class="member__title">position</h3>
-  <pre class="signature"><code>position: <a href="Vector.html">Vector</a><3></code></pre>
+  
+<pre class="signature__container"><code class="signature">position: <a href="Vector.html">Vector</a><3></code></pre>
 
 
   <div class="member__brief"><p>The absolute position of this object's center of mass (in the universal reference frame)</p></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
 
@@ -125,11 +134,12 @@ position.</p></div>
     
 <div class="member" id="velocity">
   <h3 class="member__title">velocity</h3>
-  <pre class="signature"><code>velocity: <a href="Vector.html">Vector</a><3></code></pre>
+  
+<pre class="signature__container"><code class="signature">velocity: <a href="Vector.html">Vector</a><3></code></pre>
 
 
   <div class="member__brief"><p>The absolute velocity of this object (in the universal reference frame)</p></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
 
@@ -140,11 +150,12 @@ position.</p></div>
     
 <div class="member" id="vin">
   <h3 class="member__title">vin</h3>
-  <pre class="signature"><code>vin: number</code></pre>
+  
+<pre class="signature__container"><code class="signature">vin: number</code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
 
@@ -163,36 +174,37 @@ position.</p></div>
     
 <div class="member" id="registerRetail">
   <h3 class="member__title">registerRetail</h3>
-  <pre class="signature"><code>static registerRetail(name: string)</code></pre>
+  
+<pre class="signature__container"><code class="signature">static registerRetail(name: string)</code></pre>
 
 
   <div class="member__brief"><p>Register a retail dealer for buying a car from</p></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
     
-<table class="parameters">
-  <caption>Parameters:</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
+<table class="member-parameters">
+  <caption class="member-parameters__caption">Parameters:</caption>
+  <thead class="member-parameters__head">
+    <tr class="member-parameter-header">
+      <th class="member-parameter-header__name">Name</th>
+      <th class="member-parameter-header__type">Type</th>
       
       
-      <th>Description</th>
+      <th class="member-parameter-header__description">Description</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="name">
-        <pre><code>name</code></pre>
+  <tbody class="member-parameters__body">
+    <tr class="member-parameter">
+      <td class="member-parameter__name">
+        name
       </td>
-      <td class="type">
-        <pre><code>string</code></pre>
+      <td class="member-parameter__type">
+        string
       </td>
       
       
-      <td class="description"></td>
+      <td class="member-parameter__description"></td>
     </tr>
   </tbody>
 </table>
@@ -206,46 +218,47 @@ position.</p></div>
     
 <div class="member" id="onCrash">
   <h3 class="member__title">onCrash</h3>
-  <pre class="signature"><code>onCrash(callback: Function)</code></pre>
+  
+<pre class="signature__container"><code class="signature">onCrash(callback: Function)</code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
     
-<table class="parameters">
-  <caption>Parameters:</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
+<table class="member-parameters">
+  <caption class="member-parameters__caption">Parameters:</caption>
+  <thead class="member-parameters__head">
+    <tr class="member-parameter-header">
+      <th class="member-parameter-header__name">Name</th>
+      <th class="member-parameter-header__type">Type</th>
       
       
-      <th>Description</th>
+      <th class="member-parameter-header__description">Description</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="name">
-        <pre><code>callback</code></pre>
+  <tbody class="member-parameters__body">
+    <tr class="member-parameter">
+      <td class="member-parameter__name">
+        callback
       </td>
-      <td class="type">
-        <pre><code>Function</code></pre>
-      </td>
-      
-      
-      <td class="description"></td>
-    </tr><tr>
-      <td class="name">
-        <pre><code>callback.name</code></pre>
-      </td>
-      <td class="type">
-        <pre><code>string</code></pre>
+      <td class="member-parameter__type">
+        Function
       </td>
       
       
-      <td class="description"></td>
+      <td class="member-parameter__description"></td>
+    </tr><tr class="member-parameter">
+      <td class="member-parameter__name">
+        callback.name
+      </td>
+      <td class="member-parameter__type">
+        string
+      </td>
+      
+      
+      <td class="member-parameter__description"></td>
     </tr>
   </tbody>
 </table>
@@ -261,28 +274,27 @@ position.</p></div>
     
   </div>
 </div>
-<nav class="members-explorer">
-    
-<div class="members-explorer__container">
+
+<nav class="page-members-explorer">
   
 
-<div>
-  <span class="members-explorer__category-title">Public Properties</span>
-  <ul class="members-explorer__category-list">
+<div class="page-members-explorer-category">
+  <h3 class="page-members-explorer-category__title">Public Properties</h3>
+  <ul class="page-members-explorer-category__items">
     
-      <li class="members-explorer__item"><a href="Car.html#DEFAULT_DRIVE_SHIFT">DEFAULT_DRIVE_SHIFT</a></li>
+      <li class="page-members-explorer__item"><a href="Car.html#DEFAULT_DRIVE_SHIFT">DEFAULT_DRIVE_SHIFT</a></li>
     
-      <li class="members-explorer__item"><a href="Car.html#bounds">bounds</a></li>
+      <li class="page-members-explorer__item"><a href="Car.html#bounds">bounds</a></li>
     
-      <li class="members-explorer__item"><a href="Car.html#interactions">interactions</a></li>
+      <li class="page-members-explorer__item"><a href="Car.html#interactions">interactions</a></li>
     
-      <li class="members-explorer__item"><a href="Car.html#mass">mass</a></li>
+      <li class="page-members-explorer__item"><a href="Car.html#mass">mass</a></li>
     
-      <li class="members-explorer__item"><a href="Car.html#position">position</a></li>
+      <li class="page-members-explorer__item"><a href="Car.html#position">position</a></li>
     
-      <li class="members-explorer__item"><a href="Car.html#velocity">velocity</a></li>
+      <li class="page-members-explorer__item"><a href="Car.html#velocity">velocity</a></li>
     
-      <li class="members-explorer__item"><a href="Car.html#vin">vin</a></li>
+      <li class="page-members-explorer__item"><a href="Car.html#vin">vin</a></li>
     
   </ul>
 </div>
@@ -290,27 +302,26 @@ position.</p></div>
   
   
 
-<div>
-  <span class="members-explorer__category-title">Public Methods</span>
-  <ul class="members-explorer__category-list">
+<div class="page-members-explorer-category">
+  <h3 class="page-members-explorer-category__title">Public Methods</h3>
+  <ul class="page-members-explorer-category__items">
     
-      <li class="members-explorer__item"><a href="Car.html#registerRetail">registerRetail</a></li>
+      <li class="page-members-explorer__item"><a href="Car.html#registerRetail">registerRetail</a></li>
     
-      <li class="members-explorer__item"><a href="Car.html#onCrash">onCrash</a></li>
+      <li class="page-members-explorer__item"><a href="Car.html#onCrash">onCrash</a></li>
     
   </ul>
 </div>
 
   
-</div>
-
-
 </nav>
 
 
-    </article>
-    <footer class="footer" id="footer-mount-point"></footer>
-    <script>prettyPrint();</script>
-    <script src="scripts/linenumber.js"> </script>
-  </body>
+
+      </article>
+      <footer class="footer" id="footer-mount-point"></footer>
+      <script>prettyPrint();</script>
+      <script src="scripts/linenumber.js"> </script>
+    </body>
+  </div>
 </html>

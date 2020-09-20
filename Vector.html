@@ -15,21 +15,25 @@
     <script src="scripts/prettify.js"></script>
     <script src="scripts/lang-css.js"></script>
   </head>
-  <body class="docs">
-    <header class="header" id="header-mount-point"></header>
-    <article class="page">
-      <div class="page-explorer" id="explorer-mount-point"></div>
-      
-      
+  <body class="root">
+    <div class="docs">
+      <header class="header" id="header-mount-point"></header>
+      <article class="page">
+        <div class="page-explorer" id="explorer-mount-point"></div>
+        
+        
 <div class="page-content">
   <div class="document">
     <h1 class="document__title">Vector</h1>
-    <pre class="signature"><code>class Vector extends Array</code></pre>
+    
+<pre class="signature__container"><code class="signature">class Vector extends Array</code></pre>
 
 
-  <div class="document__brief"></div>
-  <div class="ducument__description"></div>
+    <div class="document__brief"></div>
+    <div class="document__description"></div>
 
+    
+      
     
 
     
@@ -40,11 +44,12 @@
     
 <div class="member" id="dimensions">
   <h3 class="member__title">dimensions</h3>
-  <pre class="signature"><code>dimensions: number</code></pre>
+  
+<pre class="signature__container"><code class="signature">dimensions: number</code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"><p>The no. of components of this vector</p></div>
+  <div class="member__description"><p>The no. of components of this vector</p></div>
 
   
 
@@ -63,36 +68,37 @@
     
 <div class="member" id="add">
   <h3 class="member__title">add</h3>
-  <pre class="signature"><code>add(vec: <a href="Vector.html">Vector</a>)</code></pre>
+  
+<pre class="signature__container"><code class="signature">add(vec: <a href="Vector.html">Vector</a>)</code></pre>
 
 
   <div class="member__brief"><p>Add <code>vec</code> to this</p></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
     
-<table class="parameters">
-  <caption>Parameters:</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
+<table class="member-parameters">
+  <caption class="member-parameters__caption">Parameters:</caption>
+  <thead class="member-parameters__head">
+    <tr class="member-parameter-header">
+      <th class="member-parameter-header__name">Name</th>
+      <th class="member-parameter-header__type">Type</th>
       
       
-      <th>Description</th>
+      <th class="member-parameter-header__description">Description</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="name">
-        <pre><code>vec</code></pre>
+  <tbody class="member-parameters__body">
+    <tr class="member-parameter">
+      <td class="member-parameter__name">
+        vec
       </td>
-      <td class="type">
-        <pre><code><a href="Vector.html">Vector</a></code></pre>
+      <td class="member-parameter__type">
+        <a href="Vector.html">Vector</a>
       </td>
       
       
-      <td class="description"></td>
+      <td class="member-parameter__description"></td>
     </tr>
   </tbody>
 </table>
@@ -106,36 +112,37 @@
     
 <div class="member" id="equalTo">
   <h3 class="member__title">equalTo</h3>
-  <pre class="signature"><code>equalTo(vec: <a href="Vector.html">Vector</a>) → {boolean}</code></pre>
+  
+<pre class="signature__container"><code class="signature">equalTo(vec: <a href="Vector.html">Vector</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Whether this and <code>vec</code> are equal vectors</p></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
     
-<table class="parameters">
-  <caption>Parameters:</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
+<table class="member-parameters">
+  <caption class="member-parameters__caption">Parameters:</caption>
+  <thead class="member-parameters__head">
+    <tr class="member-parameter-header">
+      <th class="member-parameter-header__name">Name</th>
+      <th class="member-parameter-header__type">Type</th>
       
       
-      <th>Description</th>
+      <th class="member-parameter-header__description">Description</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="name">
-        <pre><code>vec</code></pre>
+  <tbody class="member-parameters__body">
+    <tr class="member-parameter">
+      <td class="member-parameter__name">
+        vec
       </td>
-      <td class="type">
-        <pre><code><a href="Vector.html">Vector</a></code></pre>
+      <td class="member-parameter__type">
+        <a href="Vector.html">Vector</a>
       </td>
       
       
-      <td class="description"></td>
+      <td class="member-parameter__description"></td>
     </tr>
   </tbody>
 </table>
@@ -144,20 +151,20 @@
 
   
     
-<table class="returns">
-  <caption>Returns:</caption>
-  <thead class="returns-head">
-    <tr>
-      <th class="returns-head__type">Type</th>
-      <th class="returns-head__description">Description</th>
+<table class="member-returns">
+  <caption class="member-returns__caption">Returns:</caption>
+  <thead class="member-returns__head">
+    <tr class="member-returns-header">
+      <th class="member-returns-header__type">Type</th>
+      <th class="member-returns-header__description">Description</th>
     </tr>
   </thead>
-  <tbody class="returns-body">
-    <tr class="returns-body__row">
-      <td class="returns-body__type">
+  <tbody class="member-returns__body">
+    <tr class="member-return">
+      <td class="member-return__type">
         <pre><code>boolean</code></pre>
       </td>
-      <td class="returns-body__description"></td>
+      <td class="member-return__description"></td>
     </tr>
   </tbody>
 </table>
@@ -169,36 +176,37 @@
     
 <div class="member" id="isCompat">
   <h3 class="member__title">isCompat</h3>
-  <pre class="signature"><code>isCompat(vec: <a href="Vector.html">Vector</a>) → {boolean}</code></pre>
+  
+<pre class="signature__container"><code class="signature">isCompat(vec: <a href="Vector.html">Vector</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"><p>Whether this and <code>vec</code> are compatible vectors (same dimensions)</p></div>
+  <div class="member__description"><p>Whether this and <code>vec</code> are compatible vectors (same dimensions)</p></div>
 
   
     
-<table class="parameters">
-  <caption>Parameters:</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
+<table class="member-parameters">
+  <caption class="member-parameters__caption">Parameters:</caption>
+  <thead class="member-parameters__head">
+    <tr class="member-parameter-header">
+      <th class="member-parameter-header__name">Name</th>
+      <th class="member-parameter-header__type">Type</th>
       
       
-      <th>Description</th>
+      <th class="member-parameter-header__description">Description</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="name">
-        <pre><code>vec</code></pre>
+  <tbody class="member-parameters__body">
+    <tr class="member-parameter">
+      <td class="member-parameter__name">
+        vec
       </td>
-      <td class="type">
-        <pre><code><a href="Vector.html">Vector</a></code></pre>
+      <td class="member-parameter__type">
+        <a href="Vector.html">Vector</a>
       </td>
       
       
-      <td class="description"></td>
+      <td class="member-parameter__description"></td>
     </tr>
   </tbody>
 </table>
@@ -207,20 +215,20 @@
 
   
     
-<table class="returns">
-  <caption>Returns:</caption>
-  <thead class="returns-head">
-    <tr>
-      <th class="returns-head__type">Type</th>
-      <th class="returns-head__description">Description</th>
+<table class="member-returns">
+  <caption class="member-returns__caption">Returns:</caption>
+  <thead class="member-returns__head">
+    <tr class="member-returns-header">
+      <th class="member-returns-header__type">Type</th>
+      <th class="member-returns-header__description">Description</th>
     </tr>
   </thead>
-  <tbody class="returns-body">
-    <tr class="returns-body__row">
-      <td class="returns-body__type">
+  <tbody class="member-returns__body">
+    <tr class="member-return">
+      <td class="member-return__type">
         <pre><code>boolean</code></pre>
       </td>
-      <td class="returns-body__description"></td>
+      <td class="member-return__description"></td>
     </tr>
   </tbody>
 </table>
@@ -234,16 +242,15 @@
     
   </div>
 </div>
-<nav class="members-explorer">
-    
-<div class="members-explorer__container">
+
+<nav class="page-members-explorer">
   
 
-<div>
-  <span class="members-explorer__category-title">Public Properties</span>
-  <ul class="members-explorer__category-list">
+<div class="page-members-explorer-category">
+  <h3 class="page-members-explorer-category__title">Public Properties</h3>
+  <ul class="page-members-explorer-category__items">
     
-      <li class="members-explorer__item"><a href="Vector.html#dimensions">dimensions</a></li>
+      <li class="page-members-explorer__item"><a href="Vector.html#dimensions">dimensions</a></li>
     
   </ul>
 </div>
@@ -251,29 +258,28 @@
   
   
 
-<div>
-  <span class="members-explorer__category-title">Public Methods</span>
-  <ul class="members-explorer__category-list">
+<div class="page-members-explorer-category">
+  <h3 class="page-members-explorer-category__title">Public Methods</h3>
+  <ul class="page-members-explorer-category__items">
     
-      <li class="members-explorer__item"><a href="Vector.html#add">add</a></li>
+      <li class="page-members-explorer__item"><a href="Vector.html#add">add</a></li>
     
-      <li class="members-explorer__item"><a href="Vector.html#equalTo">equalTo</a></li>
+      <li class="page-members-explorer__item"><a href="Vector.html#equalTo">equalTo</a></li>
     
-      <li class="members-explorer__item"><a href="Vector.html#isCompat">isCompat</a></li>
+      <li class="page-members-explorer__item"><a href="Vector.html#isCompat">isCompat</a></li>
     
   </ul>
 </div>
 
   
-</div>
-
-
 </nav>
 
 
-    </article>
-    <footer class="footer" id="footer-mount-point"></footer>
-    <script>prettyPrint();</script>
-    <script src="scripts/linenumber.js"> </script>
-  </body>
+
+      </article>
+      <footer class="footer" id="footer-mount-point"></footer>
+      <script>prettyPrint();</script>
+      <script src="scripts/linenumber.js"> </script>
+    </body>
+  </div>
 </html>

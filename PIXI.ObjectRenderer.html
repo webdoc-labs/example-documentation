@@ -15,57 +15,63 @@
     <script src="scripts/prettify.js"></script>
     <script src="scripts/lang-css.js"></script>
   </head>
-  <body class="docs">
-    <header class="header" id="header-mount-point"></header>
-    <article class="page">
-      <div class="page-explorer" id="explorer-mount-point"></div>
-      
-      
+  <body class="root">
+    <div class="docs">
+      <header class="header" id="header-mount-point"></header>
+      <article class="page">
+        <div class="page-explorer" id="explorer-mount-point"></div>
+        
+        
 <div class="page-content">
   <div class="document">
     <h1 class="document__title">PIXI.ObjectRenderer</h1>
-    <pre class="signature"><code>class ObjectRenderer extends <a href="PIXI.System.html">PIXI.System</a></code></pre>
+    
+<pre class="signature__container"><code class="signature">class ObjectRenderer extends <a href="PIXI.System.html">PIXI.System</a></code></pre>
 
 
-  <div class="document__brief"><p>Base for a common object renderer that can be used as a system renderer plugin.</p></div>
-  <div class="ducument__description"></div>
+    <div class="document__brief"><p>Base for a common object renderer that can be used as a system renderer plugin.</p></div>
+    <div class="document__description"></div>
 
     
-        <div class="members">
-          <h2 class="members__category">Constructor</h2>
-          
-<div class="member" id="constructor">
-  <h3 class="member__title"></h3>
-  <pre class="signature"><code>new PIXI.ObjectRenderer(renderer: PIXI.Renderer)</code></pre>
-
-
-  <div class="member__brief"></div>
-  <div class="member__desctiption"></div>
+      
+<div class="members">
+  <h2 class="members__category">Constructor</h2>
 
   
     
-<table class="parameters">
-  <caption>Parameters:</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
+<div class="member" id="constructor">
+  <h3 class="member__title"></h3>
+  
+<pre class="signature__container"><code class="signature">new PIXI.ObjectRenderer(renderer: PIXI.Renderer)</code></pre>
+
+
+  <div class="member__brief"></div>
+  <div class="member__description"></div>
+
+  
+    
+<table class="member-parameters">
+  <caption class="member-parameters__caption">Parameters:</caption>
+  <thead class="member-parameters__head">
+    <tr class="member-parameter-header">
+      <th class="member-parameter-header__name">Name</th>
+      <th class="member-parameter-header__type">Type</th>
       
       
-      <th>Description</th>
+      <th class="member-parameter-header__description">Description</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="name">
-        <pre><code>renderer</code></pre>
+  <tbody class="member-parameters__body">
+    <tr class="member-parameter">
+      <td class="member-parameter__name">
+        renderer
       </td>
-      <td class="type">
-        <pre><code>PIXI.Renderer</code></pre>
+      <td class="member-parameter__type">
+        PIXI.Renderer
       </td>
       
       
-      <td class="description"><p>The renderer this manager works for.</p></td>
+      <td class="member-parameter__description"><p>The renderer this manager works for.</p></td>
     </tr>
   </tbody>
 </table>
@@ -75,8 +81,10 @@
   
 </div>
 
-        </div>
-      
+  
+</div>
+
+    
 
     
 <div class="members">
@@ -86,11 +94,12 @@
     
 <div class="member" id="renderer">
   <h3 class="member__title">renderer</h3>
-  <pre class="signature"><code>renderer: PIXI.Renderer</code></pre>
+  
+<pre class="signature__container"><code class="signature">renderer: PIXI.Renderer</code></pre>
 
 
   <div class="member__brief"><p>The renderer this manager works for.</p></div>
-  <div class="member__desctiption"></div>
+  <div class="member__description"></div>
 
   
 
@@ -109,11 +118,12 @@
     
 <div class="member" id="destroy">
   <h3 class="member__title">destroy</h3>
-  <pre class="signature"><code>destroy()</code></pre>
+  
+<pre class="signature__container"><code class="signature">destroy()</code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"><p>Generic destruction method that frees all resources. This
+  <div class="member__description"><p>Generic destruction method that frees all resources. This
 should be called by subclasses.</p></div>
 
   
@@ -125,11 +135,12 @@ should be called by subclasses.</p></div>
     
 <div class="member" id="flush">
   <h3 class="member__title">flush</h3>
-  <pre class="signature"><code>flush()</code></pre>
+  
+<pre class="signature__container"><code class="signature">flush()</code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"><p>Stub method that should be used to empty the current
+  <div class="member__description"><p>Stub method that should be used to empty the current
 batch by rendering objects now.</p></div>
 
   
@@ -141,37 +152,38 @@ batch by rendering objects now.</p></div>
     
 <div class="member" id="render">
   <h3 class="member__title">render</h3>
-  <pre class="signature"><code>render(object: PIXI.DisplayObject)</code></pre>
+  
+<pre class="signature__container"><code class="signature">render(object: PIXI.DisplayObject)</code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"><p>Keeps the object to render. It doesn't have to be
+  <div class="member__description"><p>Keeps the object to render. It doesn't have to be
 rendered immediately.</p></div>
 
   
     
-<table class="parameters">
-  <caption>Parameters:</caption>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
+<table class="member-parameters">
+  <caption class="member-parameters__caption">Parameters:</caption>
+  <thead class="member-parameters__head">
+    <tr class="member-parameter-header">
+      <th class="member-parameter-header__name">Name</th>
+      <th class="member-parameter-header__type">Type</th>
       
       
-      <th>Description</th>
+      <th class="member-parameter-header__description">Description</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td class="name">
-        <pre><code>object</code></pre>
+  <tbody class="member-parameters__body">
+    <tr class="member-parameter">
+      <td class="member-parameter__name">
+        object
       </td>
-      <td class="type">
-        <pre><code>PIXI.DisplayObject</code></pre>
+      <td class="member-parameter__type">
+        PIXI.DisplayObject
       </td>
       
       
-      <td class="description"><p>The object to render.</p></td>
+      <td class="member-parameter__description"><p>The object to render.</p></td>
     </tr>
   </tbody>
 </table>
@@ -185,11 +197,12 @@ rendered immediately.</p></div>
     
 <div class="member" id="start">
   <h3 class="member__title">start</h3>
-  <pre class="signature"><code>start()</code></pre>
+  
+<pre class="signature__container"><code class="signature">start()</code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"><p>Stub method that initializes any state required before
+  <div class="member__description"><p>Stub method that initializes any state required before
 rendering starts. It is different from the <code>prerender</code>
 signal, which occurs every frame, in that it is called
 whenever an object requests <em>this</em> renderer specifically.</p></div>
@@ -203,11 +216,12 @@ whenever an object requests <em>this</em> renderer specifically.</p></div>
     
 <div class="member" id="stop">
   <h3 class="member__title">stop</h3>
-  <pre class="signature"><code>stop()</code></pre>
+  
+<pre class="signature__container"><code class="signature">stop()</code></pre>
 
 
   <div class="member__brief"></div>
-  <div class="member__desctiption"><p>Stops the renderer. It should free up any state and
+  <div class="member__description"><p>Stops the renderer. It should free up any state and
 become dormant.</p></div>
 
   
@@ -221,16 +235,15 @@ become dormant.</p></div>
     
   </div>
 </div>
-<nav class="members-explorer">
-    
-<div class="members-explorer__container">
+
+<nav class="page-members-explorer">
   
 
-<div>
-  <span class="members-explorer__category-title">Public Properties</span>
-  <ul class="members-explorer__category-list">
+<div class="page-members-explorer-category">
+  <h3 class="page-members-explorer-category__title">Public Properties</h3>
+  <ul class="page-members-explorer-category__items">
     
-      <li class="members-explorer__item"><a href="PIXI.ObjectRenderer.html#renderer">renderer</a></li>
+      <li class="page-members-explorer__item"><a href="PIXI.ObjectRenderer.html#renderer">renderer</a></li>
     
   </ul>
 </div>
@@ -238,33 +251,32 @@ become dormant.</p></div>
   
   
 
-<div>
-  <span class="members-explorer__category-title">Public Methods</span>
-  <ul class="members-explorer__category-list">
+<div class="page-members-explorer-category">
+  <h3 class="page-members-explorer-category__title">Public Methods</h3>
+  <ul class="page-members-explorer-category__items">
     
-      <li class="members-explorer__item"><a href="PIXI.ObjectRenderer.html#destroy">destroy</a></li>
+      <li class="page-members-explorer__item"><a href="PIXI.ObjectRenderer.html#destroy">destroy</a></li>
     
-      <li class="members-explorer__item"><a href="PIXI.ObjectRenderer.html#flush">flush</a></li>
+      <li class="page-members-explorer__item"><a href="PIXI.ObjectRenderer.html#flush">flush</a></li>
     
-      <li class="members-explorer__item"><a href="PIXI.ObjectRenderer.html#render">render</a></li>
+      <li class="page-members-explorer__item"><a href="PIXI.ObjectRenderer.html#render">render</a></li>
     
-      <li class="members-explorer__item"><a href="PIXI.ObjectRenderer.html#start">start</a></li>
+      <li class="page-members-explorer__item"><a href="PIXI.ObjectRenderer.html#start">start</a></li>
     
-      <li class="members-explorer__item"><a href="PIXI.ObjectRenderer.html#stop">stop</a></li>
+      <li class="page-members-explorer__item"><a href="PIXI.ObjectRenderer.html#stop">stop</a></li>
     
   </ul>
 </div>
 
   
-</div>
-
-
 </nav>
 
 
-    </article>
-    <footer class="footer" id="footer-mount-point"></footer>
-    <script>prettyPrint();</script>
-    <script src="scripts/linenumber.js"> </script>
-  </body>
+
+      </article>
+      <footer class="footer" id="footer-mount-point"></footer>
+      <script>prettyPrint();</script>
+      <script src="scripts/linenumber.js"> </script>
+    </body>
+  </div>
 </html>
