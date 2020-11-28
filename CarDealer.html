@@ -45,7 +45,7 @@
 <div class="member" id="closeTransaction">
   <h3 class="member__title">closeTransaction</h3>
   
-<pre class="signature__container"><code class="signature">closeTransaction(trans: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) =&amp;gt; void) → {trans is <a href="Ts.Transaction.html">Ts.Transaction</a>}</code></pre>
+<pre class="signature__container"><code class="signature">closeTransaction(trans: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) => void) → {trans is <a href="Ts.Transaction.html">Ts.Transaction</a>}</code></pre>
 
 
   <div class="member__brief"><p>Close transaction. If you respond to the counteroffer, then it won't be closed.</p></div>
@@ -191,7 +191,7 @@
 <div class="member" id="offerAsk">
   <h3 class="member__title">offerAsk</h3>
   
-<pre class="signature__container"><code class="signature">offerAsk(on: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (t: <a href="Car.html">Car</a>) =&amp;gt; void, test: { [testProperty in keyof keyof] }: number) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">offerAsk(on: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (t: <a href="Car.html">Car</a>) => void, test: { [testProperty in keyof keyof] }: number) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Offer a price to sell the car.</p></div>
