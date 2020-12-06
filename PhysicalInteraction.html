@@ -5,14 +5,19 @@
     <meta charset="utf-8" />
     <title>webdoc: PhysicalInteraction</title>
 
-    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/example-documentation/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="/scripts/default-template.js"></script>
+    <script>
+      window.appData = {
+        siteRoot: "example-documentation",
+      };
+    </script>
+    <script src="/example-documentation/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -70,7 +75,7 @@ force's magnitude.</p></div>
 <div class="member" id="createGravity">
   <h3 class="member__title">createGravity</h3>
   
-<pre class="signature__container"><code class="signature">static createGravity(objects: Tuple&lt;2, <a href="PhysicalObject.html">PhysicalObject</a>>) → {<a href="PhysicalInteraction.html">PhysicalInteraction</a>}</code></pre>
+<pre class="signature__container"><code class="signature">static createGravity(objects: Tuple&lt;2, <a href="/example-documentation/PhysicalObject.html">PhysicalObject</a>>) → {<a href="/example-documentation/PhysicalInteraction.html">PhysicalInteraction</a>}</code></pre>
 
 
   <div class="member__brief"><p>Creates a graviational force</p></div>
@@ -96,7 +101,7 @@ force's magnitude.</p></div>
           objects
         </td>
         <td class="member-parameter__type">
-          Tuple&lt;2, <a href="PhysicalObject.html">PhysicalObject</a>&gt;
+          Tuple&lt;2, <a href="/example-documentation/PhysicalObject.html">PhysicalObject</a>&gt;
         </td>
         
         
@@ -121,7 +126,7 @@ force's magnitude.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="PhysicalInteraction.html">PhysicalInteraction</a>
+        <a href="/example-documentation/PhysicalInteraction.html">PhysicalInteraction</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -136,7 +141,7 @@ force's magnitude.</p></div>
 <div class="member" id="force">
   <h3 class="member__title">force</h3>
   
-<pre class="signature__container"><code class="signature">force() → {<a href="Vector.html">Vector</a>&lt;3>}</code></pre>
+<pre class="signature__container"><code class="signature">force() → {<a href="/example-documentation/Vector.html">Vector</a>&lt;3>}</code></pre>
 
 
   <div class="member__brief"><p>This method should be overriden to calculate the force at the given instant.</p></div>
@@ -157,7 +162,7 @@ force's magnitude.</p></div>
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        <a href="Vector.html">Vector</a>&lt;3&gt;
+        <a href="/example-documentation/Vector.html">Vector</a>&lt;3&gt;
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -181,7 +186,7 @@ force's magnitude.</p></div>
   <h3 class="page-members-explorer-category__title">Public Properties</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PhysicalInteraction.html#GRAVITATIONAL_CONSTANT">GRAVITATIONAL_CONSTANT</a></li>
+      <li class="page-members-explorer__item"><a href="/example-documentation/PhysicalInteraction.html#GRAVITATIONAL_CONSTANT">GRAVITATIONAL_CONSTANT</a></li>
     
   </ul>
 </div>
@@ -193,9 +198,9 @@ force's magnitude.</p></div>
   <h3 class="page-members-explorer-category__title">Public Methods</h3>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item"><a href="PhysicalInteraction.html#createGravity">createGravity</a></li>
+      <li class="page-members-explorer__item"><a href="/example-documentation/PhysicalInteraction.html#createGravity">createGravity</a></li>
     
-      <li class="page-members-explorer__item"><a href="PhysicalInteraction.html#force">force</a></li>
+      <li class="page-members-explorer__item"><a href="/example-documentation/PhysicalInteraction.html#force">force</a></li>
     
   </ul>
 </div>
