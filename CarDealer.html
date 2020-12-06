@@ -5,14 +5,14 @@
     <meta charset="utf-8" />
     <title>webdoc: CarDealer</title>
 
-    <link type="text/css" rel="stylesheet" href="styles/index.css" />
+    <link type="text/css" rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" />
     <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="scripts/default-template.js"></script>
+    <script src="/scripts/default-template.js"></script>
   </head>
   <body class="root">
     <div class="docs">
@@ -45,7 +45,7 @@
 <div class="member" id="closeTransaction">
   <h3 class="member__title">closeTransaction</h3>
   
-<pre class="signature__container"><code class="signature">closeTransaction(trans: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) => void) → {trans is <a href="Ts.Transaction.html">Ts.Transaction</a>}</code></pre>
+<pre class="signature__container"><code class="signature">closeTransaction(trans: <a href="Ts/Transaction.html">Ts.Transaction</a>, counteroffer: (...t: <a href="Ts/Transaction.html">Ts.Transaction</a>) => void) → {trans is <a href="Ts/Transaction.html">Ts.Transaction</a>}</code></pre>
 
 
   <div class="member__brief"><p>Close transaction. If you respond to the counteroffer, then it won't be closed.</p></div>
@@ -71,7 +71,7 @@
           trans
         </td>
         <td class="member-parameter__type">
-          <a href="Ts.Transaction.html">Ts.Transaction</a>
+          <a href="Ts/Transaction.html">Ts.Transaction</a>
         </td>
         
         
@@ -81,7 +81,7 @@
           counteroffer
         </td>
         <td class="member-parameter__type">
-          (...t: <a href="Ts.Transaction.html">Ts.Transaction</a>) =&gt; void
+          (...t: <a href="Ts/Transaction.html">Ts.Transaction</a>) =&gt; void
         </td>
         
         
@@ -106,7 +106,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        trans is <a href="Ts.Transaction.html">Ts.Transaction</a>
+        trans is <a href="Ts/Transaction.html">Ts.Transaction</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -121,7 +121,7 @@
 <div class="member" id="initiateTransaction">
   <h3 class="member__title">initiateTransaction</h3>
   
-<pre class="signature__container"><code class="signature">initiateTransaction(x: object) → {typeof <a href="Ts.Transaction.html">Ts.Transaction</a>}</code></pre>
+<pre class="signature__container"><code class="signature">initiateTransaction(x: object) → {typeof <a href="Ts/Transaction.html">Ts.Transaction</a>}</code></pre>
 
 
   <div class="member__brief"><p>Initiate a transaction/negotiation with a car dealer</p></div>
@@ -176,7 +176,7 @@
   <tbody class="member-returns__body">
     <tr class="member-return">
       <td class="member-return__type">
-        typeof <a href="Ts.Transaction.html">Ts.Transaction</a>
+        typeof <a href="Ts/Transaction.html">Ts.Transaction</a>
       </td>
       <td class="member-return__description"></td>
     </tr>
@@ -191,7 +191,7 @@
 <div class="member" id="offerAsk">
   <h3 class="member__title">offerAsk</h3>
   
-<pre class="signature__container"><code class="signature">offerAsk(on: <a href="Ts.Transaction.html">Ts.Transaction</a>, counteroffer: (t: <a href="Car.html">Car</a>) => void, test: { [testProperty in keyof keyof] }: number) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">offerAsk(on: <a href="Ts/Transaction.html">Ts.Transaction</a>, counteroffer: (t: <a href="Car.html">Car</a>) => void, test: { [testProperty in keyof keyof] }: number) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Offer a price to sell the car.</p></div>
@@ -217,7 +217,7 @@
           on
         </td>
         <td class="member-parameter__type">
-          <a href="Ts.Transaction.html">Ts.Transaction</a>
+          <a href="Ts/Transaction.html">Ts.Transaction</a>
         </td>
         <td class="member-parameter__attributes">
           
@@ -289,7 +289,7 @@
 <div class="member" id="offerBid">
   <h3 class="member__title">offerBid</h3>
   
-<pre class="signature__container"><code class="signature">offerBid(on: { t : <a href="Ts.Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts.Transaction.html">Ts.Transaction</a>[] }, counteroffer: <a href="Car.html">Car</a> | <a href="Vector.html">Vector</a>) → {boolean}</code></pre>
+<pre class="signature__container"><code class="signature">offerBid(on: { t : <a href="Ts/Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts/Transaction.html">Ts.Transaction</a>[] }, counteroffer: <a href="Car.html">Car</a> | <a href="Vector.html">Vector</a>) → {boolean}</code></pre>
 
 
   <div class="member__brief"><p>Offer a price to buy the car.</p></div>
@@ -315,7 +315,7 @@
           on
         </td>
         <td class="member-parameter__type">
-          { t : <a href="Ts.Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts.Transaction.html">Ts.Transaction</a>[] }
+          { t : <a href="Ts/Transaction.html">Ts.Transaction</a>, [id: string]: <a href="Ts/Transaction.html">Ts.Transaction</a>[] }
         </td>
         <td class="member-parameter__attributes">
           <p>&lt;optional&gt;</p>
