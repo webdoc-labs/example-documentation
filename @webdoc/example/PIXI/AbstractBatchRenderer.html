@@ -21,14 +21,26 @@
   </head>
   <body class="root">
     <div class="docs">
-      <header class="header" id="header-mount-point"></header>
       <article class="page">
         <div class="page-explorer" id="explorer-mount-point"></div>
-        
-        
+        <div class="header-content-container">
+          <section class="header" id="header-mount-point"></section>
+          <div class="header-content-container__content">
+            
+            
 <div class="page-content">
   <div class="document">
-    <div class="document__package">@webdoc/example</div>
+    <div class="document__breadcrumb">
+      
+        @webdoc/example
+        &gt;
+      
+      
+        <a href=/example-documentation/@webdoc/example/PIXI.html>PIXI</a>
+        &gt;
+      
+      <span>AbstractBatchRenderer</span>
+    </div>
     <h1 class="document__title">PIXI.AbstractBatchRenderer</h1>
     
 <pre class="signature__container"><code class="signature">protected class AbstractBatchRenderer extends <a href="/example-documentation/@webdoc/example/PIXI/ObjectRenderer.html">PIXI.ObjectRenderer</a></code></pre>
@@ -44,11 +56,12 @@ reduce to the number of draw calls.</p></div>
       
 <div class="members">
   <h2 class="members__category">Constructor</h2>
+  <hr />
 
   
     
 <div class="member" id="constructor">
-  <h3 class="member__title"></h3>
+  
   
 <pre class="signature__container"><code class="signature">new PIXI.AbstractBatchRenderer(renderer: PIXI.Renderer) → {}</code></pre>
 
@@ -100,11 +113,23 @@ and <code>prerender</code> signals.</p></div>
     
 <div class="members">
   <h2 class="members__category">Public Properties</h2>
+  <hr />
 
   
     
 <div class="member" id="_drawCallPool">
-  <h3 class="member__title">_drawCallPool</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_drawCallPool">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>_drawCallPool</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">static _drawCallPool: Array&lt;PIXI.BatchDrawCall></code></pre>
 
@@ -123,7 +148,18 @@ Shared between all batch renderers because it can be only one &quot;flush&quot; 
   
     
 <div class="member" id="_textureArrayPool">
-  <h3 class="member__title">_textureArrayPool</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_textureArrayPool">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>_textureArrayPool</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">static _textureArrayPool: Array&lt;PIXI.BatchTextureArray></code></pre>
 
@@ -142,7 +178,18 @@ Shared between all batch renderers because it can be only one &quot;flush&quot; 
   
     
 <div class="member" id="bufferSize">
-  <h3 class="member__title">bufferSize</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#bufferSize">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>bufferSize</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">bufferSize: number</code></pre>
 
@@ -158,7 +205,18 @@ Shared between all batch renderers because it can be only one &quot;flush&quot; 
   
     
 <div class="member" id="MAX_TEXTURES">
-  <h3 class="member__title">MAX_TEXTURES</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#MAX_TEXTURES">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>MAX_TEXTURES</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">MAX_TEXTURES: number</code></pre>
 
@@ -176,7 +234,18 @@ properly in <code>this.contextChange</code>.</p></div>
   
     
 <div class="member" id="renderer">
-  <h3 class="member__title">renderer</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#renderer">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>renderer</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">renderer: PIXI.Renderer</code></pre>
 
@@ -192,7 +261,18 @@ properly in <code>this.contextChange</code>.</p></div>
   
     
 <div class="member" id="size">
-  <h3 class="member__title">size</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#size">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>size</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">size: number</code></pre>
 
@@ -209,7 +289,18 @@ occurs automatically.</p></div>
   
     
 <div class="member" id="state">
-  <h3 class="member__title">state</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#state">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>state</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">state: PIXI.State</code></pre>
 
@@ -225,7 +316,18 @@ occurs automatically.</p></div>
   
     
 <div class="member" id="vertexSize">
-  <h3 class="member__title">vertexSize</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#vertexSize">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>vertexSize</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">vertexSize: number</code></pre>
 
@@ -268,11 +370,23 @@ batch-renderer plugin uses 6:</p>
     
 <div class="members">
   <h2 class="members__category">Protected Properties</h2>
+  <hr />
 
   
     
 <div class="member" id="_shader">
-  <h3 class="member__title">_shader</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_shader">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>_shader</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">protected _shader: PIXI.Shader</code></pre>
 
@@ -289,7 +403,18 @@ number of textures being batched together.</p></div>
   
     
 <div class="member" id="geometryClass">
-  <h3 class="member__title">geometryClass</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#geometryClass">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>geometryClass</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">protected geometryClass: object</code></pre>
 
@@ -306,7 +431,18 @@ that are going to be batched with this.</p></div>
   
     
 <div class="member" id="shaderGenerator">
-  <h3 class="member__title">shaderGenerator</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#shaderGenerator">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>shaderGenerator</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">protected shaderGenerator: PIXI.BatchShaderGenerator</code></pre>
 
@@ -331,11 +467,23 @@ custom shader generator.</p></div>
     
 <div class="members">
   <h2 class="members__category">Public Methods</h2>
+  <hr />
 
   
     
 <div class="member" id="bindAndClearTexArray">
-  <h3 class="member__title">bindAndClearTexArray</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#bindAndClearTexArray">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>bindAndClearTexArray</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">bindAndClearTexArray(texArray: PIXI.BatchTextureArray) → {}</code></pre>
 
@@ -381,7 +529,18 @@ custom shader generator.</p></div>
   
     
 <div class="member" id="buildDrawCalls">
-  <h3 class="member__title">buildDrawCalls</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#buildDrawCalls">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>buildDrawCalls</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">buildDrawCalls(texArray: PIXI.BatchTextureArray, start: number, finish: number) → {}</code></pre>
 
@@ -447,7 +606,18 @@ custom shader generator.</p></div>
   
     
 <div class="member" id="contextChange">
-  <h3 class="member__title">contextChange</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#contextChange">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>contextChange</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">contextChange() → {}</code></pre>
 
@@ -464,7 +634,18 @@ packed-geometry object pool.</p></div>
   
     
 <div class="member" id="destroy">
-  <h3 class="member__title">destroy</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#destroy">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>destroy</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">destroy() → {}</code></pre>
 
@@ -480,7 +661,18 @@ packed-geometry object pool.</p></div>
   
     
 <div class="member" id="drawBatches">
-  <h3 class="member__title">drawBatches</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#drawBatches">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>drawBatches</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">drawBatches() → {}</code></pre>
 
@@ -496,7 +688,18 @@ packed-geometry object pool.</p></div>
   
     
 <div class="member" id="flush">
-  <h3 class="member__title">flush</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#flush">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>flush</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">flush() → {}</code></pre>
 
@@ -512,7 +715,18 @@ packed-geometry object pool.</p></div>
   
     
 <div class="member" id="initFlushBuffers">
-  <h3 class="member__title">initFlushBuffers</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#initFlushBuffers">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>initFlushBuffers</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">initFlushBuffers() → {}</code></pre>
 
@@ -528,7 +742,18 @@ packed-geometry object pool.</p></div>
   
     
 <div class="member" id="onPrerender">
-  <h3 class="member__title">onPrerender</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#onPrerender">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>onPrerender</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">onPrerender() → {}</code></pre>
 
@@ -545,7 +770,18 @@ object again.</p></div>
   
     
 <div class="member" id="packInterleavedGeometry">
-  <h3 class="member__title">packInterleavedGeometry</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#packInterleavedGeometry">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>packInterleavedGeometry</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">packInterleavedGeometry(element: PIXI.Sprite, attributeBuffer: PIXI.ViewableBuffer, indexBuffer: Uint16Array, aIndex: number, iIndex: number) → {}</code></pre>
 
@@ -635,7 +871,18 @@ present.</p></div>
   
     
 <div class="member" id="render">
-  <h3 class="member__title">render</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#render">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>render</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">render(element: PIXI.DisplayObject) → {}</code></pre>
 
@@ -683,7 +930,18 @@ using this renderer</p></td>
   
     
 <div class="member" id="start">
-  <h3 class="member__title">start</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#start">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>start</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">start() → {}</code></pre>
 
@@ -699,7 +957,18 @@ using this renderer</p></td>
   
     
 <div class="member" id="stop">
-  <h3 class="member__title">stop</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#stop">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>stop</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">stop() → {}</code></pre>
 
@@ -719,11 +988,12 @@ using this renderer</p></td>
   </div>
 </div>
 
+<hr class="page-r-divider" />
 <nav class="page-members-explorer">
   
 
 <div class="page-members-explorer-category">
-  <h3 class="page-members-explorer-category__title">Public Properties</h3>
+  <section class="page-members-explorer-category__title">Public Properties</section>
   <ul class="page-members-explorer-category__items">
     
       <li class="page-members-explorer__item"><a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_drawCallPool">_drawCallPool</a></li>
@@ -748,7 +1018,7 @@ using this renderer</p></td>
   
 
 <div class="page-members-explorer-category">
-  <h3 class="page-members-explorer-category__title">Protected Properties</h3>
+  <section class="page-members-explorer-category__title">Protected Properties</section>
   <ul class="page-members-explorer-category__items">
     
       <li class="page-members-explorer__item"><a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_shader">_shader</a></li>
@@ -763,7 +1033,7 @@ using this renderer</p></td>
   
 
 <div class="page-members-explorer-category">
-  <h3 class="page-members-explorer-category__title">Public Methods</h3>
+  <section class="page-members-explorer-category__title">Public Methods</section>
   <ul class="page-members-explorer-category__items">
     
       <li class="page-members-explorer__item"><a href="/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#bindAndClearTexArray">bindAndClearTexArray</a></li>
@@ -798,6 +1068,8 @@ using this renderer</p></td>
 
 
 
+          </div>
+        </div?
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
       <script src="scripts/linenumber.js"> </script>

@@ -21,14 +21,23 @@
   </head>
   <body class="root">
     <div class="docs">
-      <header class="header" id="header-mount-point"></header>
       <article class="page">
         <div class="page-explorer" id="explorer-mount-point"></div>
-        
-        
+        <div class="header-content-container">
+          <section class="header" id="header-mount-point"></section>
+          <div class="header-content-container__content">
+            
+            
 <div class="page-content">
   <div class="document">
-    <div class="document__package">@webdoc/example</div>
+    <div class="document__breadcrumb">
+      
+        @webdoc/example
+        &gt;
+      
+      
+      <span>CarDealer</span>
+    </div>
     <h1 class="document__title">CarDealer</h1>
     
 <pre class="signature__container"><code class="signature">interface CarDealer</code></pre>
@@ -44,11 +53,23 @@
     
 <div class="members">
   <h2 class="members__category">Public Methods</h2>
+  <hr />
 
   
     
 <div class="member" id="closeTransaction">
-  <h3 class="member__title">closeTransaction</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/CarDealer.html#closeTransaction">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>closeTransaction</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">closeTransaction(trans: <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>, counteroffer: (...t: <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>) => void) → {trans is <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>}</code></pre>
 
@@ -100,23 +121,25 @@
 
   
     
-<table class="member-returns">
-  <caption class="member-returns__caption">Returns:</caption>
-  <thead class="member-returns__head">
-    <tr class="member-returns-header">
-      <th class="member-returns-header__type">Type</th>
-      <th class="member-returns-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-returns__body">
-    <tr class="member-return">
-      <td class="member-return__type">
-        trans is <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>
-      </td>
-      <td class="member-return__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-returns">
+    <caption class="member-returns__caption">Returns:</caption>
+    <thead class="member-returns__head">
+      <tr class="member-returns-header">
+        <th class="member-returns-header__type">Type</th>
+        <th class="member-returns-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-returns__body">
+      <tr class="member-return">
+        <td class="member-return__type">
+          trans is <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>
+        </td>
+        <td class="member-return__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 </div>
@@ -124,7 +147,18 @@
   
     
 <div class="member" id="initiateTransaction">
-  <h3 class="member__title">initiateTransaction</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/CarDealer.html#initiateTransaction">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>initiateTransaction</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">initiateTransaction(x: object) → {typeof <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>}</code></pre>
 
@@ -170,23 +204,25 @@
 
   
     
-<table class="member-returns">
-  <caption class="member-returns__caption">Returns:</caption>
-  <thead class="member-returns__head">
-    <tr class="member-returns-header">
-      <th class="member-returns-header__type">Type</th>
-      <th class="member-returns-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-returns__body">
-    <tr class="member-return">
-      <td class="member-return__type">
-        typeof <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>
-      </td>
-      <td class="member-return__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-returns">
+    <caption class="member-returns__caption">Returns:</caption>
+    <thead class="member-returns__head">
+      <tr class="member-returns-header">
+        <th class="member-returns-header__type">Type</th>
+        <th class="member-returns-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-returns__body">
+      <tr class="member-return">
+        <td class="member-return__type">
+          typeof <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>
+        </td>
+        <td class="member-return__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 </div>
@@ -194,7 +230,18 @@
   
     
 <div class="member" id="offerAsk">
-  <h3 class="member__title">offerAsk</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/CarDealer.html#offerAsk">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>offerAsk</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">offerAsk(on: <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>, counteroffer: (t: <a href="/example-documentation/@webdoc/example/Car.html">Car</a>) => void, test: { [testProperty in keyof keyof] }: number) → {boolean}</code></pre>
 
@@ -268,23 +315,25 @@
 
   
     
-<table class="member-returns">
-  <caption class="member-returns__caption">Returns:</caption>
-  <thead class="member-returns__head">
-    <tr class="member-returns-header">
-      <th class="member-returns-header__type">Type</th>
-      <th class="member-returns-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-returns__body">
-    <tr class="member-return">
-      <td class="member-return__type">
-        boolean
-      </td>
-      <td class="member-return__description"><p>type inference is working</p></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-returns">
+    <caption class="member-returns__caption">Returns:</caption>
+    <thead class="member-returns__head">
+      <tr class="member-returns-header">
+        <th class="member-returns-header__type">Type</th>
+        <th class="member-returns-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-returns__body">
+      <tr class="member-return">
+        <td class="member-return__type">
+          boolean
+        </td>
+        <td class="member-return__description"><p>type inference is working</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 </div>
@@ -292,7 +341,18 @@
   
     
 <div class="member" id="offerBid">
-  <h3 class="member__title">offerBid</h3>
+  
+    <section class="member__title">
+      <a href="/example-documentation/@webdoc/example/CarDealer.html#offerBid">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span>offerBid</span>
+    </section>
+  
   
 <pre class="signature__container"><code class="signature">offerBid(on: { t : <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>, [id: string]: <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>[] }, counteroffer: <a href="/example-documentation/@webdoc/example/Car.html">Car</a> | <a href="/example-documentation/@webdoc/example/Vector.html">Vector</a>) → {boolean}</code></pre>
 
@@ -352,23 +412,25 @@
 
   
     
-<table class="member-returns">
-  <caption class="member-returns__caption">Returns:</caption>
-  <thead class="member-returns__head">
-    <tr class="member-returns-header">
-      <th class="member-returns-header__type">Type</th>
-      <th class="member-returns-header__description">Description</th>
-    </tr>
-  </thead>
-  <tbody class="member-returns__body">
-    <tr class="member-return">
-      <td class="member-return__type">
-        boolean
-      </td>
-      <td class="member-return__description"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table class="member-returns">
+    <caption class="member-returns__caption">Returns:</caption>
+    <thead class="member-returns__head">
+      <tr class="member-returns-header">
+        <th class="member-returns-header__type">Type</th>
+        <th class="member-returns-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-returns__body">
+      <tr class="member-return">
+        <td class="member-return__type">
+          boolean
+        </td>
+        <td class="member-return__description"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
 </div>
@@ -380,13 +442,14 @@
   </div>
 </div>
 
+<hr class="page-r-divider" />
 <nav class="page-members-explorer">
   
   
   
 
 <div class="page-members-explorer-category">
-  <h3 class="page-members-explorer-category__title">Public Methods</h3>
+  <section class="page-members-explorer-category__title">Public Methods</section>
   <ul class="page-members-explorer-category__items">
     
       <li class="page-members-explorer__item"><a href="/example-documentation/@webdoc/example/CarDealer.html#closeTransaction">closeTransaction</a></li>
@@ -405,6 +468,8 @@
 
 
 
+          </div>
+        </div?
       </article>
       <footer class="footer" id="footer-mount-point"></footer>
       <script src="scripts/linenumber.js"> </script>
