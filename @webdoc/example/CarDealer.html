@@ -43,13 +43,21 @@
       
       <span>CarDealer</span>
     </div>
-    <h1 class="document__title">CarDealer</h1>
+    <section class="document__title ">
+      <h1>
+        CarDealer
+      </h1>
+      
+    </section>
+
     
 <pre class="signature__container"><code class="signature">interface CarDealer</code></pre>
 
 
     <div class="document__brief"><p>This is the interface for dealing with car dealers.</p></div>
     <div class="document__description"></div>
+
+    
 
     
 
@@ -160,6 +168,15 @@
   
 
 
+  
+
+  
+
+
+
+  
+
+
 
   
 
@@ -179,7 +196,7 @@
     
 <div class="member" id="closeTransaction">
   
-    <section class="member__title">
+    <section class="member__title ">
       <a href="/example-documentation/@webdoc/example/CarDealer.html#closeTransaction">
         <img
           src="/example-documentation/icons/link.svg"
@@ -187,12 +204,18 @@
           height="16px"
         />
       </a>
-      <span>closeTransaction</span>
+      <span class="member__title_content">
+        <span>closeTransaction</span>
+        
+      </span>
     </section>
   
   
 <pre class="signature__container"><code class="signature">closeTransaction(trans: <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>, counteroffer: (...t: <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>) => void) → {trans is <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>}</code></pre>
 
+  <section class="member__tags">
+    
+  </section>
 
   <div class="member__brief"><p>Close transaction. If you respond to the counteroffer, then it won't be closed.</p></div>
   <div class="member__description"></div>
@@ -262,13 +285,14 @@
 </div>
 
   
+  
 </div>
 
   
     
 <div class="member" id="initiateTransaction">
   
-    <section class="member__title">
+    <section class="member__title ">
       <a href="/example-documentation/@webdoc/example/CarDealer.html#initiateTransaction">
         <img
           src="/example-documentation/icons/link.svg"
@@ -276,12 +300,18 @@
           height="16px"
         />
       </a>
-      <span>initiateTransaction</span>
+      <span class="member__title_content">
+        <span>initiateTransaction</span>
+        
+      </span>
     </section>
   
   
 <pre class="signature__container"><code class="signature">initiateTransaction(x: object) → {typeof <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>}</code></pre>
 
+  <section class="member__tags">
+    
+  </section>
 
   <div class="member__brief"><p>Initiate a transaction/negotiation with a car dealer</p></div>
   <div class="member__description"></div>
@@ -345,13 +375,14 @@
 </div>
 
   
+  
 </div>
 
   
     
 <div class="member" id="offerAsk">
   
-    <section class="member__title">
+    <section class="member__title ">
       <a href="/example-documentation/@webdoc/example/CarDealer.html#offerAsk">
         <img
           src="/example-documentation/icons/link.svg"
@@ -359,12 +390,18 @@
           height="16px"
         />
       </a>
-      <span>offerAsk</span>
+      <span class="member__title_content">
+        <span>offerAsk</span>
+        
+      </span>
     </section>
   
   
 <pre class="signature__container"><code class="signature">offerAsk(on: <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>, counteroffer: (t: <a href="/example-documentation/@webdoc/example/Car.html">Car</a>) => void, test: { [testProperty in keyof keyof] }: number) → {boolean}</code></pre>
 
+  <section class="member__tags">
+    
+  </section>
 
   <div class="member__brief"><p>Offer a price to sell the car.</p></div>
   <div class="member__description"><p>NOTE: This is invalid behaviour if you are the buyer in the transaction.</p></div>
@@ -456,13 +493,14 @@
 </div>
 
   
+  
 </div>
 
   
     
 <div class="member" id="offerBid">
   
-    <section class="member__title">
+    <section class="member__title ">
       <a href="/example-documentation/@webdoc/example/CarDealer.html#offerBid">
         <img
           src="/example-documentation/icons/link.svg"
@@ -470,12 +508,18 @@
           height="16px"
         />
       </a>
-      <span>offerBid</span>
+      <span class="member__title_content">
+        <span>offerBid</span>
+        
+      </span>
     </section>
   
   
 <pre class="signature__container"><code class="signature">offerBid(on: { t : <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>, [id: string]: <a href="/example-documentation/@webdoc/example/Ts/Transaction.html">Ts.Transaction</a>[] }, counteroffer: <a href="/example-documentation/@webdoc/example/Car.html">Car</a> | <a href="/example-documentation/@webdoc/example/Vector.html">Vector</a>) → {boolean}</code></pre>
 
+  <section class="member__tags">
+    
+  </section>
 
   <div class="member__brief"><p>Offer a price to buy the car.</p></div>
   <div class="member__description"><p>NOTE: This is invalid behaviour if you are the seller in the transaction.</p></div>
@@ -553,11 +597,13 @@
 </div>
 
   
+  
 </div>
 
   
 </div>
 
+    
     
   </div>
   <footer class="footer" id="footer-mount-point"></footer>
@@ -589,6 +635,7 @@
   </ul>
 </div>
 
+  
   
 </nav>
 
