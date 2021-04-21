@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{ <i>webdoc</i> }: Cars 101</title>
+
+    <link type="text/css" rel="stylesheet" href="/example-documentation/styles/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto+Mono&display=swap" />
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css">
+
+    
+
+    <script>
+      window.appData = {
+        applicationName: "{ <i>webdoc</i> }",
+        appBar: JSON.parse(`{"current":"tutorials"}`),
+        explorerTree: "example-documentation/explorer/tutorials.json",
+        siteRoot: "example-documentation",
+        integrations: JSON.parse(`{}`),
+      };
+    </script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+    <script src="/example-documentation/scripts/default-template.js"></script>
+  </head>
+  <body class="root">
+    <div class="docs">
+      <article class="page">
+        <div class="page-explorer" id="explorer-mount-point"></div>
+        <div class="header-content-container">
+          <section class="header" id="header-mount-point"></section>
+          <div class="header-content-container__content">
+            
+            
+<div class="page-content">
+  <div class="document">
+    
+    <h1>Car</h1>
+<p>A car is an automobile generally used to transport people on roads. This example package contains<br>
+an API to simulate cars via the <a href=/example-documentation/@webdoc/example/Car.html>Car</a> class.</p>
+<h2>How to get a Car instance</h2>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> {Car, FordEngine, FordTransmission} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@webdoc/example&quot;</span>;
+
+<span class="hljs-comment">// Create a car built by Ford</span>
+<span class="hljs-keyword">const</span> car = <span class="hljs-keyword">new</span> Car({ <span class="hljs-attr">make</span>: <span class="hljs-string">&quot;Ford&quot;</span> });
+
+<span class="hljs-comment">// Customize car infrastructure with ford components</span>
+car.installComponent(<span class="hljs-string">&quot;slot-engine&quot;</span>, <span class="hljs-keyword">new</span> FordEngine({ <span class="hljs-attr">pistons</span>: <span class="hljs-number">8</span> }));
+car.installComponent(<span class="hljs-string">&quot;slot-transmission&quot;</span>, <span class="hljs-keyword">new</span> FordTransmission({ <span class="hljs-attr">drive</span>: <span class="hljs-number">4</span> }));
+
+<span class="hljs-comment">// Place car on road (on Earth)</span>
+car.drop(<span class="hljs-string">&quot;1234 Virtual St, VA, VUSA&quot;</span>, { <span class="hljs-attr">planet</span>: <span class="hljs-string">&quot;Earth&quot;</span> });
+
+<span class="hljs-comment">// Set gear to &quot;drive&quot;</span>
+car.gear(<span class="hljs-string">&quot;D&quot;</span>);
+
+<span class="hljs-comment">// Accelerate 2 m/s every second until we reach 100 m/s and then stop accelerating</span>
+car.accelerate(<span class="hljs-number">2</span>).until(<span class="hljs-number">100</span>).then(<span class="hljs-number">0</span>);
+
+<span class="hljs-comment">// If you have insurance, add a callback to ensure you are insured</span>
+car.onCrash(<span class="hljs-function">() =&gt;</span> Services.Insurance.initiateClaim(<span class="hljs-string">&quot;&lt;your-insurance-token&gt;&quot;</span>));
+</code></pre>
+<h2>Using financial services</h2>
+<p>If you don't have enough cash in your bank account immediately, you can use financial services to get a credit<br>
+to buy a car. You will have to involve a creditor and use an explicit transaction:</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> transaction = Services.Bank.requestCredit({
+  <span class="hljs-attr">type</span>: <span class="hljs-string">&quot;auto-loan&quot;</span>,
+  <span class="hljs-attr">details</span>: {
+    <span class="hljs-attr">make</span>: <span class="hljs-string">&quot;Ford&quot;</span>,
+    <span class="hljs-attr">model</span>: <span class="hljs-string">&quot;Chevy&quot;</span>
+  }
+});
+
+transaction.items.register(<span class="hljs-keyword">new</span> CarDetails({ <span class="hljs-attr">make</span>: <span class="hljs-string">&quot;Ford&quot;</span>, <span class="hljs-attr">model</span>: <span class="hljs-string">&quot;Chevy&quot;</span> }));
+
+<span class="hljs-keyword">if</span> (transaction.credit.isApproved()) {
+  <span class="hljs-keyword">const</span> car = transaction.execute(<span class="hljs-keyword">new</span> Car({ <span class="hljs-attr">make</span>: <span class="hljs-string">&quot;Ford&quot;</span>, <span class="hljs-attr">model</span>: <span class="hljs-string">&quot;Chevy&quot;</span> }));
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&quot;You need to generate more cashflow to buy a car at this time.&quot;</span>);
+}
+</code></pre>
+<h2>Getting auto-insurance</h2>
+<p>To buy auto-insurance, you must have a car:</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> insurance = Services.Insurance.buy({
+  <span class="hljs-attr">type</span>: <span class="hljs-string">&quot;auto-insurance&quot;</span>,
+  <span class="hljs-attr">items</span>: [car]
+});
+
+insurance.onPremiumPaymentStatusChange(<span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">console</span>.warn(<span class="hljs-string">&quot;You might want to pay your premium!&quot;</span>));
+
+<span class="hljs-keyword">if</span> (insurance.isApproved()) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Congrats!&quot;</span>);
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&quot;Low on money, buddy!&quot;</span>);
+}
+</code></pre>
+
+  </div>
+</div>
+            <!-- footer in content -->
+          </div>
+        </div>
+      </article>
+      <script src="scripts/linenumber.js"> </script>
+    </body>
+  </div>
+</html>
