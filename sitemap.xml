@@ -2,93 +2,93 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/Class-Index.html</loc>
+    <loc>https://webdoc-labs.github.io/Class-Index.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/PIXI.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/PIXI.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/PIXI/utils.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/PIXI/utils.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/PIXI/utils/skipHello.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/PIXI/utils/skipHello.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/PIXI/TilingSprite.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/PIXI/TilingSprite.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/PIXI/AbstractRenderer.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/PIXI/AbstractRenderer.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/PIXI/ObjectRenderer.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/PIXI/ObjectRenderer.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/PIXI/System.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/PIXI/System.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/PIXI/AbstractBatchRenderer.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/PIXI/.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/PIXI/.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/R.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/R.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/R/Road.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/R/Road.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/R/Road.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/Ts.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/Ts.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/Ts/Transaction.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/Ts/Transaction.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/Bean.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/Bean.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/Car.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/Car.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/CoffeeBean.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/CoffeeBean.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/ExampleFactory.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/Gravity.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/Gravity.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/PhysicalInteraction.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/PhysicalInteraction.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/PhysicalObject.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/PhysicalObject.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/Vector.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/Vector.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/CAR_MAKES.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/CAR_MAKES.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/VectorArray.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/VectorArray.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/CarDealer.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/CarDealer.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/installBean.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/installBean.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/isPhysicalObject.html</loc>
+    <loc>https://webdoc-labs.github.io/@webdoc/example/isPhysicalObject.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/example-documentation/tutorials/car.html</loc>
+    <loc>https://webdoc-labs.github.io/tutorials/car.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/example-documentation/tutorials/ford.html</loc>
+    <loc>https://webdoc-labs.github.io/tutorials/ford.html</loc>
   </url>
   <url>
-    <loc>https://webdoc-labs.github.io/example-documentation/example-documentation/tutorials/road.html</loc>
+    <loc>https://webdoc-labs.github.io/tutorials/road.html</loc>
   </url>
 </urlset>
