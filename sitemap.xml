@@ -2,6 +2,33 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
+    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/src/Bean.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/src/Car.ts.html</loc>
+  </url>
+  <url>
+    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/src/CoffeeBean.js.html</loc>
+  </url>
+  <url>
+    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/src/ExampleFactory.js.html</loc>
+  </url>
+  <url>
+    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/src/PhysicalInteraction.js.html</loc>
+  </url>
+  <url>
+    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/src/PhysicalObject.js.html</loc>
+  </url>
+  <url>
+    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/src/StreamBuilder.js.html</loc>
+  </url>
+  <url>
+    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/src/Vector.js.html</loc>
+  </url>
+  <url>
+    <loc>https://webdoc-labs.github.io/example-documentation/@webdoc/example/src/index.js.html</loc>
+  </url>
+  <url>
     <loc>https://webdoc-labs.github.io/example-documentation/Class-Index.html</loc>
   </url>
   <url>
