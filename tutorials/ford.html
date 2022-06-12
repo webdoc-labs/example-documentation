@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>{ <i>webdoc</i> }: Documentation</title>
+    <title>{ <i>webdoc</i> }: Ford 101</title>
 
     
 
@@ -29,8 +29,8 @@
       <script>
         window.appData = {
           applicationName: `{ <i>webdoc</i> }`,
-          appBar: {"items":{"reference":{"name":"API Reference","uri":"/example-documentation/index.html"},"tutorials":{"name":"Tutorials","uri":"/example-documentation/tutorials/car.html"}},"current":"reference"},
-          explorerTree: "/example-documentation/explorer/reference.json",
+          appBar: {"items":{"reference":{"name":"API Reference","uri":"/example-documentation/index.html"},"tutorials":{"name":"Tutorials","uri":"/example-documentation/tutorials/car.html"}},"current":"tutorials"},
+          explorerTree: "/example-documentation/explorer/tutorials.json",
           siteRoot: "example-documentation",
           integrations: JSON.parse(`{}`),
         };
@@ -42,7 +42,7 @@
     
   </head>
   <body class="root">
-    <div class="docs ">
+    <div class="docs tutorials">
       <article class="page">
         <div class="header-content-container">
           <section class="header" id="header-mount-point">
@@ -54,29 +54,53 @@
             </div>
             
             
-<div class="page-content">
-  <div class="homepage">
-  
-    <div class="homepage__readme md">
-      <h1>@webdoc/example</h1>
-<p>Example documented package.</p>
-<p>This package contains all sorts of fun stuff while demonstrating what things webdoc can document.</p>
-<h2>Usage</h2>
-<ul>
-<li><code>rush build</code> will build all the packages and build the example docs</li>
-</ul>
-<p>P.S.
-Use <code>rush build -t @webdoc/example</code> to specifically build example and its dependencies only.</p>
-<p>Once built, the <code>./example-documentation</code> folder will hold the generated site. You should serve the
-site from the package folder and go to the /example-documentation path in the browser.</p>
-<pre class="hljs"><code><span class="hljs-comment"># Open localhost:5000/example-documentation</span>
-npx serve .
-</code></pre>
+<main class="page-content">
+  <div class="document">
+    
+    
+<p>Ford is an American manufacterer of cars. Here is a list of components you can use<br>
+in ford cars.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Slot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FordEngine</td>
+<td>slot-engine</td>
+</tr>
+<tr>
+<td>FordAC</td>
+<td>slot-ac</td>
+</tr>
+<tr>
+<td>FordTransmission</td>
+<td>slot-transmission</td>
+</tr>
+<tr>
+<td>FordBumper</td>
+<td>slot-bumper</td>
+</tr>
+<tr>
+<td>FordWheel</td>
+<td>slot-wheel-front-left, slot-wheel-front-right, slot-wheel-back-left, slot-wheel-back-right</td>
+</tr>
+</tbody>
+</table>
 
-    </div>
-  
+
   </div>
-</div>
+  
+  <div class="footer-gap" style="min-height: 48px;"></div>
+  
+
+
+  <footer class="footer" id="footer-mount-point"></footer>
+
+</main>
 
             <!-- footer in content -->
           </div>

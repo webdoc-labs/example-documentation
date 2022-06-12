@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>{ <i>webdoc</i> }: Documentation</title>
+    <title>{ <i>webdoc</i> }: installBean</title>
 
     
 
@@ -42,7 +42,7 @@
     
   </head>
   <body class="root">
-    <div class="docs ">
+    <div class="docs api-docs">
       <article class="page">
         <div class="header-content-container">
           <section class="header" id="header-mount-point">
@@ -54,29 +54,108 @@
             </div>
             
             
-<div class="page-content">
-  <div class="homepage">
-  
-    <div class="homepage__readme md">
-      <h1>@webdoc/example</h1>
-<p>Example documented package.</p>
-<p>This package contains all sorts of fun stuff while demonstrating what things webdoc can document.</p>
-<h2>Usage</h2>
-<ul>
-<li><code>rush build</code> will build all the packages and build the example docs</li>
-</ul>
-<p>P.S.
-Use <code>rush build -t @webdoc/example</code> to specifically build example and its dependencies only.</p>
-<p>Once built, the <code>./example-documentation</code> folder will hold the generated site. You should serve the
-site from the package folder and go to the /example-documentation path in the browser.</p>
-<pre class="hljs"><code><span class="hljs-comment"># Open localhost:5000/example-documentation</span>
-npx serve .
-</code></pre>
-
+<main class="page-content">
+  <div class="document">
+    <div class="breadcrumb">
+      
+        @webdoc/example
+        &gt;
+      
+      
+      <span>installBean</span>
     </div>
-  
-  </div>
+    <section class="document__title ">
+      <h1>
+        installBean
+      </h1>
+      
+    </section>
+
+    
+<pre class="signature__container"><code class="signature">installBean(bean: { new (): <a href="/example-documentation/@webdoc/example/Bean.html">Bean</a> }) → {void}</code></pre>
+
+
+    <div class="document__brief">
+<p>Install a bean class</p>
 </div>
+    <div class="document__description"></div>
+
+    
+
+    
+
+    
+       
+<div class="table-wrapper">
+  <table class="member-parameters">
+    <caption class="member-parameters__caption">Parameters:</caption>
+    <thead class="member-parameters__head">
+      <tr class="member-parameter-header">
+        <th class="member-parameter-header__name">Name</th>
+        <th class="member-parameter-header__type">Type</th>
+        
+        
+        <th class="member-parameter-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-parameters__body">
+      <tr class="member-parameter">
+        <td class="member-parameter__name">
+          bean
+        </td>
+        <td class="member-parameter__type">
+          { new (): <a href="/example-documentation/@webdoc/example/Bean.html">Bean</a> }
+        </td>
+        
+        
+        <td class="member-parameter__description">
+<p>the bean class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+       
+<div class="table-wrapper">
+  <table class="member-returns">
+    <caption class="member-returns__caption">Returns:</caption>
+    <thead class="member-returns__head">
+      <tr class="member-returns-header">
+        <th class="member-returns-header__type">Type</th>
+        <th class="member-returns-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-returns__body">
+      <tr class="member-return">
+        <td class="member-return__type">
+          void
+        </td>
+        <td class="member-return__description">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    
+
+    
+
+    
+    
+    
+    
+    
+  </div>
+  <div class="footer-gap" style="min-height: 48px;"></div>
+  
+
+
+  <footer class="footer" id="footer-mount-point"></footer>
+
+</main>
+
 
             <!-- footer in content -->
           </div>
