@@ -6,18 +6,18 @@
 		"siteRoot": "example-documentation"
 	},
 	"root": {
-		"id": "root-klPMRlEvwzXcIIGaebjxN",
+		"id": "root-nNBOCKsJQRVRQtpFUFSny",
 		"name": "",
 		"type": "RootDoc",
 		"members": [
 			{
-				"id": "_QhwoPpPcLkqIXPsl3-X_",
+				"id": "Nme538yjKDZbzlJBM_fR3",
 				"name": "PIXI",
 				"brief": "",
 				"type": "NSDoc",
 				"members": [
 					{
-						"id": "szkS3Xumhv_mifcMWbHbO",
+						"id": "-6xrnHgLu86Xe91RKDnPf",
 						"name": "utils",
 						"brief": "",
 						"defaultValue": "false",
@@ -25,7 +25,7 @@
 						"type": "NSDoc",
 						"members": [
 							{
-								"id": "BkZFhHqFwMO0VW9Mat9OI",
+								"id": "NAgMzkTWpf4EwdMtZ9FKA",
 								"name": "skipHello",
 								"brief": "<p>Skips the hello message of renderers that are created after this is run.</p>",
 								"deprecated": true,
@@ -48,7 +48,7 @@
 						]
 					},
 					{
-						"id": "qXJcQBkIer4BC4wvmYoYx",
+						"id": "81z4fHC944d_rrNDJueL_",
 						"name": "TilingSprite",
 						"brief": "",
 						"deprecated": "since 5.0.0",
@@ -59,7 +59,7 @@
 						"type": "ClassDoc",
 						"members": [
 							{
-								"id": "kGhvb9e7hdjvJJtTJI-PS",
+								"id": "dQapFHltIsdvR11iArXKD",
 								"name": "constructor",
 								"brief": "",
 								"access": "public",
@@ -70,20 +70,20 @@
 						]
 					},
 					{
-						"id": "izuikp599GqGzd-ZA8xdp",
+						"id": "FmFeRrYx22g4Mf_3BIqbB",
 						"name": "AbstractRenderer",
 						"brief": "",
 						"type": "ClassDoc",
 						"members": [
 							{
-								"id": "Lr0MkPgX6dMvfMWHbYhh4",
+								"id": "Idtv7hzXXhr63tQbX1yes",
 								"name": "backgroundColor",
 								"brief": "<p>The background color to fill if not transparent</p>",
 								"scope": "instance",
 								"type": "PropertyDoc"
 							},
 							{
-								"id": "0ZNgJKx1QBaE_UqEUfg5k",
+								"id": "VDaUxakKTtt0wUMiA747D",
 								"name": "constructor",
 								"brief": "",
 								"access": "public",
@@ -94,7 +94,7 @@
 						]
 					},
 					{
-						"id": "lRHxZFoonf_IcpepFZC_i",
+						"id": "7ECRKdVeJWNwdt5zIzKI5",
 						"name": "ObjectRenderer",
 						"brief": "<p>Base for a common object renderer that can be used as a system renderer plugin.</p>",
 						"type": "ClassDoc",
@@ -103,14 +103,14 @@
 						],
 						"members": [
 							{
-								"id": "P8obzb6Zva2TAspk0zXL3",
+								"id": "0V44JVlS3InIhISuQohrf",
 								"name": "renderer",
 								"brief": "<p>The renderer this manager works for.</p>",
 								"scope": "instance",
 								"type": "PropertyDoc"
 							},
 							{
-								"id": "TesNPJHeYceRvuXOHIpMl",
+								"id": "VlWv-fpEx5e9ynKKHmijv",
 								"name": "constructor",
 								"brief": "",
 								"scope": "instance",
@@ -138,7 +138,7 @@
 								"returns": []
 							},
 							{
-								"id": "2UeeEfq4MmpJeGJmB4ZJZ",
+								"id": "-K8Dpgv-DGnYg2NApIY9Q",
 								"name": "destroy",
 								"brief": "",
 								"scope": "instance",
@@ -148,7 +148,7 @@
 								"returns": []
 							},
 							{
-								"id": "67tFjSG1sYDl1plFayqCX",
+								"id": "Dz7Lt5-3K4mFyAhRHQnIk",
 								"name": "flush",
 								"brief": "",
 								"scope": "instance",
@@ -158,7 +158,7 @@
 								"returns": []
 							},
 							{
-								"id": "vyYAlmYFnJuVnUkO5R_3A",
+								"id": "I9coP2kFXu1n6-2DQnABd",
 								"name": "render",
 								"brief": "",
 								"scope": "instance",
@@ -187,7 +187,7 @@
 								"returns": []
 							},
 							{
-								"id": "Sn3lcklYQK75-qxlF0RD8",
+								"id": "_dOUblsNMr_1l7SGWy9xt",
 								"name": "start",
 								"brief": "",
 								"scope": "instance",
@@ -197,7 +197,7 @@
 								"returns": []
 							},
 							{
-								"id": "WcVFu92F_fHhbSLIBrmXu",
+								"id": "nztP1F194l_tkHUBtdJFA",
 								"name": "stop",
 								"brief": "",
 								"scope": "instance",
@@ -209,7 +209,7 @@
 						]
 					},
 					{
-						"id": "RwwMqLH5hiH_kVfllOMcw",
+						"id": "tfmrCITkSbS7Yrz3BLp6U",
 						"name": "System",
 						"brief": "<p>System is a base class used for extending systems used by the {@link PIXI.AbstractRenderer}.</p>",
 						"see": [
@@ -219,14 +219,14 @@
 						"description": "<p>Search more here: {@link https://www.google.com/}</p>",
 						"members": [
 							{
-								"id": "nb0MpMhvBb2iVoQ07t6-_",
+								"id": "Wet55C4ucONhWqJtY4ATn",
 								"name": "renderer",
 								"brief": "<p>The renderer this manager works for.</p>",
 								"scope": "instance",
 								"type": "PropertyDoc"
 							},
 							{
-								"id": "D9iL_SFG7BJKFnMB1PyeO",
+								"id": "mtsSrFAcioDABUi9ik5jJ",
 								"name": "constructor",
 								"brief": "",
 								"scope": "instance",
@@ -254,7 +254,7 @@
 								"returns": []
 							},
 							{
-								"id": "ScNLfbzqiMsH0JpE95vCV",
+								"id": "kR_MgdeggbS5OLLGBQlTs",
 								"name": "destroy",
 								"brief": "<p>Generic destroy methods to be overridden by the subclass</p>",
 								"scope": "instance",
@@ -265,7 +265,7 @@
 						]
 					},
 					{
-						"id": "ZBl9gt1EZBeV3LjG5cbzb",
+						"id": "AIFc0Qqi_2KG-QfuyoAlc",
 						"name": "AbstractBatchRenderer",
 						"brief": "<p>Renderer dedicated to drawing and batching sprites.</p>",
 						"access": "protected",
@@ -277,7 +277,7 @@
 						],
 						"members": [
 							{
-								"id": "SDGjk_maxANz5ZHTQ4p5y",
+								"id": "f15nTQjE2I0luvom_narj",
 								"name": "_drawCallPool",
 								"brief": "",
 								"scope": "static",
@@ -285,7 +285,7 @@
 								"description": "<p>Pool of <code>BatchDrawCall</code> objects that <code>flush</code> used\nto create &quot;batches&quot; of the objects being..."
 							},
 							{
-								"id": "lvnXrChbcDHAncfICAhdx",
+								"id": "DPTpTBELyspk9BWo_cw0z",
 								"name": "_textureArrayPool",
 								"brief": "",
 								"scope": "static",
@@ -293,14 +293,14 @@
 								"description": "<p>Pool of <code>BatchDrawCall</code> objects that <code>flush</code> used\nto create &quot;batches&quot; of the objects being..."
 							},
 							{
-								"id": "cDgCSE8NdU53R4mALl3bN",
+								"id": "dNs6yAim9waZulXzILpHu",
 								"name": "bufferSize",
 								"brief": "",
 								"scope": "instance",
 								"type": "PropertyDoc"
 							},
 							{
-								"id": "Q9q4tlimOLlIv58P0epUD",
+								"id": "xrOpOVCPU7ksGS6wzKH9P",
 								"name": "MAX_TEXTURES",
 								"brief": "",
 								"defaultValue": "1",
@@ -313,14 +313,14 @@
 								"description": "<p>Maximum number of textures that can be uploaded to\nthe GPU under the current context. It is initialized\nproperly in <code>..."
 							},
 							{
-								"id": "iWkVbdC09hK7cwBW9s33L",
+								"id": "aojRRNmcNvjxscD350pRC",
 								"name": "renderer",
 								"brief": "<p>The renderer this manager works for.</p>",
 								"scope": "instance",
 								"type": "PropertyDoc"
 							},
 							{
-								"id": "Ln_cdHIz52kbWX8TSd6LF",
+								"id": "DZ6SkmLfW0wKF49EM0F_z",
 								"name": "size",
 								"brief": "",
 								"defaultValue": "settings.SPRITE_BATCH_SIZE * 4",
@@ -329,7 +329,7 @@
 								"description": "<p>The number of bufferable objects before a flush\noccurs automatically.</p>"
 							},
 							{
-								"id": "QR44zhWcAyIelc7vP-TH4",
+								"id": "EXWGIu32kZpBOiAHYB1Ge",
 								"name": "state",
 								"brief": "<p>The WebGL state in which this renderer will work.</p>",
 								"readonly": true,
@@ -337,7 +337,7 @@
 								"type": "PropertyDoc"
 							},
 							{
-								"id": "XDx7AV0iOr92I_ISBegf8",
+								"id": "e-t04-VcVVobY5-BwKgvy",
 								"name": "vertexSize",
 								"brief": "",
 								"defaultValue": "undefined",
@@ -347,7 +347,7 @@
 								"description": "<p>Size of data being buffered per vertex in the\nattribute buffers (in floats). By default, the\nbatch-renderer plugin uses 6:..."
 							},
 							{
-								"id": "lk07iTia3i2UYXpkSp9_w",
+								"id": "qnseYzWaCGPQ9ianRlz6W",
 								"name": "_shader",
 								"brief": "<p>This shader is generated by <code>this.shaderGenerator</code>.</p>",
 								"access": "protected",
@@ -357,7 +357,7 @@
 								"description": "<p>It is generated specifically to handle the required\nnumber of textures being batched together.</p>"
 							},
 							{
-								"id": "1drzUxffHN1ah5ZDfAoVb",
+								"id": "DAWE2dKg_oopDoGSlUZoM",
 								"name": "geometryClass",
 								"brief": "",
 								"access": "protected",
@@ -367,7 +367,7 @@
 								"description": "<p>The class that represents the geometry of objects\nthat are going to be batched with this.</p>"
 							},
 							{
-								"id": "RcqTnzlqREzofhj-qpsj3",
+								"id": "ma-5nYFzmogLj_h-NwSKO",
 								"name": "shaderGenerator",
 								"brief": "",
 								"access": "protected",
@@ -377,7 +377,7 @@
 								"description": "<p>This is used to generate a shader that can\ncolor each vertex based on a <code>aTextureId</code>\nattribute that points to a..."
 							},
 							{
-								"id": "bsdjPhgMBtMPOJePnKLTx",
+								"id": "7qNcfCJsSASWF0OYV6o21",
 								"name": "_aBuffers",
 								"brief": "",
 								"access": "private",
@@ -389,7 +389,7 @@
 								"description": "<p>Pool of <code>ViewableBuffer</code> objects that are sorted in\norder of increasing size. The flush method uses\nthe buffer ..."
 							},
 							{
-								"id": "3OM2e-BrtvrXrIILgiCP7",
+								"id": "6Fs90okRP92nNo5LiMUMc",
 								"name": "_bufferedElements",
 								"brief": "<p>Buffer of objects that are yet to be rendered.</p>",
 								"access": "private",
@@ -397,7 +397,7 @@
 								"type": "PropertyDoc"
 							},
 							{
-								"id": "2MCaDdNh18GIZ3zCmUbr2",
+								"id": "ZyVtT4td-crWpqJOwIQHr",
 								"name": "_bufferedTextures",
 								"brief": "",
 								"access": "private",
@@ -406,7 +406,7 @@
 								"description": "<p>Data for texture batch builder, helps to save a bit of CPU on a pass</p>"
 							},
 							{
-								"id": "p2FAI43seHHq8xPD16y25",
+								"id": "8kANKqiOi2yvuVERUUsy-",
 								"name": "_bufferSize",
 								"brief": "",
 								"access": "private",
@@ -416,7 +416,7 @@
 								"description": "<p>Number of elements that are buffered and are\nwaiting to be flushed.</p>"
 							},
 							{
-								"id": "ekyET43TD6uKi9QgGBMHn",
+								"id": "0opZYhUvsiP5pnAUKjtmT",
 								"name": "_flushId",
 								"brief": "",
 								"access": "private",
@@ -426,7 +426,7 @@
 								"description": "<p>A flush may occur multiple times in a single\nframe. On iOS devices or when\n<code>settings.CAN_UPLOAD_SAME_BUFFER</code> is..."
 							},
 							{
-								"id": "GL8uV29tROAJYNeZYHIKK",
+								"id": "qR5uJ2VqfeBzxpGsDLR5S",
 								"name": "_iBuffers",
 								"brief": "",
 								"access": "private",
@@ -438,7 +438,7 @@
 								"description": "<p>Pool of <code>Uint16Array</code> objects that are sorted in\norder of increasing size. The flush method uses\nthe buffer wit..."
 							},
 							{
-								"id": "C1Q0G3hYfkQFiDY5H4xKs",
+								"id": "TUKmyphjuKxtJwa-Iq9Lo",
 								"name": "_indexCount",
 								"brief": "",
 								"access": "private",
@@ -448,7 +448,7 @@
 								"description": "<p>Total count of all indices used by the currently\nbuffered objects.</p>"
 							},
 							{
-								"id": "dD23CCCHtcrEys2QQPWNr",
+								"id": "yjNrGjhrPixaBGCWv8f9-",
 								"name": "_packedGeometries",
 								"brief": "",
 								"access": "private",
@@ -460,7 +460,7 @@
 								"description": "<p>Pool of <code>this.geometryClass</code> geometry objects\nthat store buffers. They are used to pass data\nto the shader on e..."
 							},
 							{
-								"id": "_kDP90OjivZyodzAC_nj8",
+								"id": "6biVlerY6NMICMCJAwhmV",
 								"name": "_packedGeometryPoolSize",
 								"brief": "",
 								"access": "private",
@@ -470,7 +470,7 @@
 								"description": "<p>Size of <code>this._packedGeometries</code>. It can be expanded\nif more than <code>this._packedGeometryPoolSize</code> flu..."
 							},
 							{
-								"id": "tWF-R71zrqDia9kI-tg9o",
+								"id": "dmKZnfA90yQjcvxgFxSOC",
 								"name": "_vertexCount",
 								"brief": "",
 								"access": "private",
@@ -480,7 +480,7 @@
 								"description": "<p>Total count of all vertices used by the currently\nbuffered objects.</p>"
 							},
 							{
-								"id": "9I5bHggDF_c-sdCCKA6Gf",
+								"id": "PRwO1a8EPcpTgP13LsoBy",
 								"name": "bindAndClearTexArray",
 								"brief": "<p>Bind textures for current rendering</p>",
 								"scope": "instance",
@@ -507,7 +507,7 @@
 								"returns": []
 							},
 							{
-								"id": "70n_QM72ndAHF_i6zBG1i",
+								"id": "bEOsaefpAdJmHPXvUOdYv",
 								"name": "buildDrawCalls",
 								"brief": "<p>Populating drawcalls for rendering</p>",
 								"scope": "instance",
@@ -568,7 +568,7 @@
 								"returns": []
 							},
 							{
-								"id": "h0wb-JZeMom-D0Zoziq-x",
+								"id": "W52xP-2XzVHxRu7lDNvYK",
 								"name": "constructor",
 								"brief": "",
 								"scope": "instance",
@@ -597,7 +597,7 @@
 								"returns": []
 							},
 							{
-								"id": "9Ruw5zcWmPg9tAKj0ZYNn",
+								"id": "ayLdWHfF1YiuOa2bGe0Yx",
 								"name": "contextChange",
 								"brief": "<p>Handles the <code>contextChange</code> signal.</p>",
 								"scope": "instance",
@@ -607,7 +607,7 @@
 								"returns": []
 							},
 							{
-								"id": "vTVfTnbZPZD4MFtaxEgDY",
+								"id": "EKkBCaERl7VUSf0hn7o3M",
 								"name": "destroy",
 								"brief": "<p>Destroys this <code>AbstractBatchRenderer</code>. It cannot be used again.</p>",
 								"scope": "instance",
@@ -616,7 +616,7 @@
 								"returns": []
 							},
 							{
-								"id": "GeacOLtwQCwMwb7EOkDEe",
+								"id": "b6y0AJ0oSKnj6TUbsKqH7",
 								"name": "flush",
 								"brief": "<p>Renders the content <em>now</em> and empties the current batch.</p>",
 								"scope": "instance",
@@ -625,7 +625,7 @@
 								"returns": []
 							},
 							{
-								"id": "bgkK6VoeFqlFJ7vGEvYgX",
+								"id": "5bAkpagPE28KY8j3g55EN",
 								"name": "initFlushBuffers",
 								"brief": "<p>Makes sure that static and dynamic flush pooled objects have correct dimensions</p>",
 								"scope": "instance",
@@ -634,7 +634,7 @@
 								"returns": []
 							},
 							{
-								"id": "fg-xvpMBAFri2n3A8AUSB",
+								"id": "XwHNqtcbWj1SE-FoGq9vK",
 								"name": "onPrerender",
 								"brief": "<p>Handles the <code>prerender</code> signal.</p>",
 								"scope": "instance",
@@ -644,7 +644,7 @@
 								"returns": []
 							},
 							{
-								"id": "ATP0gAFuHaZWlAIuMaSHq",
+								"id": "2tJN3ap-eObEmGW1ngLB_",
 								"name": "packInterleavedGeometry",
 								"brief": "",
 								"scope": "instance",
@@ -745,7 +745,7 @@
 								"returns": []
 							},
 							{
-								"id": "LnhSe6nZftWps4lJxYjXs",
+								"id": "PQkg1B_CXFDrNKkHskq8m",
 								"name": "render",
 								"brief": "",
 								"scope": "instance",
@@ -774,7 +774,7 @@
 								"returns": []
 							},
 							{
-								"id": "Yq-2CvjqAHI0evsjveSuZ",
+								"id": "czR4I29v2Z280HOs6IRZh",
 								"name": "start",
 								"brief": "<p>Starts a new sprite batch.</p>",
 								"scope": "instance",
@@ -783,7 +783,7 @@
 								"returns": []
 							},
 							{
-								"id": "ODzJN6ksYSXYXQX6mk2Ph",
+								"id": "7fxIlF0FMZVrdEB3HWg4i",
 								"name": "stop",
 								"brief": "<p>Stops and flushes the current batch.</p>",
 								"scope": "instance",
@@ -792,7 +792,7 @@
 								"returns": []
 							},
 							{
-								"id": "rKU6bdKEMk7w0BNvReT3O",
+								"id": "R5G2t17BmYv3rnu_cuoU0",
 								"name": "getAttributeBuffer",
 								"brief": "",
 								"access": "private",
@@ -839,7 +839,7 @@
 								]
 							},
 							{
-								"id": "eoBvqAroijODxBQ6NS1vo",
+								"id": "1flfv48ZlE9j8jF9VZPak",
 								"name": "getIndexBuffer",
 								"brief": "",
 								"access": "private",
@@ -888,7 +888,7 @@
 						]
 					},
 					{
-						"id": "QLyCdfJYkdFZClUwQupVJ",
+						"id": "vCOTAV-G_FiqC47qArYnd",
 						"name": "TRANSFORM_MODE",
 						"brief": "<p>Constants that specify the transform type.</p>",
 						"deprecated": "since 5.0.0",
@@ -896,7 +896,7 @@
 						"type": "EnumDoc",
 						"members": [
 							{
-								"id": "A0Cj96KNxpjHsa7unfGG5",
+								"id": "93RYhVow5nFHReRujomf7",
 								"name": "DYNAMIC",
 								"brief": "",
 								"access": "public",
@@ -904,7 +904,7 @@
 								"type": "PropertyDoc"
 							},
 							{
-								"id": "Qa2ko7BjrUOmpEgJpCCU_",
+								"id": "gd5tVMfBLnwD9EIAjEwZW",
 								"name": "STATIC",
 								"brief": "",
 								"access": "public",
@@ -914,14 +914,14 @@
 						]
 					},
 					{
-						"id": "CYGwk0QsGSQSOHB4sanbd",
+						"id": "GKa51Kh4E0qd2iWKsNUD-",
 						"name": "",
 						"brief": "",
 						"type": "TypedefDoc",
 						"extends": [],
 						"members": [
 							{
-								"id": "NdYsr_o2N9EDtwgPp_6Sr",
+								"id": "ofGCxqZnnUmZ4c2yPR3LC",
 								"name": "destroy",
 								"brief": "",
 								"access": "public",
@@ -930,7 +930,7 @@
 								"description": "<p>Called when destroying Application, scoped to Application instance</p>"
 							},
 							{
-								"id": "J7QzMaxfLzoVgVUonGvwi",
+								"id": "at9LUALbWOlST6gewbB95",
 								"name": "init",
 								"brief": "",
 								"access": "public",
@@ -941,7 +941,7 @@
 						]
 					},
 					{
-						"id": "gLr3ygh7BvSpr7D_vqk_R",
+						"id": "0DeMj94Qh2JWMP0aepUqt",
 						"name": "SVG_SIZE",
 						"brief": "",
 						"deprecated": "since 5.0.0",
@@ -954,20 +954,20 @@
 				]
 			},
 			{
-				"id": "mUCshVzlDX_-6DVkIH-3W",
+				"id": "YfQTFpF9mUqXcpLZB-gyX",
 				"name": "R",
 				"brief": "<p>A namespace dedicated to road manipulation utilites.</p>",
 				"readonly": true,
 				"type": "NSDoc",
 				"members": [
 					{
-						"id": "mMdBokmG3jvBTktdZnHBe",
+						"id": "WlkBE7SHhZv9Hg29JtJ6j",
 						"name": "Road",
 						"brief": "<p>This is another road class.</p>",
 						"type": "ClassDoc",
 						"members": [
 							{
-								"id": "oXkZyKvgRTHEvLal88lv6",
+								"id": "Rmg0x4UbzGbC_1-esCusZ",
 								"name": "constructor",
 								"brief": "<p>This is another road class.</p>",
 								"access": "public",
@@ -978,7 +978,7 @@
 						]
 					},
 					{
-						"id": "IcbY93GvqxEZUzKlcCofM",
+						"id": "unT_Fv4_eNX9E_NAA6Zy3",
 						"name": "DEFAULT_LANES",
 						"brief": "<p>The default no. of lanes per one side of road</p>",
 						"defaultValue": "4",
@@ -986,7 +986,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "gn0Xydk82lErnNxMnGkKk",
+						"id": "w6MFWxJ9X7YZgZwyh_sir",
 						"name": "buildRoad",
 						"brief": "<p>Builds a road</p>",
 						"scope": "instance",
@@ -1027,19 +1027,19 @@
 				]
 			},
 			{
-				"id": "Jjw_PyVoiiX1VbB7b5oIc",
+				"id": "kNKUPKISlAAN-07MiDfof",
 				"name": "Ts",
 				"brief": "",
 				"type": "NSDoc",
 				"members": [
 					{
-						"id": "zJD5HHMkMEueB39SltYbR",
+						"id": "g48cZAp4sDCXTFP2r1e5l",
 						"name": "Transaction",
 						"brief": "",
 						"type": "ClassDoc",
 						"members": [
 							{
-								"id": "K3dEdlLrMA5YX10ut1xIV",
+								"id": "8_HCegwkTVTr1KspI53nl",
 								"name": "constructor",
 								"brief": "",
 								"access": "public",
@@ -1052,13 +1052,13 @@
 				]
 			},
 			{
-				"id": "VenqQyHRbQP6mNXTeXevF",
+				"id": "e4Sdob11sChuolWLYkYsK",
 				"name": "Bean",
 				"brief": "<p>Bean class</p>",
 				"type": "ClassDoc",
 				"members": [
 					{
-						"id": "4JAykEoJt_FnrxL1rU08V",
+						"id": "ZKflKlOrq9OKwGhMDtS0X",
 						"name": "constructor",
 						"brief": "<p>Bean class</p>",
 						"access": "public",
@@ -1067,7 +1067,7 @@
 						"params": []
 					},
 					{
-						"id": "Ze1d9CSmYibdJglbK8uNO",
+						"id": "qEcM3N3ThngCs2Wo67yr4",
 						"name": "roast",
 						"brief": "<p>(optional) roasting method</p>",
 						"abstract": true,
@@ -1091,7 +1091,7 @@
 				]
 			},
 			{
-				"id": "OdUCWg-6Daje9vM4VjfZ3",
+				"id": "4qFpmbSAyUYT_fy30X7SN",
 				"name": "Car",
 				"brief": "<p><em>Simulation</em> for a automobile that can drive on a manifold surface.</p>",
 				"type": "ClassDoc",
@@ -1101,7 +1101,7 @@
 				],
 				"members": [
 					{
-						"id": "ai74MOo-0oB4L6WP_upaw",
+						"id": "-floP4UVtx4K9BxjqS7qB",
 						"name": "DEFAULT_DRIVE_SHIFT",
 						"brief": "",
 						"defaultValue": "\"manual\"",
@@ -1109,7 +1109,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "CQRw19gnjykjqzCgi0Ftq",
+						"id": "tBn9ENTzHq0lTG6FapGRI",
 						"name": "bounds",
 						"brief": "",
 						"scope": "instance",
@@ -1117,14 +1117,14 @@
 						"description": "<p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own\nposition.</p>"
 					},
 					{
-						"id": "teVc7zUjxlEOu9Lir7Vly",
+						"id": "lH6GoJpU5WWrWIapSrGBD",
 						"name": "interactions",
 						"brief": "<p>All causal interactions with other objects</p>",
 						"scope": "instance",
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "5l5XHx3gy2beWZxVB7wHP",
+						"id": "zODszhJBWO01xfQwnp5P6",
 						"name": "mass",
 						"brief": "<p>The mass of this object in kilograms.</p>",
 						"defaultValue": "0",
@@ -1132,7 +1132,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "GOazcttsiTBmA8pale-Nc",
+						"id": "r7kZPb43dFvh6H4FZ0tSm",
 						"name": "model",
 						"brief": "",
 						"access": "public",
@@ -1141,7 +1141,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "DTAFdXH_AjU0u2lZz4oXB",
+						"id": "Y30upgJ8saBQgE5ISkI-S",
 						"name": "position",
 						"brief": "<p>The absolute position of this object's center of mass (in the universal reference frame)</p>",
 						"defaultValue": "[0, 0, 0]",
@@ -1149,7 +1149,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "_2Mbpgff_-lAVrMGUwBuY",
+						"id": "ZFsJhi2SBlBT3apjuyMTS",
 						"name": "velocity",
 						"brief": "<p>The absolute velocity of this object (in the universal reference frame)</p>",
 						"defaultValue": "[0, 0, 0]",
@@ -1157,7 +1157,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "42G716mjkX-_hd8jJ3DYw",
+						"id": "brsDv4mec_4I-Q819Mejp",
 						"name": "vin",
 						"brief": "",
 						"defaultValue": "0",
@@ -1165,7 +1165,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "UuYA-INe9nf7cOWeeNGA0",
+						"id": "_HOkHw6RklAMKDwFCIxDs",
 						"name": "registerRetail",
 						"brief": "<p>Register a retail dealer for buying a car from</p>",
 						"scope": "static",
@@ -1188,7 +1188,7 @@
 						"returns": []
 					},
 					{
-						"id": "F7xJbz-Pim6C1GQG8YoRp",
+						"id": "LIa5QQZHA6c4ObXH1bwmq",
 						"name": "constructor",
 						"brief": "",
 						"scope": "instance",
@@ -1212,7 +1212,7 @@
 						"returns": []
 					},
 					{
-						"id": "pDXyiCRh2wY4P_sxpv0lm",
+						"id": "XnWn1nKue5WMKDd8oBvgq",
 						"name": "onCrash",
 						"brief": "",
 						"examples": [
@@ -1255,7 +1255,7 @@
 				]
 			},
 			{
-				"id": "Yx-OtIVwVLb6GLlcBh7Gd",
+				"id": "sxWxHpNZReT_ssIrlg28F",
 				"name": "CoffeeBean",
 				"brief": "<p>This class illustrates how you can create a Java-bean like component in JavaScript</p>",
 				"type": "ClassDoc",
@@ -1264,21 +1264,21 @@
 				],
 				"members": [
 					{
-						"id": "i2EDU9aPWvZ6YqRAmwi2d",
+						"id": "3F3X9vMhjr3Qu1r8rOXbw",
 						"name": "maturity",
 						"brief": "",
 						"scope": "instance",
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "tHMfdNWoImt6Alt0WJ7ub",
+						"id": "7dL7C9qdRIcGJcmYFCvgu",
 						"name": "roasted",
 						"brief": "",
 						"scope": "instance",
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "DtuUzSb6OlJJ0PERVtW0f",
+						"id": "ZGvVT7mF8w6Mybbreit02",
 						"name": "constructor",
 						"brief": "",
 						"scope": "instance",
@@ -1332,7 +1332,7 @@
 						"returns": []
 					},
 					{
-						"id": "VPli3ey-k0eu3gJsKJZVo",
+						"id": "XolDs4LjWPfgaacu9k25G",
 						"name": "roast",
 						"brief": "<p>Roast this coffee bean.</p>",
 						"scope": "instance",
@@ -1344,7 +1344,7 @@
 				]
 			},
 			{
-				"id": "_rAjLz3S_bCuGzWUYgKAT",
+				"id": "WXx-Y3BYPXYnsnIX5eAU6",
 				"name": "ExampleFactory",
 				"type": "ClassDoc",
 				"description": "<p>{@link ExampleFactory} can be used to build examples.</p>\n<pre class=\"hljs\"><code><span class=\"hljs-comment\">// <span clas...",
@@ -1372,7 +1372,7 @@
 				"returns": [],
 				"members": [
 					{
-						"id": "RUKyrW0ftobDBoNGC3emf",
+						"id": "xV1o7QpmA4PArXA5TfUZz",
 						"name": "getInstance",
 						"brief": "<p>Gets a lazily-initialized, shared singleton instance of {@link ExampleFactory}.</p>",
 						"scope": "static",
@@ -1397,7 +1397,7 @@
 						]
 					},
 					{
-						"id": "FgpntCYRR8emr_QmzQpvS",
+						"id": "fko-1xFmV6iG5PPNs9jq5",
 						"name": "build",
 						"brief": "<p>Build the road.</p>",
 						"scope": "instance",
@@ -1406,7 +1406,7 @@
 						"returns": []
 					},
 					{
-						"id": "_P-ZJqHlzOhudVIz5iU2x",
+						"id": "JbwUkqk1cRttZYWXFSvf0",
 						"name": "constructor",
 						"brief": "<p>This constructor should only be used for custom contexts.</p>",
 						"access": "public",
@@ -1436,7 +1436,7 @@
 						"returns": []
 					},
 					{
-						"id": "SMLQn9Rmonp38aIevq-BF",
+						"id": "043s_6JfuCqxXQpBd8HpX",
 						"name": "getContext",
 						"brief": "<p>Get the context of this factory.</p>",
 						"scope": "instance",
@@ -1463,7 +1463,7 @@
 				]
 			},
 			{
-				"id": "-t7A3ehz2cXG8SD1-d5YY",
+				"id": "m9uchd6TbQIUgaPmK7aNl",
 				"name": "Gravity",
 				"brief": "<p>This class shouldn't be documented!</p>",
 				"type": "ClassDoc",
@@ -1472,7 +1472,7 @@
 				],
 				"members": [
 					{
-						"id": "FRbOpoP83HB58FNd6rydo",
+						"id": "z3zSP3494C-0Ds-YH_arw",
 						"name": "constructor",
 						"brief": "<p>This class shouldn't be documented!</p>",
 						"access": "public",
@@ -1481,7 +1481,7 @@
 						"params": []
 					},
 					{
-						"id": "crAYa7M2jPBz6asz9cvu1",
+						"id": "2JZy7qRtdJUN82LSKuqAF",
 						"name": "force",
 						"brief": "<p>This method should be overriden to calculate the force at the given instant.</p>",
 						"scope": "instance",
@@ -1512,7 +1512,7 @@
 				]
 			},
 			{
-				"id": "7Yna8TjG5jRKL2XzODc3C",
+				"id": "ar2ZknA0WG7XIMFW-EE7C",
 				"name": "PhysicalInteraction",
 				"brief": "",
 				"readonly": true,
@@ -1520,7 +1520,7 @@
 				"description": "<p>A physical interaction is a force causes object positions to be re-evaulated each frame based on\nforce's magnitude.</p>",
 				"members": [
 					{
-						"id": "h-8rLPCiANYIQEnSjv7B_",
+						"id": "5HGISdOg9xbgSXh7sLrAu",
 						"name": "GRAVITATIONAL_CONSTANT",
 						"brief": "",
 						"defaultValue": "1",
@@ -1528,7 +1528,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "19-GnWvwMSbYY25Awxdue",
+						"id": "gz_GmHmflPKzD6A1VpZut",
 						"name": "createGravity",
 						"brief": "<p>Creates a graviational force</p>",
 						"scope": "static",
@@ -1579,7 +1579,7 @@
 						]
 					},
 					{
-						"id": "2kN06L5Dmu82B_7yhyexk",
+						"id": "R2apUONftUIsSvG-UvWiv",
 						"name": "force",
 						"brief": "<p>This method should be overriden to calculate the force at the given instant.</p>",
 						"scope": "instance",
@@ -1610,14 +1610,14 @@
 				]
 			},
 			{
-				"id": "SCDbcfcp4yQlQ2AL-JO5H",
+				"id": "UsbmX2Xg6eTCmkwKFpFdP",
 				"name": "PhysicalObject",
 				"brief": "",
 				"type": "ClassDoc",
 				"description": "<p>Represents a physical-object and its intrinsic properties. This is useful for approximating\nextended objects as a uniform,...",
 				"members": [
 					{
-						"id": "EZ-QRBxzgb_zwpRCbN65Y",
+						"id": "KVEnBIRsS5Wp3LV_y_D87",
 						"name": "bounds",
 						"brief": "",
 						"scope": "instance",
@@ -1625,14 +1625,14 @@
 						"description": "<p>The mesh enclosing this object. By default, it is a &quot;point&quot; object at the its own\nposition.</p>"
 					},
 					{
-						"id": "l0hAt0-hAxn2SNj-aXDUV",
+						"id": "NReULDUX09PT7eRxTD5dP",
 						"name": "interactions",
 						"brief": "<p>All causal interactions with other objects</p>",
 						"scope": "instance",
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "ofThUNw9ySCLTay71mlpE",
+						"id": "At6mAxtfcRQ_KfFrRHhy5",
 						"name": "mass",
 						"brief": "<p>The mass of this object in kilograms.</p>",
 						"defaultValue": "0",
@@ -1640,7 +1640,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "MlYjeWcK6iEgqMqsdDzgN",
+						"id": "Er75UpnxNt64587Hk3fyc",
 						"name": "position",
 						"brief": "<p>The absolute position of this object's center of mass (in the universal reference frame)</p>",
 						"defaultValue": "[0, 0, 0]",
@@ -1648,7 +1648,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "MrmSpFVPqluvJ-dJSFOgT",
+						"id": "SnA14tMgfbmqEtcHcgVJR",
 						"name": "velocity",
 						"brief": "<p>The absolute velocity of this object (in the universal reference frame)</p>",
 						"defaultValue": "[0, 0, 0]",
@@ -1658,7 +1658,7 @@
 				]
 			},
 			{
-				"id": "6SnlZynu84z_2FcimkEPG",
+				"id": "PLKq4L_L9pIWdc6juxHGZ",
 				"name": "Vector",
 				"brief": "",
 				"type": "ClassDoc",
@@ -1667,7 +1667,7 @@
 				],
 				"members": [
 					{
-						"id": "3-mKh_mWh_KiE2fzp_ORp",
+						"id": "RHvyaN7RD9DVaiez5Uzwf",
 						"name": "dimensions",
 						"brief": "",
 						"scope": "instance",
@@ -1675,7 +1675,7 @@
 						"description": "<p>The no. of components of this vector</p>"
 					},
 					{
-						"id": "6kFZrvzB-MXOCJm8Nknq5",
+						"id": "KCjd3MJTRls8HOY5UoWeL",
 						"name": "add",
 						"brief": "<p>Add <code>vec</code> to this</p>",
 						"scope": "instance",
@@ -1702,7 +1702,7 @@
 						"returns": []
 					},
 					{
-						"id": "JW6WHfI2x9h1JWTcoToua",
+						"id": "btzb0y8QmuFcV0QdGq95u",
 						"name": "equalTo",
 						"brief": "<p>Whether this and <code>vec</code> are equal vectors</p>",
 						"scope": "instance",
@@ -1741,7 +1741,7 @@
 						]
 					},
 					{
-						"id": "YGHLhrFNJp_wzFwyLZMyf",
+						"id": "5qXQUKPgWfCAiV1cB71rw",
 						"name": "isCompat",
 						"brief": "",
 						"scope": "instance",
@@ -1783,7 +1783,7 @@
 				]
 			},
 			{
-				"id": "P7kT9gqxX-NhuTVmhN7nZ",
+				"id": "lq0FnoXyVR9OpxIH-HwPK",
 				"name": "CAR_MAKES",
 				"brief": "",
 				"see": [
@@ -1793,7 +1793,7 @@
 				"description": "<p>These are the possible types of car makes.</p>",
 				"members": [
 					{
-						"id": "R182mG4mvAPxotcwHkBfW",
+						"id": "vnmbKiuv0PoGspWrsrX1Z",
 						"name": "FERRARI",
 						"brief": "",
 						"access": "public",
@@ -1801,7 +1801,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "3V2KCEHOs7sANM61wTJLF",
+						"id": "zgY_nvtgFN_-3W47f9dBh",
 						"name": "FORD",
 						"brief": "",
 						"access": "public",
@@ -1809,7 +1809,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "FM3RWLqly6IUK4fTxkhMm",
+						"id": "oH0GJbNgVXehN04sU7JJQ",
 						"name": "GENERAL_MOTORS",
 						"brief": "",
 						"access": "public",
@@ -1817,7 +1817,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "4G5TzgO1JNHkVW5EGxsHP",
+						"id": "yqs8WbwemXjTb0yUGR3g2",
 						"name": "JAGUAR",
 						"brief": "",
 						"access": "public",
@@ -1825,7 +1825,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "4wVl05dKjZJqSIOXhm78w",
+						"id": "qV6e5kIxu27s9dn2oWx6o",
 						"name": "KIA",
 						"brief": "",
 						"access": "public",
@@ -1833,7 +1833,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "WHGgDc_4cflAy7tDPT1RW",
+						"id": "fZRYLUdJMXkD1k3pHJDZk",
 						"name": "LAMBORGHINI",
 						"brief": "",
 						"access": "public",
@@ -1841,7 +1841,7 @@
 						"type": "PropertyDoc"
 					},
 					{
-						"id": "K50kGDMbLYn5GvOzzG_lf",
+						"id": "OUssRXOUx2xMNe8erYaZF",
 						"name": "TOYOTA",
 						"brief": "",
 						"access": "public",
@@ -1852,14 +1852,14 @@
 				]
 			},
 			{
-				"id": "EtwImiYIHyafNVYSr6yZa",
+				"id": "7ZYgAXwcpfPpyDFBSTcHo",
 				"name": "VectorArray",
 				"brief": "",
 				"type": "TypedefDoc",
 				"description": "<p>A 3D vector</p>",
 				"members": [
 					{
-						"id": "9P4_0LGkpLI1EZ-2g3KO_",
+						"id": "FkyVrvkuqsoGLBk-oLOlo",
 						"name": "meta",
 						"brief": "",
 						"access": "public",
@@ -1869,13 +1869,13 @@
 				]
 			},
 			{
-				"id": "7Y8nEjJv8ZVvy5ltfZGgR",
+				"id": "LeLrBMviFOoXrOMt0dlTb",
 				"name": "CarDealer",
 				"brief": "<p>This is the interface for dealing with car dealers.</p>",
 				"type": "InterfaceDoc",
 				"members": [
 					{
-						"id": "dYluIM7B4BC9cp41KvM5d",
+						"id": "ejy4Tqjw6F2HKDeR0HR7f",
 						"name": "closeTransaction",
 						"brief": "<p>Close transaction. If you respond to the counteroffer, then it won't be closed.</p>",
 						"type": "MethodDoc",
@@ -1934,7 +1934,7 @@
 						]
 					},
 					{
-						"id": "fYOvWWhnsPd1BVSXvW7IV",
+						"id": "-M_j9W12DmLHz3b-BLDtf",
 						"name": "initiateTransaction",
 						"brief": "<p>Initiate a transaction/negotiation with a car dealer</p>",
 						"type": "MethodDoc",
@@ -1973,7 +1973,7 @@
 						]
 					},
 					{
-						"id": "YE3LQ457YtZ6keAbB1_aO",
+						"id": "HVIqgmdN9YKhvDPQkPEQm",
 						"name": "offerAsk",
 						"brief": "<p>Offer a price to sell the car.</p>",
 						"type": "MethodDoc",
@@ -2043,7 +2043,7 @@
 						]
 					},
 					{
-						"id": "i4_15xbB0UheCwbSW7HxA",
+						"id": "oEleRM9gclZGWJOePL_3s",
 						"name": "offerBid",
 						"brief": "<p>Offer a price to buy the car.</p>",
 						"type": "MethodDoc",
@@ -2110,7 +2110,7 @@
 				]
 			},
 			{
-				"id": "3kIoHipeVifPUjYAQZJa3",
+				"id": "shLfz8Vf7mjM4kNFSXICR",
 				"name": "installBean",
 				"brief": "<p>Install a bean class</p>",
 				"type": "FunctionDoc",
@@ -2149,7 +2149,7 @@
 				]
 			},
 			{
-				"id": "qpEuo5RbsohBzl8K1qwxO",
+				"id": "KctK9cLQ_8TOJsRWfm1Ti",
 				"name": "isPhysicalObject",
 				"brief": "",
 				"authors": [
@@ -2195,400 +2195,400 @@
 		]
 	},
 	"registry": {
-		"pkg-P9QkmOie94SsP-T0rdzL-": {
+		"pkg-a58RBBgyDxRgniAdkG__1": {
 			"uri": "/example-documentation/@webdoc/example.html"
 		},
-		"_QhwoPpPcLkqIXPsl3-X_": {
+		"Nme538yjKDZbzlJBM_fR3": {
 			"uri": "/example-documentation/@webdoc/example/PIXI.html"
 		},
-		"szkS3Xumhv_mifcMWbHbO": {
+		"-6xrnHgLu86Xe91RKDnPf": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/utils.html"
 		},
-		"BkZFhHqFwMO0VW9Mat9OI": {
+		"NAgMzkTWpf4EwdMtZ9FKA": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/utils/skipHello.html"
 		},
-		"qXJcQBkIer4BC4wvmYoYx": {
+		"81z4fHC944d_rrNDJueL_": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/TilingSprite.html"
 		},
-		"kGhvb9e7hdjvJJtTJI-PS": {
+		"dQapFHltIsdvR11iArXKD": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/TilingSprite.html#constructor"
 		},
-		"izuikp599GqGzd-ZA8xdp": {
+		"FmFeRrYx22g4Mf_3BIqbB": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractRenderer.html"
 		},
-		"Lr0MkPgX6dMvfMWHbYhh4": {
+		"Idtv7hzXXhr63tQbX1yes": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractRenderer.html#backgroundColor"
 		},
-		"0ZNgJKx1QBaE_UqEUfg5k": {
+		"VDaUxakKTtt0wUMiA747D": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractRenderer.html#constructor"
 		},
-		"lRHxZFoonf_IcpepFZC_i": {
+		"7ECRKdVeJWNwdt5zIzKI5": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/ObjectRenderer.html"
 		},
-		"P8obzb6Zva2TAspk0zXL3": {
+		"0V44JVlS3InIhISuQohrf": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/ObjectRenderer.html#renderer"
 		},
-		"TesNPJHeYceRvuXOHIpMl": {
+		"VlWv-fpEx5e9ynKKHmijv": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/ObjectRenderer.html#constructor"
 		},
-		"2UeeEfq4MmpJeGJmB4ZJZ": {
+		"-K8Dpgv-DGnYg2NApIY9Q": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/ObjectRenderer.html#destroy"
 		},
-		"67tFjSG1sYDl1plFayqCX": {
+		"Dz7Lt5-3K4mFyAhRHQnIk": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/ObjectRenderer.html#flush"
 		},
-		"vyYAlmYFnJuVnUkO5R_3A": {
+		"I9coP2kFXu1n6-2DQnABd": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/ObjectRenderer.html#render"
 		},
-		"Sn3lcklYQK75-qxlF0RD8": {
+		"_dOUblsNMr_1l7SGWy9xt": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/ObjectRenderer.html#start"
 		},
-		"WcVFu92F_fHhbSLIBrmXu": {
+		"nztP1F194l_tkHUBtdJFA": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/ObjectRenderer.html#stop"
 		},
-		"RwwMqLH5hiH_kVfllOMcw": {
+		"tfmrCITkSbS7Yrz3BLp6U": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/System.html"
 		},
-		"nb0MpMhvBb2iVoQ07t6-_": {
+		"Wet55C4ucONhWqJtY4ATn": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/System.html#renderer"
 		},
-		"D9iL_SFG7BJKFnMB1PyeO": {
+		"mtsSrFAcioDABUi9ik5jJ": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/System.html#constructor"
 		},
-		"ScNLfbzqiMsH0JpE95vCV": {
+		"kR_MgdeggbS5OLLGBQlTs": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/System.html#destroy"
 		},
-		"ZBl9gt1EZBeV3LjG5cbzb": {
+		"AIFc0Qqi_2KG-QfuyoAlc": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html"
 		},
-		"SDGjk_maxANz5ZHTQ4p5y": {
+		"f15nTQjE2I0luvom_narj": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_drawCallPool"
 		},
-		"lvnXrChbcDHAncfICAhdx": {
+		"DPTpTBELyspk9BWo_cw0z": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_textureArrayPool"
 		},
-		"cDgCSE8NdU53R4mALl3bN": {
+		"dNs6yAim9waZulXzILpHu": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#bufferSize"
 		},
-		"Q9q4tlimOLlIv58P0epUD": {
+		"xrOpOVCPU7ksGS6wzKH9P": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#MAX_TEXTURES"
 		},
-		"iWkVbdC09hK7cwBW9s33L": {
+		"aojRRNmcNvjxscD350pRC": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#renderer"
 		},
-		"Ln_cdHIz52kbWX8TSd6LF": {
+		"DZ6SkmLfW0wKF49EM0F_z": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#size"
 		},
-		"QR44zhWcAyIelc7vP-TH4": {
+		"EXWGIu32kZpBOiAHYB1Ge": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#state"
 		},
-		"XDx7AV0iOr92I_ISBegf8": {
+		"e-t04-VcVVobY5-BwKgvy": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#vertexSize"
 		},
-		"lk07iTia3i2UYXpkSp9_w": {
+		"qnseYzWaCGPQ9ianRlz6W": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_shader"
 		},
-		"1drzUxffHN1ah5ZDfAoVb": {
+		"DAWE2dKg_oopDoGSlUZoM": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#geometryClass"
 		},
-		"RcqTnzlqREzofhj-qpsj3": {
+		"ma-5nYFzmogLj_h-NwSKO": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#shaderGenerator"
 		},
-		"bsdjPhgMBtMPOJePnKLTx": {
+		"7qNcfCJsSASWF0OYV6o21": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_aBuffers"
 		},
-		"3OM2e-BrtvrXrIILgiCP7": {
+		"6Fs90okRP92nNo5LiMUMc": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_bufferedElements"
 		},
-		"2MCaDdNh18GIZ3zCmUbr2": {
+		"ZyVtT4td-crWpqJOwIQHr": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_bufferedTextures"
 		},
-		"p2FAI43seHHq8xPD16y25": {
+		"8kANKqiOi2yvuVERUUsy-": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_bufferSize"
 		},
-		"ekyET43TD6uKi9QgGBMHn": {
+		"0opZYhUvsiP5pnAUKjtmT": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_flushId"
 		},
-		"GL8uV29tROAJYNeZYHIKK": {
+		"qR5uJ2VqfeBzxpGsDLR5S": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_iBuffers"
 		},
-		"C1Q0G3hYfkQFiDY5H4xKs": {
+		"TUKmyphjuKxtJwa-Iq9Lo": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_indexCount"
 		},
-		"dD23CCCHtcrEys2QQPWNr": {
+		"yjNrGjhrPixaBGCWv8f9-": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_packedGeometries"
 		},
-		"_kDP90OjivZyodzAC_nj8": {
+		"6biVlerY6NMICMCJAwhmV": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_packedGeometryPoolSize"
 		},
-		"tWF-R71zrqDia9kI-tg9o": {
+		"dmKZnfA90yQjcvxgFxSOC": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#_vertexCount"
 		},
-		"9I5bHggDF_c-sdCCKA6Gf": {
+		"PRwO1a8EPcpTgP13LsoBy": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#bindAndClearTexArray"
 		},
-		"70n_QM72ndAHF_i6zBG1i": {
+		"bEOsaefpAdJmHPXvUOdYv": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#buildDrawCalls"
 		},
-		"h0wb-JZeMom-D0Zoziq-x": {
+		"W52xP-2XzVHxRu7lDNvYK": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#constructor"
 		},
-		"9Ruw5zcWmPg9tAKj0ZYNn": {
+		"ayLdWHfF1YiuOa2bGe0Yx": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#contextChange"
 		},
-		"vTVfTnbZPZD4MFtaxEgDY": {
+		"EKkBCaERl7VUSf0hn7o3M": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#destroy"
 		},
-		"GeacOLtwQCwMwb7EOkDEe": {
+		"b6y0AJ0oSKnj6TUbsKqH7": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#flush"
 		},
-		"bgkK6VoeFqlFJ7vGEvYgX": {
+		"5bAkpagPE28KY8j3g55EN": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#initFlushBuffers"
 		},
-		"fg-xvpMBAFri2n3A8AUSB": {
+		"XwHNqtcbWj1SE-FoGq9vK": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#onPrerender"
 		},
-		"ATP0gAFuHaZWlAIuMaSHq": {
+		"2tJN3ap-eObEmGW1ngLB_": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#packInterleavedGeometry"
 		},
-		"LnhSe6nZftWps4lJxYjXs": {
+		"PQkg1B_CXFDrNKkHskq8m": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#render"
 		},
-		"Yq-2CvjqAHI0evsjveSuZ": {
+		"czR4I29v2Z280HOs6IRZh": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#start"
 		},
-		"ODzJN6ksYSXYXQX6mk2Ph": {
+		"7fxIlF0FMZVrdEB3HWg4i": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#stop"
 		},
-		"rKU6bdKEMk7w0BNvReT3O": {
+		"R5G2t17BmYv3rnu_cuoU0": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#getAttributeBuffer"
 		},
-		"eoBvqAroijODxBQ6NS1vo": {
+		"1flfv48ZlE9j8jF9VZPak": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/AbstractBatchRenderer.html#getIndexBuffer"
 		},
-		"QLyCdfJYkdFZClUwQupVJ": {
+		"vCOTAV-G_FiqC47qArYnd": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/TRANSFORM_MODE.html"
 		},
-		"A0Cj96KNxpjHsa7unfGG5": {
+		"93RYhVow5nFHReRujomf7": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/TRANSFORM_MODE.html#DYNAMIC"
 		},
-		"Qa2ko7BjrUOmpEgJpCCU_": {
+		"gd5tVMfBLnwD9EIAjEwZW": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/TRANSFORM_MODE.html#STATIC"
 		},
-		"CYGwk0QsGSQSOHB4sanbd": {
+		"GKa51Kh4E0qd2iWKsNUD-": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/.html"
 		},
-		"NdYsr_o2N9EDtwgPp_6Sr": {
+		"ofGCxqZnnUmZ4c2yPR3LC": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/.html#destroy"
 		},
-		"J7QzMaxfLzoVgVUonGvwi": {
+		"at9LUALbWOlST6gewbB95": {
 			"uri": "/example-documentation/@webdoc/example/PIXI/.html#init"
 		},
-		"gLr3ygh7BvSpr7D_vqk_R": {
+		"0DeMj94Qh2JWMP0aepUqt": {
 			"uri": "/example-documentation/@webdoc/example/PIXI.html#SVG_SIZE"
 		},
-		"mUCshVzlDX_-6DVkIH-3W": {
+		"YfQTFpF9mUqXcpLZB-gyX": {
 			"uri": "/example-documentation/@webdoc/example/R.html"
 		},
-		"mMdBokmG3jvBTktdZnHBe": {
+		"WlkBE7SHhZv9Hg29JtJ6j": {
 			"uri": "/example-documentation/@webdoc/example/R/Road.html"
 		},
-		"oXkZyKvgRTHEvLal88lv6": {
+		"Rmg0x4UbzGbC_1-esCusZ": {
 			"uri": "/example-documentation/@webdoc/example/R/Road.html#constructor"
 		},
-		"IcbY93GvqxEZUzKlcCofM": {
+		"unT_Fv4_eNX9E_NAA6Zy3": {
 			"uri": "/example-documentation/@webdoc/example/R.html#DEFAULT_LANES"
 		},
-		"gn0Xydk82lErnNxMnGkKk": {
+		"w6MFWxJ9X7YZgZwyh_sir": {
 			"uri": "/example-documentation/@webdoc/example/R.html#buildRoad"
 		},
-		"Jjw_PyVoiiX1VbB7b5oIc": {
+		"kNKUPKISlAAN-07MiDfof": {
 			"uri": "/example-documentation/@webdoc/example/Ts.html"
 		},
-		"zJD5HHMkMEueB39SltYbR": {
+		"g48cZAp4sDCXTFP2r1e5l": {
 			"uri": "/example-documentation/@webdoc/example/Ts/Transaction.html"
 		},
-		"K3dEdlLrMA5YX10ut1xIV": {
+		"8_HCegwkTVTr1KspI53nl": {
 			"uri": "/example-documentation/@webdoc/example/Ts/Transaction.html#constructor"
 		},
-		"VenqQyHRbQP6mNXTeXevF": {
+		"e4Sdob11sChuolWLYkYsK": {
 			"uri": "/example-documentation/@webdoc/example/Bean.html"
 		},
-		"4JAykEoJt_FnrxL1rU08V": {
+		"ZKflKlOrq9OKwGhMDtS0X": {
 			"uri": "/example-documentation/@webdoc/example/Bean.html#constructor"
 		},
-		"Ze1d9CSmYibdJglbK8uNO": {
+		"qEcM3N3ThngCs2Wo67yr4": {
 			"uri": "/example-documentation/@webdoc/example/Bean.html#roast"
 		},
-		"OdUCWg-6Daje9vM4VjfZ3": {
+		"4qFpmbSAyUYT_fy30X7SN": {
 			"uri": "/example-documentation/@webdoc/example/Car.html"
 		},
-		"ai74MOo-0oB4L6WP_upaw": {
+		"-floP4UVtx4K9BxjqS7qB": {
 			"uri": "/example-documentation/@webdoc/example/Car.html#DEFAULT_DRIVE_SHIFT"
 		},
-		"CQRw19gnjykjqzCgi0Ftq": {
+		"tBn9ENTzHq0lTG6FapGRI": {
 			"uri": "/example-documentation/@webdoc/example/Car.html#bounds"
 		},
-		"teVc7zUjxlEOu9Lir7Vly": {
+		"lH6GoJpU5WWrWIapSrGBD": {
 			"uri": "/example-documentation/@webdoc/example/Car.html#interactions"
 		},
-		"5l5XHx3gy2beWZxVB7wHP": {
+		"zODszhJBWO01xfQwnp5P6": {
 			"uri": "/example-documentation/@webdoc/example/Car.html#mass"
 		},
-		"GOazcttsiTBmA8pale-Nc": {
+		"r7kZPb43dFvh6H4FZ0tSm": {
 			"uri": "/example-documentation/@webdoc/example/Car.html#model"
 		},
-		"DTAFdXH_AjU0u2lZz4oXB": {
+		"Y30upgJ8saBQgE5ISkI-S": {
 			"uri": "/example-documentation/@webdoc/example/Car.html#position"
 		},
-		"_2Mbpgff_-lAVrMGUwBuY": {
+		"ZFsJhi2SBlBT3apjuyMTS": {
 			"uri": "/example-documentation/@webdoc/example/Car.html#velocity"
 		},
-		"42G716mjkX-_hd8jJ3DYw": {
+		"brsDv4mec_4I-Q819Mejp": {
 			"uri": "/example-documentation/@webdoc/example/Car.html#vin"
 		},
-		"UuYA-INe9nf7cOWeeNGA0": {
+		"_HOkHw6RklAMKDwFCIxDs": {
 			"uri": "/example-documentation/@webdoc/example/Car.html#registerRetail"
 		},
-		"F7xJbz-Pim6C1GQG8YoRp": {
+		"LIa5QQZHA6c4ObXH1bwmq": {
 			"uri": "/example-documentation/@webdoc/example/Car.html#constructor"
 		},
-		"pDXyiCRh2wY4P_sxpv0lm": {
+		"XnWn1nKue5WMKDd8oBvgq": {
 			"uri": "/example-documentation/@webdoc/example/Car.html#onCrash"
 		},
-		"Yx-OtIVwVLb6GLlcBh7Gd": {
+		"sxWxHpNZReT_ssIrlg28F": {
 			"uri": "/example-documentation/@webdoc/example/CoffeeBean.html"
 		},
-		"i2EDU9aPWvZ6YqRAmwi2d": {
+		"3F3X9vMhjr3Qu1r8rOXbw": {
 			"uri": "/example-documentation/@webdoc/example/CoffeeBean.html#maturity"
 		},
-		"tHMfdNWoImt6Alt0WJ7ub": {
+		"7dL7C9qdRIcGJcmYFCvgu": {
 			"uri": "/example-documentation/@webdoc/example/CoffeeBean.html#roasted"
 		},
-		"DtuUzSb6OlJJ0PERVtW0f": {
+		"ZGvVT7mF8w6Mybbreit02": {
 			"uri": "/example-documentation/@webdoc/example/CoffeeBean.html#constructor"
 		},
-		"VPli3ey-k0eu3gJsKJZVo": {
+		"XolDs4LjWPfgaacu9k25G": {
 			"uri": "/example-documentation/@webdoc/example/CoffeeBean.html#roast"
 		},
-		"_rAjLz3S_bCuGzWUYgKAT": {
+		"WXx-Y3BYPXYnsnIX5eAU6": {
 			"uri": "/example-documentation/@webdoc/example/ExampleFactory.html"
 		},
-		"RUKyrW0ftobDBoNGC3emf": {
+		"xV1o7QpmA4PArXA5TfUZz": {
 			"uri": "/example-documentation/@webdoc/example/ExampleFactory.html#getInstance"
 		},
-		"FgpntCYRR8emr_QmzQpvS": {
+		"fko-1xFmV6iG5PPNs9jq5": {
 			"uri": "/example-documentation/@webdoc/example/ExampleFactory.html#build"
 		},
-		"_P-ZJqHlzOhudVIz5iU2x": {
+		"JbwUkqk1cRttZYWXFSvf0": {
 			"uri": "/example-documentation/@webdoc/example/ExampleFactory.html#constructor"
 		},
-		"SMLQn9Rmonp38aIevq-BF": {
+		"043s_6JfuCqxXQpBd8HpX": {
 			"uri": "/example-documentation/@webdoc/example/ExampleFactory.html#getContext"
 		},
-		"-t7A3ehz2cXG8SD1-d5YY": {
+		"m9uchd6TbQIUgaPmK7aNl": {
 			"uri": "/example-documentation/@webdoc/example/Gravity.html"
 		},
-		"FRbOpoP83HB58FNd6rydo": {
+		"z3zSP3494C-0Ds-YH_arw": {
 			"uri": "/example-documentation/@webdoc/example/Gravity.html#constructor"
 		},
-		"crAYa7M2jPBz6asz9cvu1": {
+		"2JZy7qRtdJUN82LSKuqAF": {
 			"uri": "/example-documentation/@webdoc/example/Gravity.html#force"
 		},
-		"7Yna8TjG5jRKL2XzODc3C": {
+		"ar2ZknA0WG7XIMFW-EE7C": {
 			"uri": "/example-documentation/@webdoc/example/PhysicalInteraction.html"
 		},
-		"h-8rLPCiANYIQEnSjv7B_": {
+		"5HGISdOg9xbgSXh7sLrAu": {
 			"uri": "/example-documentation/@webdoc/example/PhysicalInteraction.html#GRAVITATIONAL_CONSTANT"
 		},
-		"19-GnWvwMSbYY25Awxdue": {
+		"gz_GmHmflPKzD6A1VpZut": {
 			"uri": "/example-documentation/@webdoc/example/PhysicalInteraction.html#createGravity"
 		},
-		"2kN06L5Dmu82B_7yhyexk": {
+		"R2apUONftUIsSvG-UvWiv": {
 			"uri": "/example-documentation/@webdoc/example/PhysicalInteraction.html#force"
 		},
-		"SCDbcfcp4yQlQ2AL-JO5H": {
+		"UsbmX2Xg6eTCmkwKFpFdP": {
 			"uri": "/example-documentation/@webdoc/example/PhysicalObject.html"
 		},
-		"EZ-QRBxzgb_zwpRCbN65Y": {
+		"KVEnBIRsS5Wp3LV_y_D87": {
 			"uri": "/example-documentation/@webdoc/example/PhysicalObject.html#bounds"
 		},
-		"l0hAt0-hAxn2SNj-aXDUV": {
+		"NReULDUX09PT7eRxTD5dP": {
 			"uri": "/example-documentation/@webdoc/example/PhysicalObject.html#interactions"
 		},
-		"ofThUNw9ySCLTay71mlpE": {
+		"At6mAxtfcRQ_KfFrRHhy5": {
 			"uri": "/example-documentation/@webdoc/example/PhysicalObject.html#mass"
 		},
-		"MlYjeWcK6iEgqMqsdDzgN": {
+		"Er75UpnxNt64587Hk3fyc": {
 			"uri": "/example-documentation/@webdoc/example/PhysicalObject.html#position"
 		},
-		"MrmSpFVPqluvJ-dJSFOgT": {
+		"SnA14tMgfbmqEtcHcgVJR": {
 			"uri": "/example-documentation/@webdoc/example/PhysicalObject.html#velocity"
 		},
-		"6SnlZynu84z_2FcimkEPG": {
+		"PLKq4L_L9pIWdc6juxHGZ": {
 			"uri": "/example-documentation/@webdoc/example/Vector.html"
 		},
-		"3-mKh_mWh_KiE2fzp_ORp": {
+		"RHvyaN7RD9DVaiez5Uzwf": {
 			"uri": "/example-documentation/@webdoc/example/Vector.html#dimensions"
 		},
-		"6kFZrvzB-MXOCJm8Nknq5": {
+		"KCjd3MJTRls8HOY5UoWeL": {
 			"uri": "/example-documentation/@webdoc/example/Vector.html#add"
 		},
-		"JW6WHfI2x9h1JWTcoToua": {
+		"btzb0y8QmuFcV0QdGq95u": {
 			"uri": "/example-documentation/@webdoc/example/Vector.html#equalTo"
 		},
-		"YGHLhrFNJp_wzFwyLZMyf": {
+		"5qXQUKPgWfCAiV1cB71rw": {
 			"uri": "/example-documentation/@webdoc/example/Vector.html#isCompat"
 		},
-		"P7kT9gqxX-NhuTVmhN7nZ": {
+		"lq0FnoXyVR9OpxIH-HwPK": {
 			"uri": "/example-documentation/@webdoc/example/CAR_MAKES.html"
 		},
-		"R182mG4mvAPxotcwHkBfW": {
+		"vnmbKiuv0PoGspWrsrX1Z": {
 			"uri": "/example-documentation/@webdoc/example/CAR_MAKES.html#FERRARI"
 		},
-		"3V2KCEHOs7sANM61wTJLF": {
+		"zgY_nvtgFN_-3W47f9dBh": {
 			"uri": "/example-documentation/@webdoc/example/CAR_MAKES.html#FORD"
 		},
-		"FM3RWLqly6IUK4fTxkhMm": {
+		"oH0GJbNgVXehN04sU7JJQ": {
 			"uri": "/example-documentation/@webdoc/example/CAR_MAKES.html#GENERAL_MOTORS"
 		},
-		"4G5TzgO1JNHkVW5EGxsHP": {
+		"yqs8WbwemXjTb0yUGR3g2": {
 			"uri": "/example-documentation/@webdoc/example/CAR_MAKES.html#JAGUAR"
 		},
-		"4wVl05dKjZJqSIOXhm78w": {
+		"qV6e5kIxu27s9dn2oWx6o": {
 			"uri": "/example-documentation/@webdoc/example/CAR_MAKES.html#KIA"
 		},
-		"WHGgDc_4cflAy7tDPT1RW": {
+		"fZRYLUdJMXkD1k3pHJDZk": {
 			"uri": "/example-documentation/@webdoc/example/CAR_MAKES.html#LAMBORGHINI"
 		},
-		"K50kGDMbLYn5GvOzzG_lf": {
+		"OUssRXOUx2xMNe8erYaZF": {
 			"uri": "/example-documentation/@webdoc/example/CAR_MAKES.html#TOYOTA"
 		},
-		"EtwImiYIHyafNVYSr6yZa": {
+		"7ZYgAXwcpfPpyDFBSTcHo": {
 			"uri": "/example-documentation/@webdoc/example/VectorArray.html"
 		},
-		"9P4_0LGkpLI1EZ-2g3KO_": {
+		"FkyVrvkuqsoGLBk-oLOlo": {
 			"uri": "/example-documentation/@webdoc/example/VectorArray.html#meta"
 		},
-		"7Y8nEjJv8ZVvy5ltfZGgR": {
+		"LeLrBMviFOoXrOMt0dlTb": {
 			"uri": "/example-documentation/@webdoc/example/CarDealer.html"
 		},
-		"dYluIM7B4BC9cp41KvM5d": {
+		"ejy4Tqjw6F2HKDeR0HR7f": {
 			"uri": "/example-documentation/@webdoc/example/CarDealer.html#closeTransaction"
 		},
-		"fYOvWWhnsPd1BVSXvW7IV": {
+		"-M_j9W12DmLHz3b-BLDtf": {
 			"uri": "/example-documentation/@webdoc/example/CarDealer.html#initiateTransaction"
 		},
-		"YE3LQ457YtZ6keAbB1_aO": {
+		"HVIqgmdN9YKhvDPQkPEQm": {
 			"uri": "/example-documentation/@webdoc/example/CarDealer.html#offerAsk"
 		},
-		"i4_15xbB0UheCwbSW7HxA": {
+		"oEleRM9gclZGWJOePL_3s": {
 			"uri": "/example-documentation/@webdoc/example/CarDealer.html#offerBid"
 		},
-		"3kIoHipeVifPUjYAQZJa3": {
+		"shLfz8Vf7mjM4kNFSXICR": {
 			"uri": "/example-documentation/@webdoc/example/installBean.html"
 		},
-		"qpEuo5RbsohBzl8K1qwxO": {
+		"KctK9cLQ_8TOJsRWfm1Ti": {
 			"uri": "/example-documentation/@webdoc/example/isPhysicalObject.html"
 		}
 	}
