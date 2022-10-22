@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>{ <i>webdoc</i> }: CoffeeBean</title>
+    <title>{ <i>webdoc</i> }: Banana</title>
 
     
 
@@ -68,124 +68,42 @@
         &gt;
       
       
-      <span>CoffeeBean</span>
+        <a href=/example-documentation/@webdoc/example/Ts.html>Ts</a>
+        &gt;
+      
+      <span>Banana</span>
     </div>
     <section class="document__title ">
       <h1>
-        CoffeeBean
+        Ts.Banana
       </h1>
       
     </section>
 
     
-<pre class="signature__container"><code class="signature">class CoffeeBean extends <a href="/example-documentation/@webdoc/example/Bean.html">Bean</a></code></pre>
+<pre class="signature__container"><code class="signature">typedef Banana
+
+{
+	peels : number,
+	color : "yellow" | "green",
+	usage : {
+		touchedBy : number,
+		eatenBy : number 
+	},
+	ripe(): boolean,
+	rotten(): boolean 
+}
+</code></pre>
 
 
     <div class="document__brief">
-<p>This class illustrates how you can create a Java-bean like component in JavaScript</p>
+<p>Banana</p>
 </div>
     <div class="document__description"></div>
 
     
 
     
-
-    
-      
-<div class="members">
-  <h2 class="members__category">Constructor</h2>
-  <hr />
-
-  
-    
-<div class="member" id="constructor" data-id="MethodDoc:constructor:object-boolean-number">
-  
-  
-<pre class="signature__container"><code class="signature">new CoffeeBean(options: object) → {}</code></pre>
-
-  <section class="member__tags">
-    
-  </section>
-
-  <div class="member__brief"></div>
-  <div class="member__description"></div>
-
-  
-
-  
-
-  
-    
-<div class="table-wrapper">
-  <table class="member-parameters">
-    <caption class="member-parameters__caption">Parameters:</caption>
-    <thead class="member-parameters__head">
-      <tr class="member-parameter-header">
-        <th class="member-parameter-header__name">Name</th>
-        <th class="member-parameter-header__type">Type</th>
-        <th class="member-parameter-header__attributes">Attributes</th>
-        
-        <th class="member-parameter-header__description">Description</th>
-      </tr>
-    </thead>
-    <tbody class="member-parameters__body">
-      <tr class="member-parameter">
-        <td class="member-parameter__name">
-          options
-        </td>
-        <td class="member-parameter__type">
-          object
-        </td>
-        <td class="member-parameter__attributes">
-          <p>&lt;optional&gt;</p>
-          
-          
-        </td>
-        
-        <td class="member-parameter__description"></td>
-      </tr><tr class="member-parameter">
-        <td class="member-parameter__name">
-          options.roasted
-        </td>
-        <td class="member-parameter__type">
-          boolean
-        </td>
-        <td class="member-parameter__attributes">
-          <p>&lt;optional&gt;</p>
-          
-          
-        </td>
-        
-        <td class="member-parameter__description">
-<p>whether the bean is <code>roasted</code></p>
-</td>
-      </tr><tr class="member-parameter">
-        <td class="member-parameter__name">
-          options.maturity
-        </td>
-        <td class="member-parameter__type">
-          number
-        </td>
-        <td class="member-parameter__attributes">
-          <p>&lt;optional&gt;</p>
-          
-          
-        </td>
-        
-        <td class="member-parameter__description"></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-  
-
-  
-  
-</div>
-
-  
-</div>
 
     
 
@@ -205,11 +123,29 @@
         <img class="accordion__bg-inactive" src="/example-documentation/icons/chevron-down.svg"/>
         <img class="accordion__bg-active" src="/example-documentation/icons/chevron-up.svg"/>
       </button>
-      <h3 class="members__subcategory">Properties from CoffeeBean</h3>
+      <h3 class="members__subcategory">Properties from Banana</h3>
     </section>
     <div class="accordion__content table-wrapper">
       <table class="summary">
         <tbody>
+          
+            <tr>
+              <td class="summary__signature">
+                
+                  "yellow" | "green"
+                
+              </td>
+              <td>
+                <section class="summary__signature">
+                  <a href="/example-documentation/@webdoc/example/Ts/Banana.html#color">color</a>
+                </section>
+                <section>
+                  
+                    <p>Color of banana</p>
+                  
+                </section>
+              </td>
+            </tr>
           
             <tr>
               <td class="summary__signature">
@@ -219,9 +155,11 @@
               </td>
               <td>
                 <section class="summary__signature">
-                  <a href="/example-documentation/@webdoc/example/CoffeeBean.html#maturity">maturity</a>
+                  <a href="/example-documentation/@webdoc/example/Ts/Banana.html#peels">peels</a>
                 </section>
                 <section>
+                  
+                    <p>Peels in banana</p>
                   
                 </section>
               </td>
@@ -230,14 +168,16 @@
             <tr>
               <td class="summary__signature">
                 
-                  boolean
+                  { touchedBy : number, eatenBy : number }
                 
               </td>
               <td>
                 <section class="summary__signature">
-                  <a href="/example-documentation/@webdoc/example/CoffeeBean.html#roasted">roasted</a>
+                  <a href="/example-documentation/@webdoc/example/Ts/Banana.html#usage">usage</a>
                 </section>
                 <section>
+                  
+                    <p>Analytics around how many people have interacted with this banana</p>
                   
                 </section>
               </td>
@@ -259,7 +199,7 @@
         <img class="accordion__bg-inactive" src="/example-documentation/icons/chevron-down.svg"/>
         <img class="accordion__bg-active" src="/example-documentation/icons/chevron-up.svg"/>
       </button>
-      <h3 class="members__subcategory">Methods from CoffeeBean</h3>
+      <h3 class="members__subcategory">Methods from Banana</h3>
     </section>
     <div class="accordion__content table-wrapper">
       <table class="summary">
@@ -268,14 +208,34 @@
             <tr>
               <td class="summary__signature">
                 
+                  boolean
+                
               </td>
               <td>
                 <section class="summary__signature">
-                  <a href="/example-documentation/@webdoc/example/CoffeeBean.html#roast">roast()</a>
+                  <a href="/example-documentation/@webdoc/example/Ts/Banana.html#ripe">ripe()</a>
                 </section>
                 <section>
                   
-                    <p>Roast this coffee bean.</p>
+                    <p>Evaluate if banana is ripe for eating</p>
+                  
+                </section>
+              </td>
+            </tr>
+          
+            <tr>
+              <td class="summary__signature">
+                
+                  boolean
+                
+              </td>
+              <td>
+                <section class="summary__signature">
+                  <a href="/example-documentation/@webdoc/example/Ts/Banana.html#rotten">rotten()</a>
+                </section>
+                <section>
+                  
+                    <p>Check if banana has rotten</p>
                   
                 </section>
               </td>
@@ -295,17 +255,14 @@
   
 
 
-  
 
   
 
 
-  
 
   
 
 
-  
 
 </div>
 
@@ -318,10 +275,10 @@
 
   
     
-<div class="member" id="maturity" data-id="PropertyDoc:maturity">
+<div class="member" id="color" data-id="PropertyDoc:color">
   
-    <section class="member__title " data-id="PropertyDoc:maturity">
-      <a href="/example-documentation/@webdoc/example/CoffeeBean.html#maturity">
+    <section class="member__title " data-id="PropertyDoc:color">
+      <a href="/example-documentation/@webdoc/example/Ts/Banana.html#color">
         <img
           src="/example-documentation/icons/link.svg"
           width="16px"
@@ -329,14 +286,14 @@
         />
       </a>
       <span class="member__title_content">
-        <span>maturity</span>
+        <span>color</span>
         
       </span>
       
         <span class="tag--source">
           
-            <a href="/example-documentation/@webdoc/example/src/CoffeeBean.js.html#16">
-              CoffeeBean.js:16
+            <a href="/example-documentation/@webdoc/example/src/Car.ts.html#133">
+              Car.ts:133
             </a>
           
         </span>
@@ -344,15 +301,17 @@
     </section>
   
   
-<pre class="signature__container"><code class="signature">maturity: number
+<pre class="signature__container"><code class="signature">color: "yellow" | "green"
 
-number</code></pre>
+"yellow" | "green"</code></pre>
 
   <section class="member__tags">
     
   </section>
 
-  <div class="member__brief"></div>
+  <div class="member__brief">
+<p>Color of banana</p>
+</div>
   <div class="member__description"></div>
 
   
@@ -367,10 +326,10 @@ number</code></pre>
 
   
     
-<div class="member" id="roasted" data-id="PropertyDoc:roasted">
+<div class="member" id="peels" data-id="PropertyDoc:peels">
   
-    <section class="member__title " data-id="PropertyDoc:roasted">
-      <a href="/example-documentation/@webdoc/example/CoffeeBean.html#roasted">
+    <section class="member__title " data-id="PropertyDoc:peels">
+      <a href="/example-documentation/@webdoc/example/Ts/Banana.html#peels">
         <img
           src="/example-documentation/icons/link.svg"
           width="16px"
@@ -378,14 +337,14 @@ number</code></pre>
         />
       </a>
       <span class="member__title_content">
-        <span>roasted</span>
+        <span>peels</span>
         
       </span>
       
         <span class="tag--source">
           
-            <a href="/example-documentation/@webdoc/example/src/CoffeeBean.js.html#13">
-              CoffeeBean.js:13
+            <a href="/example-documentation/@webdoc/example/src/Car.ts.html#130">
+              Car.ts:130
             </a>
           
         </span>
@@ -393,15 +352,68 @@ number</code></pre>
     </section>
   
   
-<pre class="signature__container"><code class="signature">roasted: boolean
+<pre class="signature__container"><code class="signature">peels: number
 
-boolean</code></pre>
+number</code></pre>
 
   <section class="member__tags">
     
   </section>
 
-  <div class="member__brief"></div>
+  <div class="member__brief">
+<p>Peels in banana</p>
+</div>
+  <div class="member__description"></div>
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+
+  
+    
+<div class="member" id="usage" data-id="PropertyDoc:usage">
+  
+    <section class="member__title " data-id="PropertyDoc:usage">
+      <a href="/example-documentation/@webdoc/example/Ts/Banana.html#usage">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span class="member__title_content">
+        <span>usage</span>
+        
+      </span>
+      
+        <span class="tag--source">
+          
+            <a href="/example-documentation/@webdoc/example/src/Car.ts.html#136">
+              Car.ts:136
+            </a>
+          
+        </span>
+      
+    </section>
+  
+  
+<pre class="signature__container"><code class="signature">usage: { touchedBy : number, eatenBy : number }
+
+{ touchedBy : number, eatenBy : number }</code></pre>
+
+  <section class="member__tags">
+    
+  </section>
+
+  <div class="member__brief">
+<p>Analytics around how many people have interacted with this banana</p>
+</div>
   <div class="member__description"></div>
 
   
@@ -425,10 +437,10 @@ boolean</code></pre>
 
   
     
-<div class="member" id="roast" data-id="MethodDoc:roast:">
+<div class="member" id="ripe" data-id="MethodDoc:ripe:">
   
-    <section class="member__title " data-id="MethodDoc:roast:">
-      <a href="/example-documentation/@webdoc/example/CoffeeBean.html#roast">
+    <section class="member__title " data-id="MethodDoc:ripe:">
+      <a href="/example-documentation/@webdoc/example/Ts/Banana.html#ripe">
         <img
           src="/example-documentation/icons/link.svg"
           width="16px"
@@ -436,14 +448,14 @@ boolean</code></pre>
         />
       </a>
       <span class="member__title_content">
-        <span>roast</span>
+        <span>ripe</span>
         
       </span>
       
         <span class="tag--source">
           
-            <a href="/example-documentation/@webdoc/example/src/CoffeeBean.js.html#23">
-              CoffeeBean.js:23
+            <a href="/example-documentation/@webdoc/example/src/Car.ts.html#147">
+              Car.ts:147
             </a>
           
         </span>
@@ -451,25 +463,117 @@ boolean</code></pre>
     </section>
   
   
-<pre class="signature__container"><code class="signature">roast() → {}</code></pre>
+<pre class="signature__container"><code class="signature">ripe() → {boolean}</code></pre>
 
   <section class="member__tags">
     
   </section>
 
   <div class="member__brief">
-<p>Roast this coffee bean.</p>
+<p>Evaluate if banana is ripe for eating</p>
 </div>
-  <div class="member__description">
-<p>NOTE: You cannot re-roast coffee beans and an error will be thrown if you try to
-roast a roasted coffee bean.</p>
+  <div class="member__description"></div>
+
+  
+
+  
+
+  
+
+  
+    
+<div class="table-wrapper">
+  <table class="member-returns">
+    <caption class="member-returns__caption">Returns:</caption>
+    <thead class="member-returns__head">
+      <tr class="member-returns-header">
+        <th class="member-returns-header__type">Type</th>
+        <th class="member-returns-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-returns__body">
+      <tr class="member-return">
+        <td class="member-return__type">
+          boolean
+        </td>
+        <td class="member-return__description">
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
   
+  
+</div>
+
+  
+    
+<div class="member" id="rotten" data-id="MethodDoc:rotten:">
+  
+    <section class="member__title " data-id="MethodDoc:rotten:">
+      <a href="/example-documentation/@webdoc/example/Ts/Banana.html#rotten">
+        <img
+          src="/example-documentation/icons/link.svg"
+          width="16px"
+          height="16px"
+        />
+      </a>
+      <span class="member__title_content">
+        <span>rotten</span>
+        
+      </span>
+      
+        <span class="tag--source">
+          
+            <a href="/example-documentation/@webdoc/example/src/Car.ts.html#152">
+              Car.ts:152
+            </a>
+          
+        </span>
+      
+    </section>
+  
+  
+<pre class="signature__container"><code class="signature">rotten() → {boolean}</code></pre>
+
+  <section class="member__tags">
+    
+  </section>
+
+  <div class="member__brief">
+<p>Check if banana has rotten</p>
+</div>
+  <div class="member__description"></div>
 
   
 
   
+
+  
+
+  
+    
+<div class="table-wrapper">
+  <table class="member-returns">
+    <caption class="member-returns__caption">Returns:</caption>
+    <thead class="member-returns__head">
+      <tr class="member-returns-header">
+        <th class="member-returns-header__type">Type</th>
+        <th class="member-returns-header__description">Description</th>
+      </tr>
+    </thead>
+    <tbody class="member-returns__body">
+      <tr class="member-return">
+        <td class="member-return__type">
+          boolean
+        </td>
+        <td class="member-return__description">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   
   
@@ -502,12 +606,16 @@ roast a roasted coffee bean.</p>
   <section class="page-members-explorer-category__title">Public Properties</section>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item" data-id="PropertyDoc:maturity">
-        <a href=/example-documentation/@webdoc/example/CoffeeBean.html#maturity>maturity</a>
+      <li class="page-members-explorer__item" data-id="PropertyDoc:color">
+        <a href=/example-documentation/@webdoc/example/Ts/Banana.html#color>color</a>
       </li>
     
-      <li class="page-members-explorer__item" data-id="PropertyDoc:roasted">
-        <a href=/example-documentation/@webdoc/example/CoffeeBean.html#roasted>roasted</a>
+      <li class="page-members-explorer__item" data-id="PropertyDoc:peels">
+        <a href=/example-documentation/@webdoc/example/Ts/Banana.html#peels>peels</a>
+      </li>
+    
+      <li class="page-members-explorer__item" data-id="PropertyDoc:usage">
+        <a href=/example-documentation/@webdoc/example/Ts/Banana.html#usage>usage</a>
       </li>
     
   </ul>
@@ -520,8 +628,12 @@ roast a roasted coffee bean.</p>
   <section class="page-members-explorer-category__title">Public Methods</section>
   <ul class="page-members-explorer-category__items">
     
-      <li class="page-members-explorer__item" data-id="MethodDoc:roast:">
-        <a href=/example-documentation/@webdoc/example/CoffeeBean.html#roast>roast</a>
+      <li class="page-members-explorer__item" data-id="MethodDoc:ripe:">
+        <a href=/example-documentation/@webdoc/example/Ts/Banana.html#ripe>ripe</a>
+      </li>
+    
+      <li class="page-members-explorer__item" data-id="MethodDoc:rotten:">
+        <a href=/example-documentation/@webdoc/example/Ts/Banana.html#rotten>rotten</a>
       </li>
     
   </ul>
